@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<title>Harry Zhang</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="image/favicon.png" sizes="16x16">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+.video-container {
+	position:relative;
+	padding-bottom:56.25%;
+	padding-top:30px;
+	height:0;
+	overflow:hidden;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 140px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.hidden{
+    display:none;
+}
+
+.button {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+
+a {
+    color: #9900cc;
+    text-decoration: none;
+}
+
+</style>
+<script>
+function toggleMoreResearch() {
+    var x = document.getElementById("more_research");
+    var y = document.getElementById("show_more_button");
+    x.style.display = "block";
+    y.style.display = "none";
+}
+</script>
+<body class="w3-light-grey">
+
+
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+  
+    <!-- Left Column -->
+    <div class="w3-third">
+    
+      <div class="w3-white w3-text-grey w3-card-4">
+        <div class="w3-display-container">
+		<!--
+          <img src="avatar.jpg" style="width:100%" alt="Avatar">
+		-->
+		<img src="image/drum_guitar.jpg" style="width:100%" alt="Avatar">
+        </div>
+        <center><h2><b> Li "Harry" Zhang &nbsp;张力 </b></h2></center>
+        <div class="w3-container">
+          <p><i class="fa fa-university fa-fw w3-margin-right w3-large w3-text-purple"></i>University of Michigan</p>
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-purple"></i><span class="tooltip">NLP<span class="tooltiptext">Natural Language Processing</span></span>, <span class="tooltip">ML<span class="tooltiptext">Machine Learning</span></span>, <span class="tooltip">AI<span class="tooltiptext">Artificial Intelligence</span></span> </p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-purple"></i>Shenzhen, China</p>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-purple"></i>zharry at umich dot edu</p>
+          <p><i class="fa fa-language fa-fw w3-margin-right w3-large w3-text-purple"></i>中文, English, Français</p>
+          <hr>
+		  
+		  <p class="w3-large w3-text-theme"><b><i class="fa fa-bullseye fa-fw w3-margin-right w3-text-purple"></i>Pool</b></p>
+		  <div class="video-container">
+		  <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLdoWMpbmbJL9dpYJcnCJXinRaShG8vtiC" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		  </div>
+          <ul>
+			<li>Captain of Michigan Billiards Team</li>
+			<li>1st place out of 12 in 9-Ball Scotch Doubles, 1st Midwest Invitational (intercollegiate)</li>
+            <li>7th place out of 32 in 9-Ball Scotch Doubles, 14th UM Team Pool Championship (intercollegiate)</li>
+		  </ul>
+          <hr>
+          
+          <p class="w3-large w3-text-theme"><b><i class="fa fa-music fa-fw w3-margin-right w3-text-purple"></i>Music</b></p>
+		  <div class="video-container">
+		  <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLdoWMpbmbJL8TrugrVCqpzBuwQx7qrdOS" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		  </div>
+          <p>I've been playing the drums since 2012, and the guitar since 2018. My comfort zone is rock, punk and metal, but I'm trying to step out of it.</p>
+          <hr>
+          
+          <p class="w3-large w3-text-theme"><b><i class="fa fa-gamepad fa-fw w3-margin-right w3-text-purple"></i>Gaming</b></p>
+		  <img src="image/Hearthstone Screenshot 03-17-18 01.38.58.png" alt="hearthstone">
+          <p>I'm a retired competitive player of <a href="https://playhearthstone.com/" target="_blank">Hearthstone</a>, Ragnarok#13105 on North America server, from July 2016 to May 2018.</p>
+          <ul>
+            <li>6 times Legend rank (&lt 1%) in Ranked Play </li>
+			<li>#29 out of 5 million players in March 2018</li>
+			<li><span class="tooltip">Michigan Hearthstone Team<span class="tooltiptext">Team name: RIPatches</span></span>: #9 out of 821 teams in <a href='https://compete.tespa.org/tournament/97/registrants' target='_blank'>TESPA 2018</a> (intercollegiate)</li>
+		  </ul>
+          <!--
+          <div class="video-container">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLdoWMpbmbJL_TveqUTWhbJ-BHwLCe0w4X" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+          <p>I'm also an accomplished player of <a href="http://www.monsterhunterworld.com/us/" target="_blank">Monster Hunter World</a>, doing speedruns occasionally.</p>
+          <hr>
+          -->
+		  <p class="w3-large w3-text-theme"><b><i class="fa fa-star-half-o fa-fw w3-margin-right w3-text-purple"></i>Adventures</b></p>
+		  <div class="video-container">
+		  <iframe width="413" height="230" src="https://www.youtube.com/embed/videoseries?list=PLdoWMpbmbJL98ZZaNGg5vHdPnbZsxMfJH" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		  </div>
+          <p>I took a leap of faith from: </p>
+          <ul>
+			<li><a href='https://www.skydivetecumseh.com/' target='_blank'>Skydive Tecumseh, USA</a> (18,000 feet)</li>
+            <li><a href='https://www.macautower.com.mo/tower-adventure/tower-adventure/bungy-jump/' target='_blank'>Macau Tower, China</a> (233 meters, the highest bungy jump in the world)</li>
+			<li><a href='https://www.bungy.co.nz/queenstown/nevis/nevis-swing/' target='_blank'>Nevis Swing, New Zealand</a> (300 meters arc)</li>
+			<li><a href='https://www.bungy.co.nz/queenstown/kawarau-bungy-centre/kawarau-bridge-bungy/' target='_blank'>Kawarau Bridge, New Zealand</a> (43 meters, the first bungy jump in the world)</li>
+		  </ul>
+          <!--
+          <p class="w3-large w3-text-theme"><b><i class="fa fa-puzzle-piece fa-fw w3-margin-right w3-text-purple"></i>Trivia</b></p>
+          <ul>
+            <li>I picked my nickname Harry when I was 7 due to the Harry Potter series.</li>
+            <li>I identify as Slytherin, Targaryen and INTJ.</li>
+          </ul>
+          -->
+		  <br>
+        </div>
+      </div><br>
+
+    <!-- End Left Column -->
+    </div>
+
+    <!-- Right Column -->
+    <div class="w3-twothird">
+      <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-user fa-fw w3-margin-right w3-xxlarge w3-text-purple"></i>About me</h2>
+        <div class="w3-container">
+          </h3>Currently applying to PhD programs starting Fall 2019, I just graduated from the University of Michigan, in December 2018. I am a researcher in Natural Language Processing, mentored by <a href="https://web.eecs.umich.edu/~mihalcea/" target="_blank">Prof. Rada Mihalcea</a> and <a href="http://www.cs.yale.edu/homes/radev/" target="_blank">Prof. Dragomir Radev</a>. My passion lies in using natural language understanding to help humans understand each other better. My past experience includes deep learning, semantics, meaning representation and embeddings, transfer learning, multi-task learning and multi-modality. My spectrum of hobbies spans video games, drumming, guitar, pool, golf, movies, broadway musicals and so on. To learn about my research and hobbies in college in 2 minutes, watch <a href=https://youtu.be/K6s3j_IadYA target="_blank">this video</a>. <br><br></h3>
+          </h3><a href="docs/CV.pdf" target="_blank"><span class="w3-tag w3-purple w3-round w3-hover-opacity">CV</span></a> &nbsp; <a href="docs/简历.pdf" target="_blank"><span class="w3-tag w3-purple w3-round w3-hover-opacity w3-hover-opacity">简历</span></a> &nbsp; <a href="#publications"><span class="w3-tag w3-purple w3-round w3-hover-opacity">Publications</span></a> &nbsp; 
+          <a href="https://www.facebook.com/gyczzl997"><i class="fa fa-facebook-official w3-large w3-hover-opacity"></i></a> &nbsp; 
+          <a href="https://www.linkedin.com/in/hazrael"><i class="fa fa-linkedin w3-large w3-hover-opacity"></i></a>
+          <br><br></h3>
+          
+        </div>
+      </div>
+	  
+      <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-search fa-fw w3-margin-right w3-xxlarge w3-text-purple"></i>Research Highlights</h2>
+		<!--
+		<span class="w3-tag w3-purple w3-round w3-hover-opacity">Current</span>
+		-->
+        
+        <div class="w3-container">
+          <h5 class="w3-text-gray"><b>Sentence Embeddings, Transfer Learning and Semantic Similarity</b> <sup><a href="#pub3">[1]</a> <a href="#pub2">[2]</a></sup><span style="float:right;"><a href="docs/um-aisymposium-dnt.pdf" target="_blank"><i class="fa fa-image w3-xlarge w3-hover-opacity"></i></a></span></h5>
+          <!-- <img src="image/lit.png" alt="LIT" height="70" width="70"> -->
+          <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Oct 2017 - Sept 2018</h6>
+          Recent advancement on neural sentence embeddings show highly competitive performance on semantic similarity tasks. However, the embeddings don't usually just work off-the-shelf, as we show that the transfer learning methodology is crucial to performance. We propose a fine-tuning approach and a multi-label approach which outperforms most alternative transfer learning approaches on semantic similarity tasks, achieving state-of-the-art performance on multiple datasets. Two papers are in pre-print; a poster is presented in <a href="https://www.kellogg.northwestern.edu/news-events/conference/ic2s2/2018.aspx" target='_blank'>IC2S2 2018</a>. </p>
+          <hr>
+        </div>
+
+        <div class="w3-container">
+          <h5 class="w3-text-gray"><b>Academic Advising Dialogue System and Text-to-SQL Generation</b> <sup><a href="#pub1">[3]</a></sup><span style="float:right;"><a href="docs/acl2018_poster - final.pdf" target="_blank"><i class="fa fa-image w3-xlarge w3-hover-opacity"></i></a></span></h5>
+          <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2015 - Apr 2017 </h6>
+          The work is a part of the <a href='http://sapphire.eecs.umich.edu/' target="_blank">Sapphire project</a>, a collaboration between U-M and IBM. The goal is to build a dialog system able to answer questions about university course information. While tackling the task of translating natural language to SQL, we identified flaws in the current text-to-SQL evaluation scheme and proposed alternatives. I contributed to building the a text-to-SQL dataset and implementing named entitiy recognition as a preprocessing step. The paper is accepted to <a href='https://acl2018.org/'  target="_blank">ACL 2018</a>.</p>
+          <hr>
+        </div>
+        <div id='show_more_button'>
+            <button onclick="toggleMoreResearch()" class='button'><span class="w3-tag w3-purple w3-round w3-hover-opacity">More research</span></button>
+        </div>
+        <div id="more_research" class='hidden'>
+            <div class="w3-container">
+              <h5 class="w3-text-gray"><b>Active Interpretation of Disparate Alternatives</b><span style="float:right;"><a href="https://www.darpa.mil/program/active-interpretation-of-disparate-alternatives" target="_blank"><i class="fa fa-globe w3-xlarge w3-hover-opacity"></i></a></span></h5>
+              <!-- <img src="image/newyorker.jpeg" alt="The New Yorker" height="40" width="136"> -->
+              <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2018 - Present </h6>
+              <p>Funded by DARPA, this project involves many institutes and desciplines including NLP and computer vision. From the texts, audios and videos recounting the Russia-Ukraine conflict in 2014, the goal is to extract knowledge elements and generate hypotheses about real-life events. I used named entity recognition, keyword extraction and word embeddings to extract textual entities from the data and assign them with categories from the given ontology.</p>
+              <hr>
+            </div>
+
+            <div class="w3-container">
+              <h5 class="w3-text-gray"><b>Cartoon Caption Clustering</b><span style="float:right;"><a href="http://tangra.cs.yale.edu//cartoons/newFold/cartoongallery2.php" target="_blank"><i class="fa fa-globe w3-xlarge w3-hover-opacity"></i></a></span></h5>
+              <!-- <img src="image/newyorker.jpeg" alt="The New Yorker" height="40" width="136"> -->
+              <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2016 - Apr 2016 </h6>
+              <p>In each volume of the New Yorker magazine, there is a comic section where thousands of readers submit funny captions. The goal is to automatically divide them into clusters based on their theme of humor (what they are joking about) using unsupervised learning. Work had been done years ago but the codes were scattered and underdocumented. I as a freshman was in charge of this project, to bring the existing system up to date and to make optimization. </p>
+              <hr>
+            </div>
+          
+            <div class="w3-container">
+              <h5 class="w3-text-gray"><b>ACL Anthology Network</b><span style="float:right;"><a href="http://tangra.cs.yale.edu/newaan/" target="_blank"><i class="fa fa-globe w3-xlarge w3-hover-opacity"></i></a></span></h5>
+              <!-- <img src="image/1200px-Association_for_Computational_Linguistics_logo.svg.png" alt="ACL" height="50" width="75"> -->
+              <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sept 2016 - Dec 2016 </h6>
+              <p>AAN encompases our corpus of resources on NLP and related fields and the research projects which build upon this corpus. We have collected around 6,500 surveys, tutorials and other resources and created a search engine which allows users to easily browse these resources. I helped build and maintain this power anthology with information regarding numerous papers included in top NLP venues. It features paper citation, author citation, and author collaboration, etc. </p>
+            </div>
+            </div>
+            <br>
+      </div>
+      <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-purple"></i>Work Experience</h2>
+        
+        <div class="w3-container">
+          <h5 class="w3-text-gray"><b>Research Summer Intern @ IBM Research</b><img src="image/ibm-logo.05dc870.png" alt="IBM Research" style="float:right;height:20px;"></h5>
+          
+          <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>TBD, 2019</h6>
+          <!--<p>???</p>-->
+          <hr>
+        </div>
+        
+        
+        <div class="w3-container">
+          <h5 class="w3-text-gray"><b>Summer Analyst in Technology @ Goldman Sachs</b><img src="image/GoldmanSachsLogo.jpg" alt="Goldman Sachs" style="float:right;height:40px;"></h5>
+          
+          <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2017 - Aug 2017</h6>
+          <p>As a full-stack developer, contribute to enhancing the GS App Store, which is the firm’s strategic application delivery and management solution for desktop and mobile platforms. The technology stack for GS App Store consists of AngularJS (Front-end), C# Web APIs (Middle-tier) and Elasticsearch (Back-end). My major goal is to improve user experience using data analytics and machine learning.</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-text-gray"><b>Instructional Aide @ Michigan Engineering</b><img src="image/UMCoE.jpg" alt="Michigan EECS" style="float:right;width:250px;height:25x;"></h5>
+		  <!-- <img src="image/UMCoE.jpg" alt="Michigan EECS" height="25" width="250"> -->
+          <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2016 - Dec 2018</h6>
+          <p> Instructed EECS 595: Natural Language Processing, the only NLP course at the Univerisity facing graudate students and seniors. Also instructed EECS 280: Programming and Introductory Data Structures, the largest programming course facing undergraduates.</p>
+            <br>
+        </div>
+      </div>
+      
+      <a id="publications">
+      <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-paper-plane-o fa-fw w3-margin-right w3-xxlarge w3-text-purple"></i>Publications</h2>
+        <div class="w3-container">
+          <a name="pub3"></a>
+          <h5 class="w3-text-gray"><b>[1] Multi-Label Transfer Learning for Semantic Similarity</b></h5>
+          <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i><b>Li Zhang</b>, Steven R. Wilson and Rada Mihalcea</h6>
+          <p><a href="https://arxiv.org/abs/1805.12501" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <a href="pages/mtl-similarity.bib" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">BibTeX</span></a> <a href="https://github.com/gyczzl997/tl-mll-semantic-similarity" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Code</span></a> &nbsp; In arXiv pre-print; in submission.</p>
+          <hr>
+          <a name="pub2"></a>
+          <h5 class="w3-text-gray"><b>[2] Direct Network Transfer: Transfer Learning of Sentence Embeddings for Semantic Similarity</b></h5>
+          <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i><b>Li Zhang</b>, Steven R. Wilson and Rada Mihalcea</h6>
+          <p><a href="https://arxiv.org/abs/1804.07835" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <a href="pages/snt-similarity.bib" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">BibTeX</span></a> <a href="https://github.com/gyczzl997/tl-mll-semantic-similarity" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Code</span></a> &nbsp; In arXiv pre-print; in submission.</p>
+          <hr>
+          <a name="pub1"></a>
+          <h5 class="w3-text-gray"><b>[3] Improving Text-to-SQL Evaluation Methodology</b></h5>
+          <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i>Catherine Finegan-Dollak, Jonathan K. Kummerfeld,
+           <b>Li Zhang</b>, Karthik Ramanathan Dhanalakshmi
+           Ramanathan, Sesh Sadasivam, Rui Zhang and Dragomir
+           Radev</h6>
+          <p><a href="https://arxiv.org/abs/1806.09029" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <a href="pages/text2sql.bib" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">BibTeX</span></a> <a href="https://github.com/jkkummerfeld/text2sql-data" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Code</span></a> &nbsp; Accepted to <a href='https://acl2018.org/'  target="_blank">ACL 2018</a>.</p>
+          <br>
+        </div>
+      </div>
+      
+      <div class="w3-container w3-card-2 w3-white">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-book fa-fw w3-margin-right w3-xxlarge w3-text-purple"></i>Education</h2>
+        <div class="w3-container">
+          <h5 class="w3-text-gray"><b>University of Michigan</b><img src="image/CSE-Logo-Mobile.png" alt="U of M" style="float:right;width:150px;height:90x;"></h5>
+          <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2015 - Dec 2018</h6>
+          <h6 class="w3-text-purple"><i class="fa fa-map-marker fa-fw w3-margin-right"></i>Ann Arbor, MI</h6>
+		  <h6 class="w3-text-purple"><i class="fa fa-graduation-cap fa-fw w3-margin-right"></i>B.S.E., Major in Computer Science, International Minor</h6>
+		  <p>Cumulative GPA: 3.82/4.00</p>
+        </div>
+		<br>
+      </div>
+      
+      
+
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+
+<footer class="w3-container w3-purple w3-center w3-margin-top">
+  <p>Last updated: 12/20/2018</p>
+  <p>&copy; Li Zhang &middot; Powered by w3.css</p>
+</footer>
+
+</body>
+</html>
