@@ -83,8 +83,8 @@ function toggleMoreResearch() {
     y.style.display = "none";
 }
 
-function togglesem2019bib() {
-  var x = document.getElementById("sem2019bib");
+function toggle(bib) {
+  var x = document.getElementById(bib);
   if (x.style.display === "block") {
     x.style.display = "none";
   } else {
@@ -276,7 +276,7 @@ function togglesem2019bib() {
           <a name="pub3"></a>
           <h5 class="w3-text-gray"><b>[1] Multi-Label Transfer Learning for Multi-Relational Semantic Similarity</b></h5>
           <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i><b>Li Zhang</b>, Steven R. Wilson and Rada Mihalcea</h6>
-          <p><a href="https://arxiv.org/abs/1805.12501" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="togglesem2019bib()">BibTeX</span> <a href="https://github.com/gyczzl997/tl-mll-semantic-similarity" target="_blank"></a> &nbsp; Accepted to <a href="https://starsem.org/2019/" target="_blank">*SEM 2019</a>; presented at <a href="https://naacl2019.org/" target="_blank">NAACL 2019</a>.</p>
+          <p><a href="https://arxiv.org/abs/1805.12501" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle(sem2019bib)">BibTeX</span> <a href="https://github.com/gyczzl997/tl-mll-semantic-similarity" target="_blank"></a> &nbsp; Accepted to <a href="https://starsem.org/2019/" target="_blank">*SEM 2019</a>; presented at <a href="https://naacl2019.org/" target="_blank">NAACL 2019</a>.</p>
           <div id="sem2019bib" class='hidden'>
             @article{zhang2018multi,
               title={Multi-Label Transfer Learning for Semantic Similarity},
@@ -289,7 +289,15 @@ function togglesem2019bib() {
           <a name="pub2"></a>
           <h5 class="w3-text-gray"><b>[2] Direct Network Transfer: Transfer Learning of Sentence Embeddings for Semantic Similarity</b></h5>
           <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i><b>Li Zhang</b>, Steven R. Wilson and Rada Mihalcea</h6>
-          <p><a href="https://arxiv.org/abs/1804.07835"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <a href="pages/snt-similarity.bib"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">BibTeX</span></a> <a href="https://github.com/gyczzl997/tl-mll-semantic-similarity" target="_blank"></a> &nbsp; In arXiv pre-print; in submission; presented at <a href="https://www.kellogg.northwestern.edu/news-events/conference/ic2s2/2018.aspx" target='_blank'>IC2S2 2018</a>.</p>
+          <p><a href="https://arxiv.org/abs/1804.07835"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle(dntbib)">BibTeX</span> <a href="https://github.com/gyczzl997/tl-mll-semantic-similarity" target="_blank"></a> &nbsp; In arXiv pre-print; in submission; presented at <a href="https://www.kellogg.northwestern.edu/news-events/conference/ic2s2/2018.aspx" target='_blank'>IC2S2 2018</a>.</p>
+          <div id="dntbib" class='hidden'>
+            @article{zhang2018sequential,
+              title={Sequential Network Transfer: Adapting Sentence Embeddings to Human Activities and Beyond},
+              author={Zhang, Li and Wilson, Steven R and Mihalcea, Rada},
+              journal={arXiv preprint arXiv:1804.07835},
+              year={2018}
+            }
+          </div>
           <hr>
           <a name="pub1"></a>
           <h5 class="w3-text-gray"><b>[3] Improving Text-to-SQL Evaluation Methodology</b></h5>
@@ -297,7 +305,23 @@ function togglesem2019bib() {
            <b>Li Zhang</b>, Karthik Ramanathan Dhanalakshmi
            Ramanathan, Sesh Sadasivam, Rui Zhang and Dragomir
            Radev</h6>
-          <p><a href="https://arxiv.org/abs/1806.09029" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <a href="pages/text2sql.bib" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">BibTeX</span></a> <a href="https://github.com/jkkummerfeld/text2sql-data""><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Code</span></a> &nbsp; Accepted to <a href='https://acl2018.org/'  target="_blank">ACL 2018</a>.</p>
+          <p><a href="https://arxiv.org/abs/1806.09029" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle(acl2018bib)">BibTeX</span> <a href="https://github.com/jkkummerfeld/text2sql-data""><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Code</span></a> &nbsp; Accepted to <a href='https://acl2018.org/'  target="_blank">ACL 2018</a>.</p>
+          <div id="acl2018bib" class='hidden'>
+                    @InProceedings{acl18sql,
+          author    = {Catherine Finegan-Dollak\*  and  Jonathan K. Kummerfeld\*  and  Li Zhang  and  Karthik Ramanathan  and  Sesh Sadasivam  and  Rui Zhang  and  Dragomir Radev},
+          title     = {Improving Text-to-SQL Evaluation Methodology},
+          booktitle = {Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
+          shortvenue = {ACL},
+          month     = {July},
+          year      = {2018},
+          address   = {Melbourne, Victoria, Australia},
+          pages     = {351--360},
+          abstract  = {To be informative, an evaluation must measure how well systems generalize to realistic unseen data. We identify limitations of and propose improvements to current evaluations of text-to-SQL systems. First, we compare human-generated and automatically generated questions, characterizing properties of queries necessary for real-world applications. To facilitate evaluation on multiple datasets, we release standardized and improved versions of seven existing datasets and one new text-to-SQL dataset. Second, we show that the current division of data into training and test sets measures robustness to variations in the way questions are asked, but only partially tests how well systems generalize to new queries; therefore, we propose a complementary dataset split for evaluation of future work. Finally, we demonstrate how the common practice of anonymizing variables during evaluation removes an important challenge of the task. Our observations highlight key difficulties, and our methodology enables effective measurement of future development.},
+          url       = {http://aclweb.org/anthology/P18-1033},
+          software  = {https://github.com/jkkummerfeld/text2sql-data},
+          data      = {https://github.com/jkkummerfeld/text2sql-data},
+        }
+          </div>
           <br>
         </div>
       </div>
