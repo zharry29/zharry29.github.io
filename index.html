@@ -80,6 +80,15 @@ function toggleMoreResearch() {
     x.style.display = "block";
     y.style.display = "none";
 }
+
+function togglesem2019bib() {
+  var x = document.getElementById("sem2019bib");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
 </script>
 <body class="w3-light-grey">
 
@@ -265,12 +274,20 @@ function toggleMoreResearch() {
           <a name="pub3"></a>
           <h5 class="w3-text-gray"><b>[1] Multi-Label Transfer Learning for Multi-Relational Semantic Similarity</b></h5>
           <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i><b>Li Zhang</b>, Steven R. Wilson and Rada Mihalcea</h6>
-          <p><a href="https://arxiv.org/abs/1805.12501" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <a href="pages/mtl-similarity.bib" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Bib</span></a> <a href="https://github.com/gyczzl997/tl-mll-semantic-similarity" target="_blank"></a> &nbsp; Accepted to <a href="https://starsem.org/2019/" target="_blank">*SEM 2019</a>; presented at <a href="https://naacl2019.org/" target="_blank">NAACL 2019</a>.</p>
+          <p><a href="https://arxiv.org/abs/1805.12501" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <button onclick="togglesem2019bib()"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">BibTex</span></button> <a href="https://github.com/gyczzl997/tl-mll-semantic-similarity" target="_blank"></a> &nbsp; Accepted to <a href="https://starsem.org/2019/" target="_blank">*SEM 2019</a>; presented at <a href="https://naacl2019.org/" target="_blank">NAACL 2019</a>.</p>
+          <div id="sem2019bib">
+            @article{zhang2018multi,
+              title={Multi-Label Transfer Learning for Semantic Similarity},
+              author={Zhang, Li and Wilson, Steven R and Mihalcea, Rada},
+              journal={arXiv preprint arXiv:1805.12501},
+              year={2018}
+            }
+          </div>
           <hr>
           <a name="pub2"></a>
           <h5 class="w3-text-gray"><b>[2] Direct Network Transfer: Transfer Learning of Sentence Embeddings for Semantic Similarity</b></h5>
           <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i><b>Li Zhang</b>, Steven R. Wilson and Rada Mihalcea</h6>
-          <p><a href="https://arxiv.org/abs/1804.07835"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <a href="pages/snt-similarity.bib"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Bib</span></a> <a href="https://github.com/gyczzl997/tl-mll-semantic-similarity" target="_blank"></a> &nbsp; In arXiv pre-print; in submission; presented at <a href="https://www.kellogg.northwestern.edu/news-events/conference/ic2s2/2018.aspx" target='_blank'>IC2S2 2018</a>.<iframe src="http://stackoverflow.com/reputation"></iframe></p>
+          <p><a href="https://arxiv.org/abs/1804.07835"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <a href="pages/snt-similarity.bib"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">BibTex</span></a> <a href="https://github.com/gyczzl997/tl-mll-semantic-similarity" target="_blank"></a> &nbsp; In arXiv pre-print; in submission; presented at <a href="https://www.kellogg.northwestern.edu/news-events/conference/ic2s2/2018.aspx" target='_blank'>IC2S2 2018</a>.</p>
           <hr>
           <a name="pub1"></a>
           <h5 class="w3-text-gray"><b>[3] Improving Text-to-SQL Evaluation Methodology</b></h5>
@@ -278,7 +295,7 @@ function toggleMoreResearch() {
            <b>Li Zhang</b>, Karthik Ramanathan Dhanalakshmi
            Ramanathan, Sesh Sadasivam, Rui Zhang and Dragomir
            Radev</h6>
-          <p><a href="https://arxiv.org/abs/1806.09029" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <a href="pages/text2sql.bib" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Bib</span></a> <a href="https://github.com/jkkummerfeld/text2sql-data""><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Code</span></a> &nbsp; Accepted to <a href='https://acl2018.org/'  target="_blank">ACL 2018</a>.</p>
+          <p><a href="https://arxiv.org/abs/1806.09029" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <a href="pages/text2sql.bib" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">BibTex</span></a> <a href="https://github.com/jkkummerfeld/text2sql-data""><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Code</span></a> &nbsp; Accepted to <a href='https://acl2018.org/'  target="_blank">ACL 2018</a>.</p>
           <br>
         </div>
       </div>
