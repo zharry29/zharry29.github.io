@@ -283,11 +283,19 @@ function toggle(bib) {
           <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i><b>Li Zhang</b>, Steven R. Wilson and Rada Mihalcea</h6>
           <p><a href="https://www.aclweb.org/anthology/S19-1005" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('sem2019bib')">BibTeX</span> &nbsp; In <a href="https://starsem.org/2019/" target="_blank">*SEM 2019</a>; presented at <a href="https://naacl2019.org/" target="_blank">NAACL 2019</a>.</p>
           <div id="sem2019bib" class='hidden'>
-            @article{zhang2018multi,
-              title={Multi-Label Transfer Learning for Semantic Similarity},
-              author={Zhang, Li and Wilson, Steven R and Mihalcea, Rada},
-              journal={arXiv preprint arXiv:1805.12501},
-              year={2018}
+            @inproceedings{zhang-etal-2019-multi,
+                title = "Multi-Label Transfer Learning for Multi-Relational Semantic Similarity",
+                author = "Zhang, Li  and
+                  Wilson, Steven  and
+                  Mihalcea, Rada",
+                booktitle = "Proceedings of the Eighth Joint Conference on Lexical and Computational Semantics (*{SEM} 2019)",
+                month = jun,
+                year = "2019",
+                address = "Minneapolis, Minnesota",
+                publisher = "Association for Computational Linguistics",
+                url = "https://www.aclweb.org/anthology/S19-1005",
+                pages = "44--50",
+                abstract = "Multi-relational semantic similarity datasets define the semantic relations between two short texts in multiple ways, e.g., similarity, relatedness, and so on. Yet, all the systems to date designed to capture such relations target one relation at a time. We propose a multi-label transfer learning approach based on LSTM to make predictions for several relations simultaneously and aggregate the losses to update the parameters. This multi-label regression approach jointly learns the information provided by the multiple relations, rather than treating them as separate tasks. Not only does this approach outperform the single-task approach and the traditional multi-task learning approach, but it also achieves state-of-the-art performance on all but one relation of the Human Activity Phrase dataset.",
             }
           </div>
           <hr>
