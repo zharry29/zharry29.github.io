@@ -79,8 +79,19 @@ a {
 function toggleMoreResearch() {
     var x = document.getElementById("more_research");
     var y = document.getElementById("show_more_button");
+    var z = document.getElementById("show_less_button");
     x.style.display = "block";
     y.style.display = "none";
+    z.style.display = "block";
+}
+
+function toggleCollapseResearch() {
+    var x = document.getElementById("more_research");
+    var y = document.getElementById("show_more_button");
+    var z = document.getElementById("show_less_button");
+    x.style.display = "none";
+    y.style.display = "block";
+    z.style.display = "none";
 }
 
 function toggle(bib) {
@@ -139,7 +150,7 @@ function toggle(bib) {
 		  <div class="video-container">
 		  <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLdoWMpbmbJL9dpYJcnCJXinRaShG8vtiC" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 		  </div>
-          <p>I am a competitive pool player. In college I was in the university team and played in intercollegiate tournaments. Now I mostly just train and practice.</p>
+          <p>I am a competitive pool player. In college I was in the university team and played in intercollegiate tournaments. Now I mostly just try to get better.</p>
           <!--
           <p class="w3-large w3-text-theme"><b><i class="fa fa-gamepad fa-fw w3-margin-right w3-text-purple"></i>Gaming</b></p>
 		  <img src="image/Hearthstone Screenshot 03-17-18 01.38.58.png" alt="hearthstone">
@@ -205,9 +216,16 @@ function toggle(bib) {
 		<span class="w3-tag w3-purple w3-round w3-hover-opacity">Current</span>
 		-->
         <div class="w3-container">
-          <h5 class="w3-text-gray"><b>Semi-Supervised Crosslingual Event and Entity Extraction</b> </h5>
-          <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sept 2019 - Present</h6>
-          This work is a part of the <a href='https://www.iarpa.gov/index.php/research-programs/better' target="_blank">IARPA BETTER project</a>. We are given training data of event and Entity extraction in English, and attemt to transfer the model to Arabic.</p>
+          <h5 class="w3-text-gray"><b>Semi-Supervised Crosslingual Information Retrival</b> </h5>
+          <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sept 2019 - <span class="w3-tag w3-purple w3-round w3-hover-opacity">Present</span></h6>
+          This work is a part of the <a href='https://www.iarpa.gov/index.php/research-programs/better' target="_blank">IARPA BETTER project</a>. Given training data of event and entity extraction in English, the goal is to to transfer to Arabic without training data. We attempt to create Arabic training data using annotation projection and direct transfer, with a machine translation system and a word aligner.
+          <hr>
+        </div>
+
+        <div class="w3-container">
+          <h5 class="w3-text-gray"><b>Probing and Building Multiple Choice Datasets</b> </h5>
+          <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Nov 2019 - <span class="w3-tag w3-purple w3-round w3-hover-opacity">Present</span></h6>
+          Multiple choice is a classic format for NLU datasets. With tremendous increase in model expressivity, systems such as BERT can "hack" most existing multiple choice datasets by learning spurious cues instead of intended knowledge. We study what the model exploits by applying input manipulation and perturbation, while attempting to advance the practice of building multiple choice datasets by experimenting with controls such as negative sampling and adverserial filtering.
           <hr>
         </div>
 
@@ -257,6 +275,10 @@ function toggle(bib) {
               <p>AAN encompases our corpus of resources on NLP and related fields and the research projects which build upon this corpus. We have collected around 6,500 surveys, tutorials and other resources and created a search engine which allows users to easily browse these resources. I helped build and maintain this power anthology with information regarding numerous papers included in top NLP venues. It features paper citation, author citation, and author collaboration, etc. </p>
             </div>
             </div>
+            <div id='show_less_button' class='hidden'>
+            	<hr>
+            	<button onclick="toggleCollapseResearch()" class='button'><span class="w3-tag w3-purple w3-round w3-hover-opacity">Collapse</span></button>
+        	</div>
             <br>
       </div>
       <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
@@ -394,7 +416,7 @@ function toggle(bib) {
 </div>
 
 <footer class="w3-container w3-purple w3-center w3-margin-top">
-  <p>&copy; Li Zhang 2019 &middot; Powered by w3.css</p>
+  <p>&copy; Li Zhang 2020 &middot; Powered by w3.css</p>
 </footer>
 
 </body>
