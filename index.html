@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Li "Harry" Zhang</title>
   <meta charset="UTF-8">
@@ -9,102 +10,114 @@
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
-  html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+  html,
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Roboto", sans-serif
+  }
+  
   .video-container {
-  	position:relative;
-  	padding-bottom:56.25%;
-  	padding-top:0px;
-  	height:0;
-  	overflow:hidden;
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 0px;
+    height: 0;
+    overflow: hidden;
   }
-
+  
   img {
-      max-width: 100%;
-      max-height: 100%;
+    max-width: 100%;
+    max-height: 100%;
   }
-
-  .video-container iframe, .video-container object, .video-container embed {
-  	position:absolute;
-  	top:0;
-  	left:0;
-  	width:100%;
-  	height:100%;
+  
+  .video-container iframe,
+  .video-container object,
+  .video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
-
+  
   .tooltip {
-      position: relative;
-      display: inline-block;
-      border-bottom: 1px dotted black;
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
   }
-
+  
   .tooltip .tooltiptext {
-      visibility: hidden;
-      width: 140px;
-      background-color: black;
-      color: #fff;
-      text-align: center;
-      border-radius: 6px;
-      padding: 5px 0;
-
-      /* Position the tooltip */
-      position: absolute;
-      z-index: 1;
+    visibility: hidden;
+    width: 140px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
   }
-
+  
   .tooltip:hover .tooltiptext {
-      visibility: visible;
+    visibility: visible;
   }
-
-  .hidden{
-      display:none;
+  
+  .hidden {
+    display: none;
   }
-
+  
   .button {
-      background-color: Transparent;
-      background-repeat:no-repeat;
-      border: none;
-      cursor:pointer;
-      overflow: hidden;
-      outline:none;
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
   }
-
+  
   a {
-      color: #9900cc;
-      text-decoration: none;
+    color: #9900cc;
+    text-decoration: none;
   }
-
+  
   .fab {
-    position:relative;
-    top:3px;
-}
-
-  .help            { cursor: help; }
-
+    position: relative;
+    top: 3px;
+  }
+  
+  .help {
+    cursor: help;
+  }
   </style>
   <!-- Place your kit's code here -->
   <script src="https://kit.fontawesome.com/e86b39c03c.js" crossorigin="anonymous"></script>
   <script>
   function toggleMoreResearch() {
-      var x = document.getElementById("more_research");
-      var y = document.getElementById("show_more_button");
-      var z = document.getElementById("show_less_button");
-      x.style.display = "block";
-      y.style.display = "none";
-      z.style.display = "block";
+    var x = document.getElementById("more_research");
+    var y = document.getElementById("show_more_button");
+    var z = document.getElementById("show_less_button");
+    x.style.display = "block";
+    y.style.display = "none";
+    z.style.display = "block";
   }
 
   function toggleCollapseResearch() {
-      var x = document.getElementById("more_research");
-      var y = document.getElementById("show_more_button");
-      var z = document.getElementById("show_less_button");
-      x.style.display = "none";
-      y.style.display = "block";
-      z.style.display = "none";
+    var x = document.getElementById("more_research");
+    var y = document.getElementById("show_more_button");
+    var z = document.getElementById("show_less_button");
+    x.style.display = "none";
+    y.style.display = "block";
+    z.style.display = "none";
   }
 
   function toggle(bib) {
     var x = document.getElementById(bib);
-    if (x.style.display === "block") {
+    if(x.style.display === "block") {
       x.style.display = "none";
     } else {
       x.style.display = "block";
@@ -112,64 +125,50 @@
   }
   </script>
 </head>
+
 <body class="w3-light-grey">
-
-
-<!-- Page Container -->
-<div class="w3-content w3-margin-top" style="max-width:1400px;">
-
-  <!-- The Grid -->
-  <div class="w3-row-padding">
-  
-    <!-- Left Column -->
-    <div class="w3-third">
-    
-      <div class="w3-white w3-text-grey w3-card-4">
-        <div class="w3-display-container">
-		<!--
+  <!-- Page Container -->
+  <div class="w3-content w3-margin-top" style="max-width:1400px;">
+    <!-- The Grid -->
+    <div class="w3-row-padding">
+      <!-- Left Column -->
+      <div class="w3-third">
+        <div class="w3-white w3-text-grey w3-card-4">
+          <div class="w3-display-container">
+            <!--
           <img src="avatar.jpg" style="width:100%" alt="Avatar">
-		-->
-		<img src="image/guitar.jpg" style="width:100%" alt="Avatar">
-        </div>
-        <center><h2><font face="georgia"> Li "Harry" Zhang &nbsp;</font><b>张力 </b></h2></center>
-        <div class="w3-container">
-          <hr>
-          <p class="w3-large w3-text-theme"><b><i class="fa fa-user fa-fw w3-margin-right w3-text-purple"></i>About Me</b></p>
-          <p><font color='black'>I am a second-year PhD student focusing on <b>Natural Language Processing</b>, working with <a href="http://www.cis.upenn.edu/~ccb/" target="_blank">Prof. Chris Callison-Burch</a> at the University of Pennsylvania. I graduated from the University of Michigan in 2018, previously mentored by <a href="https://web.eecs.umich.edu/~mihalcea/" target="_blank">Prof. Rada Mihalcea</a> and <a href="http://www.cs.yale.edu/homes/radev/" target="_blank">Prof. Dragomir Radev</a>. I'm also a competitive <b>pool player</b> and a passionate amateur <b>multi-instrumental musician</b>! I love playing metal, rock, funk and fusion.</font></p>
-          <!--  &nbsp; <a href="docs/简历.pdf" target="_blank"><span class="w3-tag w3-purple w3-round w3-hover-opacity w3-hover-opacity">简历</span></a> --> 
-          <a href="docs/CV.pdf" target="_blank"><span class="w3-tag w3-purple w3-round w3-hover-opacity">CV</span></a> &nbsp; <a href="#pubs"><span class="w3-tag w3-purple w3-round w3-hover-opacity">Publications</span></a> &nbsp; <a href="https://www.facebook.com/gyczzl997"><i class="fab fa-facebook-square w3-xlarge w3-hover-opacity"></i></a> &nbsp; 
-          <a href="https://twitter.com/liharryzhang"><i class="fab fa-twitter-square w3-xlarge w3-hover-opacity"></i></a> &nbsp;
-          <a href="https://www.linkedin.com/in/hazrael"><i class="fab fa-linkedin w3-xlarge w3-hover-opacity"></i></a> &nbsp; 
-          <a href="https://www.youtube.com/channel/UCppRpvSeqhLTcR8qSXKkrFg"><i class="fab fa-youtube w3-xlarge w3-hover-opacity"></i></a>
-          <br>
-          <p><i class="fa fa-university fa-fw w3-margin-right w3-large w3-text-purple"></i>University of Pennsylvania</p>
-          <!--<p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-purple"></i><span class="tooltip">NLP<span class="tooltiptext">Natural Language Processing</span></span>, <span class="tooltip">ML<span class="tooltiptext">Machine Learning</span></span>, <span class="tooltip">AI<span class="tooltiptext">Artificial Intelligence</span></span> </p>-->
-          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-purple"></i>Shenzhen, China</p>
-          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-purple"></i>zharry@seas.upenn.edu</p>
-          <hr>
-
-      <p class="w3-large w3-text-theme"><b><i class="fas fa-headphones fa-fw w3-margin-right w3-text-purple"></i>Music</b></p>
-      <div class="video-container">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLdoWMpbmbJL8Tn0M-JH8fZWPTHANqUoQ-" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-      </div>
-      <p>I play, record and produce music. Sometimes I play multiple instruments myself; sometimes I play with my talented friends. More of my work can be found on <a href="https://space.bilibili.com/483770554">Bilibili</a>.</p>
-      <hr>
-
-		  <div class="video-container">
-		  <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLdoWMpbmbJL-6JgN_t7txxRDK__eXDG1-" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-		  </div>
-      <p>I'm an intermediate-to-advanced drummer. I play a Roland TD-30K electronic set with Tama Speed Cobra 910 pedals. </p>
-      <p>I'm also a beginner-to-intermediate guitarist and bassist. I play a Schecter C-7 FR-S Apocalypse electric guitar and an Ibanez GSRM20 Mikro electric bass.</p>
-      <hr>
-		  
-		  <p class="w3-large w3-text-theme"><b><i class="fa fa-bullseye fa-fw w3-margin-right w3-text-purple"></i>Pool</b></p>
-		  <div class="video-container">
-		  <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLdoWMpbmbJL9mkYJpyqxAcs2f3F32sGUi" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-		  </div>
-          <p>I'm a decent pool player. I used to play competitively in the university team and played in intercollegiate tournaments regularly. I play with a Predator SP2 REVO play cue and a Mezz Dual Force break & jump cue.</p>
-      
-      
-      <!--
+    --><img src="image/guitar.jpg" style="width:100%" alt="Avatar"> </div>
+          <center>
+            <h2><font face="georgia"> Li "Harry" Zhang &nbsp;</font><b>张力 </b></h2></center>
+          <div class="w3-container">
+            <hr>
+            <p class="w3-large w3-text-theme"><b><i class="fa fa-user fa-fw w3-margin-right w3-text-purple"></i>About Me</b></p>
+            <p><font color='black'>I am a second-year PhD student focusing on <b>Natural Language Processing</b>, working with <a href="http://www.cis.upenn.edu/~ccb/" target="_blank">Prof. Chris Callison-Burch</a> at the University of Pennsylvania. I graduated from the University of Michigan in 2018, previously mentored by <a href="https://web.eecs.umich.edu/~mihalcea/" target="_blank">Prof. Rada Mihalcea</a> and <a href="http://www.cs.yale.edu/homes/radev/" target="_blank">Prof. Dragomir Radev</a>. I'm also a competitive <b>pool player</b> and a passionate amateur <b>multi-instrumental musician</b>! I love playing metal, rock, funk and fusion.</font></p>
+            <!--  &nbsp; <a href="docs/简历.pdf" target="_blank"><span class="w3-tag w3-purple w3-round w3-hover-opacity w3-hover-opacity">简历</span></a> --><a href="docs/CV.pdf" target="_blank"><span class="w3-tag w3-purple w3-round w3-hover-opacity">CV</span></a> &nbsp; <a href="#pubs"><span class="w3-tag w3-purple w3-round w3-hover-opacity">Publications</span></a> &nbsp; <a href="https://www.facebook.com/gyczzl997"><i class="fab fa-facebook-square w3-xlarge w3-hover-opacity"></i></a> &nbsp; <a href="https://twitter.com/liharryzhang"><i class="fab fa-twitter-square w3-xlarge w3-hover-opacity"></i></a> &nbsp; <a href="https://www.linkedin.com/in/hazrael"><i class="fab fa-linkedin w3-xlarge w3-hover-opacity"></i></a> &nbsp; <a href="https://www.youtube.com/channel/UCppRpvSeqhLTcR8qSXKkrFg"><i class="fab fa-youtube w3-xlarge w3-hover-opacity"></i></a>
+            <br>
+            <p><i class="fa fa-university fa-fw w3-margin-right w3-large w3-text-purple"></i>University of Pennsylvania</p>
+            <!--<p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-purple"></i><span class="tooltip">NLP<span class="tooltiptext">Natural Language Processing</span></span>, <span class="tooltip">ML<span class="tooltiptext">Machine Learning</span></span>, <span class="tooltip">AI<span class="tooltiptext">Artificial Intelligence</span></span> </p>-->
+            <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-purple"></i>Shenzhen, China</p>
+            <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-purple"></i>zharry@seas.upenn.edu</p>
+            <hr>
+            <p class="w3-large w3-text-theme"><b><i class="fas fa-headphones fa-fw w3-margin-right w3-text-purple"></i>Music</b></p>
+            <div class="video-container">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLdoWMpbmbJL8Tn0M-JH8fZWPTHANqUoQ-" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+            <p>I play, record and produce music. Sometimes I play multiple instruments myself; sometimes I play with my talented friends. More of my work can be found on <a href="https://space.bilibili.com/483770554">Bilibili</a>.</p>
+            <hr>
+            <div class="video-container">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLdoWMpbmbJL-6JgN_t7txxRDK__eXDG1-" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+            <p>I'm an intermediate-to-advanced drummer. I play a Roland TD-30K electronic set with Tama Speed Cobra 910 pedals. </p>
+            <p>I'm also a beginner-to-intermediate guitarist and bassist. I play a Schecter C-7 FR-S Apocalypse electric guitar and an Ibanez GSRM20 Mikro electric bass.</p>
+            <hr>
+            <p class="w3-large w3-text-theme"><b><i class="fa fa-bullseye fa-fw w3-margin-right w3-text-purple"></i>Pool</b></p>
+            <div class="video-container">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLdoWMpbmbJL9mkYJpyqxAcs2f3F32sGUi" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+            <p>I'm a decent pool player. I used to play competitively in the university team and played in intercollegiate tournaments regularly. I play with a Predator SP2 REVO play cue and a Mezz Dual Force break & jump cue.</p>
+            <!--
       <hr>
       <p class="w3-large w3-text-theme"><b><i class="fa fa-gamepad fa-fw w3-margin-right w3-text-purple"></i>Gaming</b></p>
       <div class="video-container">
@@ -177,54 +176,51 @@
       </div>
           <p>I play a lot of video games, sometime competitively. I used to play varsity e-sports in college and was top 16 in the USA in <a href='https://www.tespa.org/compete#HearthstoneVarsity' target='_blank'>Hearthstone TESPA</a> collegiate tournament of 2018.</p>
       -->
-          <!--
+            <!--
           <p class="w3-large w3-text-theme"><b><i class="fa fa-gamepad fa-fw w3-margin-right w3-text-purple"></i>Gaming</b></p>
-		  <img src="image/Hearthstone Screenshot 03-17-18 01.38.58.png" alt="hearthstone">
+      <img src="image/Hearthstone Screenshot 03-17-18 01.38.58.png" alt="hearthstone">
           <p>I'm a retired competitive player of <a href="https://playhearthstone.com/" target="_blank">Hearthstone</a>, Ragnarok#13105 on North America server, from July 2016 to May 2018.</p>
           <ul>
             <li>6 times Legend rank (&lt 1%) in Ranked Play </li>
-			<li>#29 out of 5 million players in March 2018</li>
-			<li><span class="tooltip">Michigan Hearthstone Team<span class="tooltiptext">Team name: RIPatches</span></span>: #9 out of 821 teams in <a href='https://compete.tespa.org/tournament/97/registrants' target='_blank'>TESPA 2018</a> (intercollegiate)</li>
-		  </ul>
+      <li>#29 out of 5 million players in March 2018</li>
+      <li><span class="tooltip">Michigan Hearthstone Team<span class="tooltiptext">Team name: RIPatches</span></span>: #9 out of 821 teams in <a href='https://compete.tespa.org/tournament/97/registrants' target='_blank'>TESPA 2018</a> (intercollegiate)</li>
+      </ul>
           -->
-          <!--
+            <!--
           <div class="video-container">
           <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLdoWMpbmbJL_TveqUTWhbJ-BHwLCe0w4X" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
           <p>I'm also an accomplished player of <a href="http://www.monsterhunterworld.com/us/" target="_blank">Monster Hunter World</a>, doing speedruns occasionally.</p>
           -->
-
-      <!--
+            <!--
       <hr>
-		  <p class="w3-large w3-text-theme"><b><i class="fas fa-parachute-box fa-fw w3-margin-right w3-text-purple"></i>Adventures</b></p>
-		  <div class="video-container">
-		  <iframe width="413" height="230" src="https://www.youtube.com/embed/videoseries?list=PLdoWMpbmbJL98ZZaNGg5vHdPnbZsxMfJH" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-		  </div>
+      <p class="w3-large w3-text-theme"><b><i class="fas fa-parachute-box fa-fw w3-margin-right w3-text-purple"></i>Adventures</b></p>
+      <div class="video-container">
+      <iframe width="413" height="230" src="https://www.youtube.com/embed/videoseries?list=PLdoWMpbmbJL98ZZaNGg5vHdPnbZsxMfJH" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
           <p>I took a leap of faith from: </p>
           <ul>
-			<li><a href='https://www.skydivetecumseh.com/' target='_blank'>Skydive Tecumseh, USA</a> (18,000 feet)</li>
+      <li><a href='https://www.skydivetecumseh.com/' target='_blank'>Skydive Tecumseh, USA</a> (18,000 feet)</li>
             <li><a href='https://www.macautower.com.mo/tower-adventure/tower-adventure/bungy-jump/' target='_blank'>Macau Tower, China</a> (233 meters, the highest bungy jump in the world)</li>
-			<li><a href='https://www.bungy.co.nz/queenstown/nevis/nevis-swing/' target='_blank'>Nevis Swing, New Zealand</a> (300 meters arc)</li>
-			<li><a href='https://www.bungy.co.nz/queenstown/kawarau-bungy-centre/kawarau-bridge-bungy/' target='_blank'>Kawarau Bridge, New Zealand</a> (43 meters, the first bungy jump in the world)</li>
-		  </ul>
+      <li><a href='https://www.bungy.co.nz/queenstown/nevis/nevis-swing/' target='_blank'>Nevis Swing, New Zealand</a> (300 meters arc)</li>
+      <li><a href='https://www.bungy.co.nz/queenstown/kawarau-bungy-centre/kawarau-bridge-bungy/' target='_blank'>Kawarau Bridge, New Zealand</a> (43 meters, the first bungy jump in the world)</li>
+      </ul>
     -->
-          <!--
+            <!--
           <p class="w3-large w3-text-theme"><b><i class="fa fa-puzzle-piece fa-fw w3-margin-right w3-text-purple"></i>Trivia</b></p>
           <ul>
             <li>I picked my nickname Harry when I was 7 due to the Harry Potter series.</li>
             <li>I identify as Slytherin, Targaryen and INTJ.</li>
           </ul>
           -->
-		  <br>
+            <br> </div>
         </div>
-      </div><br>
-
-    <!-- End Left Column -->
-    </div>
-
-    <!-- Right Column -->
-    <div class="w3-twothird">
-      <!--
+        <br>
+        <!-- End Left Column -->
+      </div>
+      <!-- Right Column -->
+      <div class="w3-twothird">
+        <!--
       <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
         <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-user fa-fw w3-margin-right w3-xxlarge w3-text-purple"></i>About me</h2>
         <div class="w3-container">
@@ -238,294 +234,241 @@
         </div>
       </div>
       -->
-	  
-      <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-search fa-fw w3-margin-right w3-xxlarge w3-text-purple"></i>Research Highlights</h2>
-		<!--
-		<span class="w3-tag w3-purple w3-round w3-hover-opacity">Current</span>
-		-->
-
-        <div class="w3-container">
-          <h5 class="w3-text-gray"><b>Script Learning with <img src="image/WikiHow_logo.png" alt="wikihow" scale="70" width="100"></b> <sup><a href="#pub5">[5]</a></sup><sup><a href="#pub6">[6]</a></sup> </h5>
-          <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Nov 2019 - <span class="w3-tag w3-purple w3-round w3-hover-opacity">Present</span> <div style="float:right;"> <span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round" >Dialogue</span> <span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round" >Sentence Semantics</span> <span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round">Resources and Evaluation</span></div></h6>
-          Using <a href='https://www.wikihow.com/Main-Page' target="_blank">wikiHow</a>, we create learning resources and evaluation benchmarks for reasoning <i>goal-step</i> and <i>temporal</i> event relations. Our training data is effective for NLU tasks involving these relations, such as intent detection. We are currently expanding our resources to multilingual and multimodal versions.
-          <hr>
-        </div>
-
+        <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
+          <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-search fa-fw w3-margin-right w3-xxlarge w3-text-purple"></i>Research Highlights</h2>
+          <!--
+    <span class="w3-tag w3-purple w3-round w3-hover-opacity">Current</span>
+    -->
+          <div class="w3-container">
+            <h5 class="w3-text-gray"><b>Script Learning with <img src="image/WikiHow_logo.png" alt="wikihow" scale="70" width="100"></b> <sup><a href="#pub5">[5]</a></sup><sup><a href="#pub6">[6]</a></sup> </h5>
+            <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Nov 2019 - <span class="w3-tag w3-purple w3-round w3-hover-opacity">Present</span> <div style="float:right;"> <span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round" >Dialogue</span> <span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round" >Sentence Semantics</span> <span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round">Resources and Evaluation</span></div></h6> Using <a href='https://www.wikihow.com/Main-Page' target="_blank">wikiHow</a>, we create learning resources and evaluation benchmarks for reasoning <i>goal-step</i> and <i>temporal</i> event relations. Our training data is effective for NLU tasks involving these relations, such as intent detection. We are currently expanding our resources to multilingual and multimodal versions.
+            <hr> </div>
           <div class="w3-container">
             <h5 class="w3-text-gray"><b>Split and Rephrase: Evaluation Benchmarks and Metrics</b> <sup><a href="#pub4">[4]</a></sup> </h5>
-            <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Apr 2019 - Jun 2019 <div style="float:right;"> <span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round" >Text Simplification</span> <span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round">Resources and Evaluation</span></div></h6>
-            Split and Rephrase is a text simplification task to rewrite a complex sentence into several simpler ones. We show that the existing benchmark is too simplistic, developing a rule-based model using no training data which performs on par with the current state-of-the-art neural model. We then propose two new crowdsourced benchmarks with improved quality. We also provide a study on the flaws of BLEU score, and the cost-efficiency of using crowd workers to evaluate models. </p>
-            <hr>
-          </div>
-
-        <div id='show_more_button'>
+            <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Apr 2019 - Jun 2019 <div style="float:right;"> <span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round" >Text Simplification</span> <span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round">Resources and Evaluation</span></div></h6> Split and Rephrase is a text simplification task to rewrite a complex sentence into several simpler ones. We show that the existing benchmark is too simplistic, developing a rule-based model using no training data which performs on par with the current state-of-the-art neural model. We then propose two new crowdsourced benchmarks with improved quality. We also provide a study on the flaws of BLEU score, and the cost-efficiency of using crowd workers to evaluate models. </p>
+            <hr> </div>
+          <div id='show_more_button'>
             <button onclick="toggleMoreResearch()" class='button'><span class="w3-tag w3-purple w3-round w3-hover-opacity">More research</span></button>
-        </div>
-          
-        <div id="more_research" class='hidden'>
-          <div class="w3-container">
-            <h5 class="w3-text-gray"><b>Sentence Embeddings, Transfer Learning and Semantic Similarity</b> <sup><a href="#pub2">[2]</a><a href="#pub3">[3]</a></sup></h5>
-            <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Oct 2017 - Sept 2018 <div style="float:right;"> <span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round" >Sentence Semantics</span></div></h6>
-            Recent advancement on neural sentence embeddings show highly competitive performance on semantic similarity tasks. However, the embeddings don't usually just work off-the-shelf, as we show that the transfer learning methodology is crucial to performance. We propose a fine-tuning approach and a multi-label approach which outperforms most alternative transfer learning approaches on semantic similarity tasks, achieving state-of-the-art performance on multiple datasets. </p>
-            <hr>
           </div>
-          <div class="w3-container">
-            <h5 class="w3-text-gray"><b>Crosslingual Information Retrieval</b> </h5>
-            <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sept 2019 - Present <span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round" style="float:right;">Information Extraction</span></h6>
-            This work is a part of the <a href='https://www.iarpa.gov/index.php/research-programs/better' target="_blank">IARPA BETTER project</a>. Given training data of event and entity extraction in one language, the goal is to to transfer to another language without training data. We consider zero-shot transfer and some translation-based baselines. 
-            <hr>
-          </div>
-
-          <div class="w3-container">
-            <h5 class="w3-text-gray"><b>Academic Advising Dialogue System and Text-to-SQL Generation</b> <sup><a href="#pub1">[1]</a></sup></h5>
-            <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2015 - Apr 2017 <div style="float:right;"> <span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round" >Dialogue</span> <span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round">Resources and Evaluation</span></div></h6>
-            This work is a part of the <a href='http://sapphire.eecs.umich.edu/' target="_blank">UM-IBM Sapphire project</a>. The goal is to build a dialog system able to answer questions about university course information. While tackling the task of translating natural language to SQL, we identified flaws in the current text-to-SQL evaluation scheme and proposed alternatives. I contributed to building the a text-to-SQL dataset and implementing named entitiy recognition as a preprocessing step.</p>
-            <hr>
-          </div>
-          <div class="w3-container">
-            <h5 class="w3-text-gray"><b>Active Interpretation of Disparate Alternatives</b></h5>
-            <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2018 - Feb 2019 </h6>
-            <p>This work is a part of the <a href='https://www.darpa.mil/program/active-interpretation-of-disparate-alternatives' target="_blank">DARPA AIDA project</a>. From the texts, audios and videos recounting the Russia-Ukraine conflict in 2014, the goal is to extract knowledge elements and generate hypotheses about real-life events. I used named entity recognition, keyword extraction and word embeddings to extract textual entities from the data and assign them with categories from the given ontology.</p>
-            <hr>
-          </div>
-
-          <div class="w3-container">
-            <h5 class="w3-text-gray"><b>Cartoon Caption Clustering</b><span style="float:right;"><a href="http://tangra.cs.yale.edu//cartoons/newFold/cartoongallery2.php" target="_blank"><i class="fa fa-globe w3-xlarge w3-hover-opacity"></i></a></span></h5>
-            <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2016 - Apr 2016 </h6>
-            <p>In each volume of the New Yorker magazine, there is a comic section where thousands of readers submit funny captions. The goal is to automatically divide them into clusters based on their theme of humor (what they are joking about) using unsupervised learning. Work had been done years ago but the codes were scattered and underdocumented. I as a freshman was in charge of this project, to bring the existing system up to date and to make optimization. </p>
-            <hr>
-          </div>
-        
-          <div class="w3-container">
-            <h5 class="w3-text-gray"><b>ACL Anthology Network</b><span style="float:right;"><a href="http://tangra.cs.yale.edu/newaan/" target="_blank"><i class="fa fa-globe w3-xlarge w3-hover-opacity"></i></a></span></h5>
-            <!-- <img src="image/1200px-Association_for_Computational_Linguistics_logo.svg.png" alt="ACL" height="50" width="75"> -->
-            <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sept 2016 - Dec 2016 </h6>
-            <p>AAN encompases our corpus of resources on NLP and related fields and the research projects which build upon this corpus. We have collected around 6,500 surveys, tutorials and other resources and created a search engine which allows users to easily browse these resources. I helped build and maintain this power anthology with information regarding numerous papers included in top NLP venues. It features paper citation, author citation, and author collaboration, etc. </p>
-          </div>
+          <div id="more_research" class='hidden'>
+            <div class="w3-container">
+              <h5 class="w3-text-gray"><b>Sentence Embeddings, Transfer Learning and Semantic Similarity</b> <sup><a href="#pub2">[2]</a><a href="#pub3">[3]</a></sup></h5>
+              <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Oct 2017 - Sept 2018 <div style="float:right;"> <span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round" >Sentence Semantics</span></div></h6> Recent advancement on neural sentence embeddings show highly competitive performance on semantic similarity tasks. However, the embeddings don't usually just work off-the-shelf, as we show that the transfer learning methodology is crucial to performance. We propose a fine-tuning approach and a multi-label approach which outperforms most alternative transfer learning approaches on semantic similarity tasks, achieving state-of-the-art performance on multiple datasets. </p>
+              <hr> </div>
+            <div class="w3-container">
+              <h5 class="w3-text-gray"><b>Crosslingual Information Retrieval</b> </h5>
+              <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sept 2019 - Present <span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round" style="float:right;">Information Extraction</span></h6> This work is a part of the <a href='https://www.iarpa.gov/index.php/research-programs/better' target="_blank">IARPA BETTER project</a>. Given training data of event and entity extraction in one language, the goal is to to transfer to another language without training data. We consider zero-shot transfer and some translation-based baselines.
+              <hr> </div>
+            <div class="w3-container">
+              <h5 class="w3-text-gray"><b>Academic Advising Dialogue System and Text-to-SQL Generation</b> <sup><a href="#pub1">[1]</a></sup></h5>
+              <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2015 - Apr 2017 <div style="float:right;"> <span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round" >Dialogue</span> <span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round">Resources and Evaluation</span></div></h6> This work is a part of the <a href='http://sapphire.eecs.umich.edu/' target="_blank">UM-IBM Sapphire project</a>. The goal is to build a dialog system able to answer questions about university course information. While tackling the task of translating natural language to SQL, we identified flaws in the current text-to-SQL evaluation scheme and proposed alternatives. I contributed to building the a text-to-SQL dataset and implementing named entitiy recognition as a preprocessing step.</p>
+              <hr> </div>
+            <div class="w3-container">
+              <h5 class="w3-text-gray"><b>Active Interpretation of Disparate Alternatives</b></h5>
+              <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2018 - Feb 2019 </h6>
+              <p>This work is a part of the <a href='https://www.darpa.mil/program/active-interpretation-of-disparate-alternatives' target="_blank">DARPA AIDA project</a>. From the texts, audios and videos recounting the Russia-Ukraine conflict in 2014, the goal is to extract knowledge elements and generate hypotheses about real-life events. I used named entity recognition, keyword extraction and word embeddings to extract textual entities from the data and assign them with categories from the given ontology.</p>
+              <hr> </div>
+            <div class="w3-container">
+              <h5 class="w3-text-gray"><b>Cartoon Caption Clustering</b><span style="float:right;"><a href="http://tangra.cs.yale.edu//cartoons/newFold/cartoongallery2.php" target="_blank"><i class="fa fa-globe w3-xlarge w3-hover-opacity"></i></a></span></h5>
+              <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2016 - Apr 2016 </h6>
+              <p>In each volume of the New Yorker magazine, there is a comic section where thousands of readers submit funny captions. The goal is to automatically divide them into clusters based on their theme of humor (what they are joking about) using unsupervised learning. Work had been done years ago but the codes were scattered and underdocumented. I as a freshman was in charge of this project, to bring the existing system up to date and to make optimization. </p>
+              <hr> </div>
+            <div class="w3-container">
+              <h5 class="w3-text-gray"><b>ACL Anthology Network</b><span style="float:right;"><a href="http://tangra.cs.yale.edu/newaan/" target="_blank"><i class="fa fa-globe w3-xlarge w3-hover-opacity"></i></a></span></h5>
+              <!-- <img src="image/1200px-Association_for_Computational_Linguistics_logo.svg.png" alt="ACL" height="50" width="75"> -->
+              <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sept 2016 - Dec 2016 </h6>
+              <p>AAN encompases our corpus of resources on NLP and related fields and the research projects which build upon this corpus. We have collected around 6,500 surveys, tutorials and other resources and created a search engine which allows users to easily browse these resources. I helped build and maintain this power anthology with information regarding numerous papers included in top NLP venues. It features paper citation, author citation, and author collaboration, etc. </p>
+            </div>
           </div>
           <div id='show_less_button' class='hidden'>
-          	<hr>
-          	<button onclick="toggleCollapseResearch()" class='button'><span class="w3-tag w3-purple w3-round w3-hover-opacity">Collapse</span></button>
-      	</div>
-          <br>
-      </div>
-      
-      <a name="pubs"></a>
-      <a id="publications">
-      <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-paper-plane-o fa-fw w3-margin-right w3-xxlarge w3-text-purple"></i>Publications</h2>
-        <div class="w3-container">
-          <a name="pub6"></a>
-          <h5 class="w3-text-gray"><b>[6] Intent Detection with WikiHow</b></h5>
-          <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i><b>Li Zhang</b>, Qing Lyu and Chris Callison-Burch</h6>
-          <p><a href="https://www.aclweb.org/anthology/2020.aacl-main.35/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('aacl2020bib')">BibTeX</span> <a href="https://github.com/zharry29/wikihow-intent" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Repo</span></a> &nbsp;In <a href="http://www.aacl2020.org/" target="_blank">AACL-IJCNLP 2020</a>.</p>
-          <div id="aacl2020bib" class='hidden'>
-            <pre style="overflow:auto">
-@inproceedings{zhang-etal-2020-intent,
-    title = "Intent Detection with {W}iki{H}ow",
-    author = "Zhang, Li  and
-      Lyu, Qing  and
-      Callison-Burch, Chris",
-    booktitle = "Proceedings of the 1st Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics and the 10th International Joint Conference on Natural Language Processing",
-    month = dec,
-    year = "2020",
-    address = "Suzhou, China",
-    publisher = "Association for Computational Linguistics",
-    url = "https://www.aclweb.org/anthology/2020.aacl-main.35",
-    pages = "328--333",
-    abstract = "Modern task-oriented dialog systems need to reliably understand users{'} intents. Intent detection is even more challenging when moving to new domains or new languages, since there is little annotated data. To address this challenge, we present a suite of pretrained intent detection models which can predict a broad range of intended goals from many actions because they are trained on wikiHow, a comprehensive instructional website. Our models achieve state-of-the-art results on the Snips dataset, the Schema-Guided Dialogue dataset, and all 3 languages of the Facebook multilingual dialog datasets. Our models also demonstrate strong zero- and few-shot performance, reaching over 75{\%} accuracy using only 100 training examples in all datasets.",
-}
-            </pre>
+            <hr>
+            <button onclick="toggleCollapseResearch()" class='button'><span class="w3-tag w3-purple w3-round w3-hover-opacity">Collapse</span></button>
           </div>
-          <hr>
-          <a name="pub5"></a>
-          <h5 class="w3-text-gray"><b>[5] Reasoning about Goals, Steps, and Temporal Ordering with WikiHow</b></h5>
-          <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i><b>Li Zhang</b><span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span>, Qing Lyu<span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span> and Chris Callison-Burch</h6>
-          <p><a href="https://www.aclweb.org/anthology/2020.emnlp-main.374/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('emnlp2020-1bib')">BibTeX</span> <a href="https://github.com/zharry29/wikihow-goal-step" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Repo</span></a> &nbsp;In <a href="https://2020.emnlp.org/" target="_blank">EMNLP 2020</a>.</p>
-          <div id="emnlp2020-1bib" class='hidden'>
-            <pre style="overflow:auto">
-@inproceedings{zhang-etal-2020-reasoning,
-    title = "Reasoning about Goals, Steps, and Temporal Ordering with {W}iki{H}ow",
-    author = "Zhang, Li  and
-      Lyu, Qing  and
-      Callison-Burch, Chris",
-    booktitle = "Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)",
-    month = nov,
-    year = "2020",
-    address = "Online",
-    publisher = "Association for Computational Linguistics",
-    url = "https://www.aclweb.org/anthology/2020.emnlp-main.374",
-    pages = "4630--4639",
-}
-            </pre>
-          </div>
-          <hr>
-          <a name="pub4"></a>
-          <h5 class="w3-text-gray"><b>[4] Small but Mighty: New Benchmarks for Split and Rephrase</b></h5>
-          <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i><b>Li Zhang</b>, Huaiyu Zhu, Siddhartha Brahma and Yunyao Li</h6>
-          <p><a href="https://www.aclweb.org/anthology/2020.emnlp-main.91/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('emnlp2020-2bib')">BibTeX</span> &nbsp;In <a href="https://2020.emnlp.org/" target="_blank">EMNLP 2020</a>.</p>
-          <div id="emnlp2020-2bib" class='hidden'>
-            <pre style="overflow:auto">
-@inproceedings{zhang-etal-2020-small,
-    title = "Small but Mighty: New Benchmarks for Split and Rephrase",
-    author = "Zhang, Li  and
-      Zhu, Huaiyu  and
-      Brahma, Siddhartha  and
-      Li, Yunyao",
-    booktitle = "Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)",
-    month = nov,
-    year = "2020",
-    address = "Online",
-    publisher = "Association for Computational Linguistics",
-    url = "https://www.aclweb.org/anthology/2020.emnlp-main.91",
-    pages = "1198--1205",
-}      
-            </pre>
-          </div>
-          <hr>
-          <a name="pub3"></a>
-          <h5 class="w3-text-gray"><b>[3] Multi-Label Transfer Learning for Multi-Relational Semantic Similarity</b></h5>
-          <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i><b>Li Zhang</b>, Steven R. Wilson and Rada Mihalcea</h6>
-          <p><a href="https://www.aclweb.org/anthology/S19-1005" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('sem2019bib')">BibTeX</span> <a href="docs/starSEM2019-presentation.pdf" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Slides</span></a> &nbsp; In <a href="https://starsem.org/2019/" target="_blank">*SEM 2019</a>.</p>
-          <div id="sem2019bib" class='hidden'>
-            <pre style="overflow:auto">
-@inproceedings{zhang-etal-2019-multi,
-    title = "Multi-Label Transfer Learning for Multi-Relational Semantic Similarity",
-    author = "Zhang, Li  and
-      Wilson, Steven  and
-      Mihalcea, Rada",
-    booktitle = "Proceedings of the Eighth Joint Conference on Lexical and Computational Semantics (*{SEM} 2019)",
-    month = jun,
-    year = "2019",
-    address = "Minneapolis, Minnesota",
-    publisher = "Association for Computational Linguistics",
-    url = "https://www.aclweb.org/anthology/S19-1005",
-    pages = "44--50",
-    abstract = "Multi-relational semantic similarity datasets define the semantic relations between two short texts in multiple ways, e.g., similarity, relatedness, and so on. Yet, all the systems to date designed to capture such relations target one relation at a time. We propose a multi-label transfer learning approach based on LSTM to make predictions for several relations simultaneously and aggregate the losses to update the parameters. This multi-label regression approach jointly learns the information provided by the multiple relations, rather than treating them as separate tasks. Not only does this approach outperform the single-task approach and the traditional multi-task learning approach, but it also achieves state-of-the-art performance on all but one relation of the Human Activity Phrase dataset.",
-}
-            </pre>
-          </div>
-          <hr>
-          <a name="pub2"></a>
-          <h5 class="w3-text-gray"><b>[2] Direct Network Transfer: Transfer Learning of Sentence Embeddings for Semantic Similarity</b></h5>
-          <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i><b>Li Zhang</b>, Steven R. Wilson and Rada Mihalcea</h6>
-          <p><a href="https://arxiv.org/abs/1804.07835" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('dntbib')">BibTeX</span> <a href="docs/ic2s2_18_activities.pptx.pdf"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Poster</span></a> &nbsp; In arXiv pre-print; presented at <a href="https://www.kellogg.northwestern.edu/news-events/conference/ic2s2/2018.aspx" target='_blank'>IC2S2 2018</a>.</p>
-          <div id="dntbib" class='hidden'>
-            <pre style="overflow:auto">
-@misc{zhang2018direct,
-    title={Direct Network Transfer: Transfer Learning of Sentence Embeddings for Semantic Similarity},
-    author={Li Zhang and Steven R. Wilson and Rada Mihalcea},
-    year={2018},
-    eprint={1804.07835},
-    archivePrefix={arXiv},
-    primaryClass={cs.CL}
-}
-            </pre>
-          </div>
-          <hr>
-          <a name="pub1"></a>
-          <h5 class="w3-text-gray"><b>[1] Improving Text-to-SQL Evaluation Methodology</b></h5>
-          <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i>Catherine Finegan-Dollak, Jonathan K. Kummerfeld,
+          <br> </div>
+        <a name="pubs"></a>
+        <a id="publications">
+          <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
+            <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-paper-plane-o fa-fw w3-margin-right w3-xxlarge w3-text-purple"></i>Publications</h2>
+            <div class="w3-container">
+              <a name="pub6"></a>
+              <h5 class="w3-text-gray"><b>[6] Intent Detection with WikiHow</b></h5>
+              <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i><b>Li Zhang</b>, Qing Lyu and Chris Callison-Burch</h6>
+              <p><a href="https://www.aclweb.org/anthology/2020.aacl-main.35/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('aacl2020bib')">BibTeX</span> <a href="https://github.com/zharry29/wikihow-intent" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Repo</span></a> &nbsp;In <a href="http://www.aacl2020.org/" target="_blank">AACL-IJCNLP 2020</a>.</p>
+              <div id="aacl2020bib" class='hidden'> <pre style="overflow:auto">
+              @inproceedings{zhang-etal-2020-intent,
+                  title = "Intent Detection with {W}iki{H}ow",
+                  author = "Zhang, Li  and
+                    Lyu, Qing  and
+                    Callison-Burch, Chris",
+                  booktitle = "Proceedings of the 1st Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics and the 10th International Joint Conference on Natural Language Processing",
+                  month = dec,
+                  year = "2020",
+                  address = "Suzhou, China",
+                  publisher = "Association for Computational Linguistics",
+                  url = "https://www.aclweb.org/anthology/2020.aacl-main.35",
+                  pages = "328--333",
+                  abstract = "Modern task-oriented dialog systems need to reliably understand users{'} intents. Intent detection is even more challenging when moving to new domains or new languages, since there is little annotated data. To address this challenge, we present a suite of pretrained intent detection models which can predict a broad range of intended goals from many actions because they are trained on wikiHow, a comprehensive instructional website. Our models achieve state-of-the-art results on the Snips dataset, the Schema-Guided Dialogue dataset, and all 3 languages of the Facebook multilingual dialog datasets. Our models also demonstrate strong zero- and few-shot performance, reaching over 75{\%} accuracy using only 100 training examples in all datasets.",
+              }
+            </pre> </div> </div>
+            <div class="w3-container">
+              <a name="pub5"></a>
+              <h5 class="w3-text-gray"><b>[5] Reasoning about Goals, Steps, and Temporal Ordering with WikiHow</b></h5>
+              <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i><b>Li Zhang</b><span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span>, Qing Lyu<span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span> and Chris Callison-Burch</h6>
+              <p><a href="https://www.aclweb.org/anthology/2020.emnlp-main.374/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('emnlp2020-1bib')">BibTeX</span> <a href="https://github.com/zharry29/wikihow-goal-step" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Repo</span></a> &nbsp;In <a href="https://2020.emnlp.org/" target="_blank">EMNLP 2020</a>.</p>
+              <div id="emnlp2020-1bib" class='hidden'> <pre style="overflow:auto">
+              @inproceedings{zhang-etal-2020-reasoning,
+                  title = "Reasoning about Goals, Steps, and Temporal Ordering with {W}iki{H}ow",
+                  author = "Zhang, Li  and
+                    Lyu, Qing  and
+                    Callison-Burch, Chris",
+                  booktitle = "Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+                  month = nov,
+                  year = "2020",
+                  address = "Online",
+                  publisher = "Association for Computational Linguistics",
+                  url = "https://www.aclweb.org/anthology/2020.emnlp-main.374",
+                  pages = "4630--4639",
+              }
+            </pre> </div> </div>
+            <div class="w3-container">
+              <a name="pub4"></a>
+              <h5 class="w3-text-gray"><b>[4] Small but Mighty: New Benchmarks for Split and Rephrase</b></h5>
+              <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i><b>Li Zhang</b>, Huaiyu Zhu, Siddhartha Brahma and Yunyao Li</h6>
+              <p><a href="https://www.aclweb.org/anthology/2020.emnlp-main.91/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('emnlp2020-2bib')">BibTeX</span> &nbsp;In <a href="https://2020.emnlp.org/" target="_blank">EMNLP 2020</a>.</p>
+              <div id="emnlp2020-2bib" class='hidden'> <pre style="overflow:auto">
+              @inproceedings{zhang-etal-2020-small,
+                  title = "Small but Mighty: New Benchmarks for Split and Rephrase",
+                  author = "Zhang, Li  and
+                    Zhu, Huaiyu  and
+                    Brahma, Siddhartha  and
+                    Li, Yunyao",
+                  booktitle = "Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+                  month = nov,
+                  year = "2020",
+                  address = "Online",
+                  publisher = "Association for Computational Linguistics",
+                  url = "https://www.aclweb.org/anthology/2020.emnlp-main.91",
+                  pages = "1198--1205",
+              }      
+            </pre> </div> </div>
+            <div class="w3-container">
+              <a name="pub3"></a>
+              <h5 class="w3-text-gray"><b>[3] Multi-Label Transfer Learning for Multi-Relational Semantic Similarity</b></h5>
+              <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i><b>Li Zhang</b>, Steven R. Wilson and Rada Mihalcea</h6>
+              <p><a href="https://www.aclweb.org/anthology/S19-1005" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('sem2019bib')">BibTeX</span> <a href="docs/starSEM2019-presentation.pdf" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Slides</span></a> &nbsp; In <a href="https://starsem.org/2019/" target="_blank">*SEM 2019</a>.</p>
+              <div id="sem2019bib" class='hidden'> <pre style="overflow:auto">
+              @inproceedings{zhang-etal-2019-multi,
+                  title = "Multi-Label Transfer Learning for Multi-Relational Semantic Similarity",
+                  author = "Zhang, Li  and
+                    Wilson, Steven  and
+                    Mihalcea, Rada",
+                  booktitle = "Proceedings of the Eighth Joint Conference on Lexical and Computational Semantics (*{SEM} 2019)",
+                  month = jun,
+                  year = "2019",
+                  address = "Minneapolis, Minnesota",
+                  publisher = "Association for Computational Linguistics",
+                  url = "https://www.aclweb.org/anthology/S19-1005",
+                  pages = "44--50",
+                  abstract = "Multi-relational semantic similarity datasets define the semantic relations between two short texts in multiple ways, e.g., similarity, relatedness, and so on. Yet, all the systems to date designed to capture such relations target one relation at a time. We propose a multi-label transfer learning approach based on LSTM to make predictions for several relations simultaneously and aggregate the losses to update the parameters. This multi-label regression approach jointly learns the information provided by the multiple relations, rather than treating them as separate tasks. Not only does this approach outperform the single-task approach and the traditional multi-task learning approach, but it also achieves state-of-the-art performance on all but one relation of the Human Activity Phrase dataset.",
+              }
+            </pre> </div> </div>
+            <div class="w3-container">
+              <a name="pub2"></a>
+              <h5 class="w3-text-gray"><b>[2] Direct Network Transfer: Transfer Learning of Sentence Embeddings for Semantic Similarity</b></h5>
+              <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i><b>Li Zhang</b>, Steven R. Wilson and Rada Mihalcea</h6>
+              <p><a href="https://arxiv.org/abs/1804.07835" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('dntbib')">BibTeX</span> <a href="docs/ic2s2_18_activities.pptx.pdf"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Poster</span></a> &nbsp; In arXiv pre-print; presented at <a href="https://www.kellogg.northwestern.edu/news-events/conference/ic2s2/2018.aspx" target='_blank'>IC2S2 2018</a>.</p>
+              <div id="dntbib" class='hidden'> <pre style="overflow:auto">
+              @misc{zhang2018direct,
+                  title={Direct Network Transfer: Transfer Learning of Sentence Embeddings for Semantic Similarity},
+                  author={Li Zhang and Steven R. Wilson and Rada Mihalcea},
+                  year={2018},
+                  eprint={1804.07835},
+                  archivePrefix={arXiv},
+                  primaryClass={cs.CL}
+              }
+            </pre> </div> </div>
+            <div class="w3-container">
+              <a name="pub1"></a>
+              <h5 class="w3-text-gray"><b>[1] Improving Text-to-SQL Evaluation Methodology</b></h5>
+              <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i>Catherine Finegan-Dollak, Jonathan K. Kummerfeld,
            <b>Li Zhang</b>, Karthik Ramanathan Dhanalakshmi
            Ramanathan, Sesh Sadasivam, Rui Zhang and Dragomir
            Radev</h6>
-          <p><a href="https://www.aclweb.org/anthology/P18-1033/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('acl2018bib')">BibTeX</span> <a href="https://github.com/jkkummerfeld/text2sql-data"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Repo</span></a> <a href="docs/acl2018_poster - final.pdf"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Poster</span></a> &nbsp; In <a href='https://acl2018.org/'  target="_blank">ACL 2018</a>.</p>
-          <div id="acl2018bib" class='hidden'>
-            <pre style="overflow:auto">
-@InProceedings{acl18sql,
-    author    = {Catherine Finegan-Dollak\*  and  Jonathan K. Kummerfeld\*  and  Li Zhang  and  Karthik Ramanathan  and  Sesh Sadasivam  and  Rui Zhang  and  Dragomir Radev},
-    title     = {Improving Text-to-SQL Evaluation Methodology},
-    booktitle = {Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
-    shortvenue = {ACL},
-    month     = {July},
-    year      = {2018},
-    address   = {Melbourne, Victoria, Australia},
-    pages     = {351--360},
-    abstract  = {To be informative, an evaluation must measure how well systems generalize to realistic unseen data. We identify limitations of and propose improvements to current evaluations of text-to-SQL systems. First, we compare human-generated and automatically generated questions, characterizing properties of queries necessary for real-world applications. To facilitate evaluation on multiple datasets, we release standardized and improved versions of seven existing datasets and one new text-to-SQL dataset. Second, we show that the current division of data into training and test sets measures robustness to variations in the way questions are asked, but only partially tests how well systems generalize to new queries; therefore, we propose a complementary dataset split for evaluation of future work. Finally, we demonstrate how the common practice of anonymizing variables during evaluation removes an important challenge of the task. Our observations highlight key difficulties, and our methodology enables effective measurement of future development.},
-    url       = {http://aclweb.org/anthology/P18-1033},
-    software  = {https://github.com/jkkummerfeld/text2sql-data},
-    data      = {https://github.com/jkkummerfeld/text2sql-data},
-}
-            </pre>
+              <p><a href="https://www.aclweb.org/anthology/P18-1033/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('acl2018bib')">BibTeX</span> <a href="https://github.com/jkkummerfeld/text2sql-data"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Repo</span></a> <a href="docs/acl2018_poster - final.pdf"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Poster</span></a> &nbsp; In <a href='https://acl2018.org/' target="_blank">ACL 2018</a>.</p>
+              <div id="acl2018bib" class='hidden'> <pre style="overflow:auto">
+              @InProceedings{acl18sql,
+                  author    = {Catherine Finegan-Dollak\*  and  Jonathan K. Kummerfeld\*  and  Li Zhang  and  Karthik Ramanathan  and  Sesh Sadasivam  and  Rui Zhang  and  Dragomir Radev},
+                  title     = {Improving Text-to-SQL Evaluation Methodology},
+                  booktitle = {Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
+                  shortvenue = {ACL},
+                  month     = {July},
+                  year      = {2018},
+                  address   = {Melbourne, Victoria, Australia},
+                  pages     = {351--360},
+                  abstract  = {To be informative, an evaluation must measure how well systems generalize to realistic unseen data. We identify limitations of and propose improvements to current evaluations of text-to-SQL systems. First, we compare human-generated and automatically generated questions, characterizing properties of queries necessary for real-world applications. To facilitate evaluation on multiple datasets, we release standardized and improved versions of seven existing datasets and one new text-to-SQL dataset. Second, we show that the current division of data into training and test sets measures robustness to variations in the way questions are asked, but only partially tests how well systems generalize to new queries; therefore, we propose a complementary dataset split for evaluation of future work. Finally, we demonstrate how the common practice of anonymizing variables during evaluation removes an important challenge of the task. Our observations highlight key difficulties, and our methodology enables effective measurement of future development.},
+                  url       = {http://aclweb.org/anthology/P18-1033},
+                  software  = {https://github.com/jkkummerfeld/text2sql-data},
+                  data      = {https://github.com/jkkummerfeld/text2sql-data},
+              }
+            </pre> </div> 
+              <br> </div>
           </div>
-          <br>
-        </div>
+          <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
+            <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-purple"></i>Work Experience</h2>
+            <div class="w3-container">
+              <h5 class="w3-text-gray"><b>Teaching Assistant</b><img src="image/UM-Penn.png" alt="UM-Penn" style="float:right;width:107px;height:50x;"></h5>
+              <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2016 - Dec 2020</h6>
+              <p> At Penn, I instructed CIS 530: Computational Linguistics (Winter, Fall 2020). At Michigan, I instructed EECS 595: Natural Language Processing (Fall 2018) and EECS 280: Programming and Introductory Data Structures (Winter, Fall 2016).</p>
+              <hr> </div>
+            <div class="w3-container">
+              <h5 class="w3-text-gray"><b>Research Intern @ IBM Research</b><img src="image/ibm-logo.05dc870.png" alt="IBM Research" style="float:right;height:20px;"></h5>
+              <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Apr 2019 - Jun 2019</h6>
+              <p>I did NLP research and software development on text simplification.</p>
+              <hr> </div>
+            <div class="w3-container">
+              <h5 class="w3-text-gray"><b>Summer Analyst in Technology @ Goldman Sachs</b><img src="image/GoldmanSachsLogo.jpg" alt="Goldman Sachs" style="float:right;height:40px;"></h5>
+              <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2017 - Aug 2017</h6>
+              <p>I performed software engineering, data analytics and machine learning.</p>
+              <br> </div>
+          </div>
+          <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
+            <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-book fa-fw w3-margin-right w3-xxlarge w3-text-purple"></i>Education</h2>
+            <div class="w3-container">
+              <h5 class="w3-text-gray"><b>University of Pennsylvania</b><img src="image/upenn-logo.png" alt="upenn logo" style="float:right;width:120px;height:120px;"></h5>
+              <h6 class="w3-text-purple"><i class="fa fa-map-marker fa-fw w3-margin-right"></i>Philadephia, PA, USA</h6>
+              <h6 class="w3-text-purple"><i class="fa fa-graduation-cap fa-fw w3-margin-right"></i>Ph.D. Computer and Information Science; <span class="w3-tag w3-purple w3-round w3-hover-opacity">In progress</span></h6>
+              <p>GPA: 3.89/4.00</p>
+              <hr> </div>
+            <div class="w3-container">
+              <h5 class="w3-text-gray"><b>University of Michigan</b><img src="image/umich-logo.png" alt="umich logo" style="float:right;width:120px;height:120px;"></h5>
+              <h6 class="w3-text-purple"><i class="fa fa-map-marker fa-fw w3-margin-right"></i>Ann Arbor, MI, USA</h6>
+              <h6 class="w3-text-purple"><i class="fa fa-graduation-cap fa-fw w3-margin-right"></i>B.S.E. Computer Science; Class of 2018</h6>
+              <p>GPA: 3.82/4.00 <i>summa cum laude</i></p>
+              <hr> </div>
+            <div class="w3-container">
+              <h5 class="w3-text-gray"><b>Shenzhen Middle School</b><img src="image/sms-logo.jpg" alt="SMS logo" style="float:right;width:120px;height:120px;"></h5>
+              <h6 class="w3-text-purple"><i class="fa fa-map-marker fa-fw w3-margin-right"></i>Shenzhen, China</h6>
+              <h6 class="w3-text-purple"><i class="fa fa-graduation-cap fa-fw w3-margin-right"></i>High School Diploma; Class of 2015</h6>
+              <p>GPA: 4.23/4.30 </p>
+              <br> </div>
+          </div>
+          <div class="w3-container w3-card-2 w3-white">
+            <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-scroll fa-fw w3-margin-right w3-xxlarge w3-text-purple"></i>Services</h2>
+            <h6 class="w3-text-black"><i class="fa fa-pen-nib fa-fw w3-margin-right"></i>Reviewer of <a href='https://2021.aclweb.org/'  target="_blank">ACL-IJCNLP 2021</a> </h6>
+            <h6 class="w3-text-black"><i class="fa fa-pen-nib fa-fw w3-margin-right"></i>Session chair of <a href='http://www.aacl2020.org/'  target="_blank">AACL-IJCNLP 2020</a> </h6>
+            <h6 class="w3-text-black"><i class="fa fa-pen-nib fa-fw w3-margin-right"></i>Co-organizer of <a href='https://nlp.cis.upenn.edu/clunch.html'  target="_blank">CLUNCH</a> in 2020, Penn's NLP seminar series </h6>
+            <h6 class="w3-text-black"><i class="fa fa-pen-nib fa-fw w3-margin-right"></i>Reviewer of <a href='https://coling2020.org/'  target="_blank">COLING 2020</a> </h6>
+            <h6 class="w3-text-black"><i class="fa fa-pen-nib fa-fw w3-margin-right"></i>Reviewer of <a href='https://www.journals.elsevier.com/computer-speech-and-language'  target="_blank">Computer Speech and Language</a> 2018</h6>
+            <br> </div>
+          <!-- End Right Column -->
       </div>
-
-      <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-purple"></i>Work Experience</h2>
-        <div class="w3-container">
-          <h5 class="w3-text-gray"><b>Teaching Assistant</b><img src="image/UM-Penn.png" alt="UM-Penn" style="float:right;width:107px;height:50x;"></h5>
-          <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2016 - Dec 2020</h6>
-          <p> At Penn, I instructed CIS 530: Computational Linguistics (Winter, Fall 2020). At Michigan, I instructed EECS 595: Natural Language Processing (Fall 2018) and EECS 280: Programming and Introductory Data Structures (Winter, Fall 2016).</p>
-          <hr>
-        </div>
-        
-        <div class="w3-container">
-          <h5 class="w3-text-gray"><b>Research Intern @ IBM Research</b><img src="image/ibm-logo.05dc870.png" alt="IBM Research" style="float:right;height:20px;"></h5>
-          
-          <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Apr 2019 - Jun 2019</h6>
-          <p>I did NLP research and software development on text simplification.</p>
-          <hr>
-        </div>
-        
-        <div class="w3-container">
-          <h5 class="w3-text-gray"><b>Summer Analyst in Technology @ Goldman Sachs</b><img src="image/GoldmanSachsLogo.jpg" alt="Goldman Sachs" style="float:right;height:40px;"></h5>
-          
-          <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2017 - Aug 2017</h6>
-          <p>I performed software engineering, data analytics and machine learning.</p>
-          <br>
-        </div>
-      </div>
-      
-      <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-book fa-fw w3-margin-right w3-xxlarge w3-text-purple"></i>Education</h2>
-        <div class="w3-container">
-          <h5 class="w3-text-gray"><b>University of Pennsylvania</b><img src="image/upenn-logo.png" alt="upenn logo" style="float:right;width:120px;height:120px;"></h5>
-          <h6 class="w3-text-purple"><i class="fa fa-map-marker fa-fw w3-margin-right"></i>Philadephia, PA, USA</h6>
-          <h6 class="w3-text-purple"><i class="fa fa-graduation-cap fa-fw w3-margin-right"></i>Ph.D. Computer and Information Science; <span class="w3-tag w3-purple w3-round w3-hover-opacity">In progress</span></h6>
-          <p>GPA: 3.89/4.00</p> 
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-text-gray"><b>University of Michigan</b><img src="image/umich-logo.png" alt="umich logo" style="float:right;width:120px;height:120px;"></h5>
-          <h6 class="w3-text-purple"><i class="fa fa-map-marker fa-fw w3-margin-right"></i>Ann Arbor, MI, USA</h6>
-          <h6 class="w3-text-purple"><i class="fa fa-graduation-cap fa-fw w3-margin-right"></i>B.S.E. Computer Science; Class of 2018</h6>
-          <p>GPA: 3.82/4.00 <i>summa cum laude</i></p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-text-gray"><b>Shenzhen Middle School</b><img src="image/sms-logo.jpg" alt="SMS logo" style="float:right;width:120px;height:120px;"></h5>
-          <h6 class="w3-text-purple"><i class="fa fa-map-marker fa-fw w3-margin-right"></i>Shenzhen, China</h6>
-          <h6 class="w3-text-purple"><i class="fa fa-graduation-cap fa-fw w3-margin-right"></i>High School Diploma; Class of 2015</h6>
-          <p>GPA: 4.23/4.30 </p>
-          <br>
-        </div>
-      </div>
-
-      <div class="w3-container w3-card-2 w3-white">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-scroll fa-fw w3-margin-right w3-xxlarge w3-text-purple"></i>Services</h2>
-        <h6 class="w3-text-black"><i class="fa fa-pen-nib fa-fw w3-margin-right"></i>Reviewer of <a href='https://2021.aclweb.org/'  target="_blank">ACL-IJCNLP 2021</a> </h6>
-        <h6 class="w3-text-black"><i class="fa fa-pen-nib fa-fw w3-margin-right"></i>Session chair of <a href='http://www.aacl2020.org/'  target="_blank">AACL-IJCNLP 2020</a> </h6>
-        <h6 class="w3-text-black"><i class="fa fa-pen-nib fa-fw w3-margin-right"></i>Co-organizer of <a href='https://nlp.cis.upenn.edu/clunch.html'  target="_blank">CLUNCH</a> in 2020, Penn's NLP seminar series </h6>
-        <h6 class="w3-text-black"><i class="fa fa-pen-nib fa-fw w3-margin-right"></i>Reviewer of <a href='https://coling2020.org/'  target="_blank">COLING 2020</a> </h6>
-        <h6 class="w3-text-black"><i class="fa fa-pen-nib fa-fw w3-margin-right"></i>Reviewer of <a href='https://www.journals.elsevier.com/computer-speech-and-language'  target="_blank">Computer Speech and Language</a> 2018</h6>
-        </br>
-      </div>
-      
-    <!-- End Right Column -->
+      <!-- End Grid -->
     </div>
-    
-  <!-- End Grid -->
+    <!-- End Page Container -->
   </div>
-  
-  <!-- End Page Container -->
-</div>
-
-<footer class="w3-container w3-purple w3-center w3-margin-top">
-  <p>&copy; Li Zhang 2021 &middot; Powered by w3.css</p>
-</footer>
-
+  <footer class="w3-container w3-purple w3-center w3-margin-top">
+    <p>&copy; Li Zhang 2021 &middot; Powered by w3.css</p>
+  </footer>
 </body>
+
 </html>
