@@ -114,6 +114,23 @@
     y.style.display = "block";
     z.style.display = "none";
   }
+  function toggleMorePublications() {
+    var x = document.getElementById("more_publications");
+    var y = document.getElementById("show_more_button_pub");
+    var z = document.getElementById("show_less_button_pub");
+    x.style.display = "block";
+    y.style.display = "none";
+    z.style.display = "block";
+  }
+
+  function toggleCollapsePublications() {
+    var x = document.getElementById("more_publications");
+    var y = document.getElementById("show_more_button_pub");
+    var z = document.getElementById("show_less_button_pub");
+    x.style.display = "none";
+    y.style.display = "block";
+    z.style.display = "none";
+  }
 
   function toggle(bib) {
     var x = document.getElementById(bib);
@@ -351,6 +368,11 @@
                   pages = "1198--1205",
               }      
             </pre> </div> </div>
+          <div id='show_more_button_pub'>
+            <hr>
+            <button onclick="toggleMorePublications()" class='button'><span class="w3-tag w3-purple w3-round w3-hover-opacity">More Publications</span></button>
+          </div>
+          <div id="more_publications" class='hidden'>
             <div class="w3-container">
               <a name="pub3"></a>
               <h5 class="w3-text-gray"><b>[3] Multi-Label Transfer Learning for Multi-Relational Semantic Similarity</b></h5>
@@ -410,8 +432,12 @@
                   software  = {https://github.com/jkkummerfeld/text2sql-data},
                   data      = {https://github.com/jkkummerfeld/text2sql-data},
               }
-            </pre> </div> 
-              <br> </div>
+            </pre> </div>  </div>
+            </div>
+            <div id='show_less_button_pub' class='hidden'>
+              <hr>
+              <button onclick="toggleCollapsePublications()" class='button'><span class="w3-tag w3-purple w3-round w3-hover-opacity">Collapse</span></button>
+          </div> <br>
           </div>
           <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
             <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-purple"></i>Work Experience</h2>
