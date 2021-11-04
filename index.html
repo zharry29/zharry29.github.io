@@ -160,7 +160,7 @@
           <div class="w3-container">
             <hr>
             <p class="w3-large w3-text-theme"><b><i class="fa fa-user fa-fw w3-margin-right w3-text-purple"></i>About Me</b></p>
-            <p><font color='black'>I am a second-year PhD student researcher focusing on <b>Natural Language Processing</b>, mentored by <a href="http://www.cis.upenn.edu/~ccb/" target="_blank">Prof. Chris Callison-Burch</a> at the University of Pennsylvania. I graduated from the University of Michigan in 2018, previously mentored by <a href="https://web.eecs.umich.edu/~mihalcea/" target="_blank">Prof. Rada Mihalcea</a> and <a href="http://www.cs.yale.edu/homes/radev/" target="_blank">Prof. Dragomir Radev</a>. I'm also a multi-instrumental musician, music producer, and video creator. </font></p>
+            <p><font color='black'>I am a third-year PhD student researcher focusing on <b>Natural Language Processing</b>, mentored by <a href="http://www.cis.upenn.edu/~ccb/" target="_blank">Prof. Chris Callison-Burch</a> at the University of Pennsylvania. I graduated from the University of Michigan in 2018, previously mentored by <a href="https://web.eecs.umich.edu/~mihalcea/" target="_blank">Prof. Rada Mihalcea</a> and <a href="http://www.cs.yale.edu/homes/radev/" target="_blank">Prof. Dragomir Radev</a>. I'm also a multi-instrumental musician, music producer, and video creator. </font></p>
             <a href="docs/CV.pdf" target="_blank"><span class="w3-tag w3-purple w3-round w3-hover-opacity">CV</span></a> &nbsp; <a href="https://space.bilibili.com/483770554" target="_blank"><img src="image/1200px-Bilibili_Logo_Blue.svg.png" alt="bilibili" width="50"></a> &nbsp; <a href="https://www.youtube.com/c/HazStudio" target="_blank"><i class="fab fa-youtube w3-xxlarge w3-hover-opacity"></i></a> &nbsp; <a href="https://open.spotify.com/artist/6ntpoMsRdS6WWUiuGjvcsf" target="_blank"><i class="fab fa-spotify w3-xxlarge w3-hover-opacity"></i></a> &nbsp; <a href="https://music.apple.com/us/artist/haz-studio/1565038720" target="_blank"><i class="fab fa-itunes w3-xxlarge w3-hover-opacity"></i></a> &nbsp; <a href="https://music.amazon.com/artists/B093NPZGC5/haz-studio" target="_blank"><i class="fab fa-amazon w3-xxlarge w3-hover-opacity"></i></a> &nbsp; <a href="https://www.facebook.com/gyczzl997" target="_blank"><i class="fab fa-facebook-square w3-xxlarge w3-hover-opacity"></i></a> &nbsp; <a href="https://twitter.com/liharryzhang" target="_blank"><i class="fab fa-twitter-square w3-xxlarge w3-hover-opacity"></i></a> &nbsp; <a href="https://www.linkedin.com/in/hazrael" target="_blank"><i class="fab fa-linkedin w3-xxlarge w3-hover-opacity"></i></a> 
             <br>
             <p><i class="fa fa-university fa-fw w3-margin-right w3-large w3-text-purple"></i>University of Pennsylvania</p>
@@ -197,20 +197,38 @@
     <span class="w3-tag w3-purple w3-round w3-hover-opacity">Current</span>
     -->
           <div class="w3-container">
-            <h5 class="w3-text-gray"><b>Script Learning with <a href='https://www.wikihow.com/Main-Page' target="_blank"><img src="image/WikiHow_logo.png" alt="wikihow" scale="70" width="100"></a></b> <sup><a href="#pub5">[5]</a></sup><sup><a href="#pub6">[6]</a></sup><sup><a href="#pub7">[7]</a></sup><sup><a href="#pub8">[8]</a></sup> </h5>
-            <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Nov 2019 - <span class="w3-tag w3-purple w3-round w3-hover-opacity">Present</span> <div style="float:right;"> <span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round" >Dialogue</span> <span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round" >Sentence Semantics</span> <span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round">Resources and Evaluation</span></div></h6> A <i>script</i> is a group of events connected by some logical relations. For example, to "record music" you need to "set up the wiring"; such is a goal-step relation. But before you "set up the wiring", you should "invest in recording gears"; such is a step-step temporal relation. We use wikiHow to build datasets to train models that can identify such relations, even with multilingual texts or images. Using this knowledge, our models can also detect intent or suggest steps. 
+            <h5 class="w3-text-gray"><b>Learning Procedural Knowledge with <a href='https://www.wikihow.com/Main-Page' target="_blank"><img src="image/WikiHow_logo.png" alt="wikihow" scale="70" width="100"></a></b> <sup><a href="#pub7">[7]</a></sup><sup><a href="#pub8">[8]</a></sup> </h5>
+            <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Nov 2019 - <span class="w3-tag w3-purple w3-round w3-hover-opacity">Present</span> <div style="float:right;"> <span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round" >Semantics</span> <span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round" >Dialog</span> <span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round">Commonsense reasoning</span></div></h6> 
+            Events are at the core of natural language, capturing "what is happening" instead of just "what is written down". <b>Procedural events</b>, specifically, are human activities that can be seen as a series of <b>steps</b> to accomplish a certain <b>goal</b>. For example, recipes, manuals to assemble furniture, how-to guides are all about procedrual events. These human-centered events involve idiosyncratic challenges and fascinating benefits.
             <br>
             <br>
-            To show the power of our datasets and models, I will lead University of Pennsylvania's effort to participate in the <a href='https://developer.amazon.com/alexaprize' target="_blank">Alexa Prize TaskBot challenge</a>, where we will build a chatbot to help users do household tasks.
+            Our first effort is to <b>extract</b> the procedural events. For example, to "record music" you need to "buy suitable equipments"; such is a goal-step relation. But before you "buy suitable equipments", you should "plan out your budget"; such is a step-step temporal relation. We use wikiHow to build datasets to train and test models that can <b>reason </b> about such relations. Our models show strong zero- and few-shot results on other tasks, especially on intent detection in dialogs.<sup><a href="#pub5">[5]</a></sup><sup><a href="#pub6">[6]</a></sup>
+            <br>
+            <br>
+            The inference of goal-step relations does not have to be confined to texts. Images and videos can also represent procedural events, with potentially richer information. We extend our task to a <b>multimodal</b> setting, showing the potential to generalize from the visuals in wikiHow to other domains.</sup><sup><a href="#pub8">[8]</a></sup>
+            <br>
+            <br>
+            One of the holy-grails of procedural knowledge is for models to <b>construct</b> complete, high-quality procedures from scratch. We push the limit of our models and explore this difficult task in 18 languages, using techniques in both information retrieval and generation by language models. The task turns out extremely challenging, but not impossible.<sup><a href="#pub7">[7]</a></sup>
+            <br>
+            <br>
+            While all our previous work has treated procedures as a flat structure, procedural events are inherently <b>hierarchical</b>. To "become a great musician", you need to "practice", which in turn requires "making effective plans". We constructed an event hierarchy from wikiHow and showed that it efficiently aided users perform daily tasks and improved performance of downstream tasks such as video retrieval.
+            <br>
+            <br>
+            To show the power of our datasets and models, I co-lead University of Pennsylvania's effort to participate in the <a href='https://developer.amazon.com/alexaprize' target="_blank">Alexa Prize TaskBot challenge</a>, where we build a <b>dialog system</b> to help users do household tasks.
             <hr> </div>
-          <div class="w3-container">
-            <h5 class="w3-text-gray"><b>Split and Rephrase: Evaluation Benchmarks and Metrics</b> <sup><a href="#pub4">[4]</a></sup> </h5>
-            <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Apr 2019 - Jun 2019 <div style="float:right;"> <span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round" >Text Simplification</span> <span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round">Resources and Evaluation</span></div></h6> Split and Rephrase is a text simplification task to rewrite a complex sentence into several simpler ones. We show that the existing benchmark is too simplistic, developing a rule-based model using no training data which performs on par with the current state-of-the-art neural model. We then propose two new crowdsourced benchmarks with improved quality. We also provide a study on the flaws of BLEU score, and the cost-efficiency of using crowd workers to evaluate models. </p>
-            <hr> </div>
+          
           <div id='show_more_button'>
             <button onclick="toggleMoreResearch()" class='button'><span class="w3-tag w3-purple w3-round w3-hover-opacity">More research</span></button>
           </div>
           <div id="more_research" class='hidden'>
+            <div class="w3-container">
+            <h5 class="w3-text-gray"><b>Label-Aware Semantic Role Labeling</b> </h5>
+            <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2021 - Aug 2021 <div style="float:right;"> <span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round" >Sentence Semantics</span> </div></h6> (work done as intern at IBM Research) Semantic role labeling answers the question of "who did what to whom, when and how", extracting important information about a predicate. While previous work has treated the semantic role labels as symbolic, we explicitly use their definitions and advance state-of-the-art with some limitations. </p>
+            <hr> </div>
+            <div class="w3-container">
+            <h5 class="w3-text-gray"><b>Split and Rephrase: Evaluation Benchmarks and Metrics</b> <sup><a href="#pub4">[4]</a></sup> </h5>
+            <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Apr 2019 - Jun 2019 <div style="float:right;"> <span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round" >Text Simplification</span> <span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round">Resources and Evaluation</span></div></h6> (work done as intern at IBM Research) Split and Rephrase is a text simplification task to rewrite a complex sentence into several simpler ones. We show that the existing benchmark is too simplistic, developing a rule-based model using no training data which performs on par with the current state-of-the-art neural model. We then propose two new crowdsourced benchmarks with improved quality. We also provide a study on the flaws of BLEU score, and the cost-efficiency of using crowd workers to evaluate models. </p>
+            <hr> </div>
             <div class="w3-container">
               <h5 class="w3-text-gray"><b>Sentence Embeddings, Transfer Learning and Semantic Similarity</b> <sup><a href="#pub2">[2]</a><a href="#pub3">[3]</a></sup></h5>
               <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Oct 2017 - Sept 2018 <div style="float:right;"> <span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round" >Sentence Semantics</span></div></h6> Recent advancement on neural sentence embeddings show highly competitive performance on semantic similarity tasks. However, the embeddings don't usually just work off-the-shelf, as we show that the transfer learning methodology is crucial to performance. We propose a fine-tuning approach and a multi-label approach which outperforms most alternative transfer learning approaches on semantic similarity tasks, achieving state-of-the-art performance on multiple datasets. </p>
@@ -333,7 +351,13 @@
     pages = "4630--4639",
 }
             </pre> </div> </div>
-            <div class="w3-container">
+
+          <div id='show_more_button_pub'>
+            <hr>
+            <button onclick="toggleMorePublications()" class='button'><span class="w3-tag w3-purple w3-round w3-hover-opacity">More Publications</span></button>
+          </div>
+          <div id="more_publications" class='hidden'>
+                        <div class="w3-container">
               <a name="pub4"></a>
               <h5 class="w3-text-gray"><b>[4] Small but Mighty: New Benchmarks for Split and Rephrase</b></h5>
               <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i><b>Li Zhang</b>, Huaiyu Zhu, Siddhartha Brahma and Yunyao Li</h6>
@@ -354,11 +378,6 @@
     pages = "1198--1205",
 }      
             </pre> </div> </div>
-          <div id='show_more_button_pub'>
-            <hr>
-            <button onclick="toggleMorePublications()" class='button'><span class="w3-tag w3-purple w3-round w3-hover-opacity">More Publications</span></button>
-          </div>
-          <div id="more_publications" class='hidden'>
             <div class="w3-container">
               <a name="pub3"></a>
               <h5 class="w3-text-gray"><b>[3] Multi-Label Transfer Learning for Multi-Relational Semantic Similarity</b></h5>
