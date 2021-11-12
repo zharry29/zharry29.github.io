@@ -218,13 +218,13 @@
             Events are at the core of natural language, capturing "what is happening" instead of just "what is written down". <b>Procedural events</b>, specifically, are human activities that can be seen as a series of <b>steps</b> to accomplish a certain <b>goal</b>. For example, recipes, manuals to assemble furniture, how-to guides are all about procedrual events. These human-centered events involve idiosyncratic challenges and fascinating benefits.
             <br>
             <br>
-            Our first effort is to <b>extract</b> the procedural events. For example, to "record music" you need to "buy suitable equipments"; such is a goal-step relation. But before you "buy suitable equipments", you should "plan out your budget"; such is a step-step temporal relation. We use wikiHow to build datasets to train and test models that can <b>reason </b> about such relations. Our models show strong zero- and few-shot results on other tasks, especially on intent detection in dialogs.<sup><a href="#pub5">[5]</a></sup><sup><a href="#pub6">[6]</a></sup>
+            Our first effort is to <b>extract</b> the procedural events. For example, to "record music" you need to "buy suitable equipments"; such is a goal-step relation. But before you "buy suitable equipments", you should "plan out your budget"; such is a step-step temporal relation. We use wikiHow to build datasets to train and test models that can <b>reason </b> about such relations. Our models show strong zero- and few-shot results on other tasks, especially on intent detection in dialogs.<sup><a href="#pub6">[6]</a></sup><sup><a href="#pub7">[7]</a></sup>
             <br>
             <br>
-            The inference of goal-step relations does not have to be confined to texts. Images and videos can also represent procedural events, with potentially richer information. We extend our task to a <b>multimodal</b> setting, showing the potential to generalize from the visuals in wikiHow to other domains.</sup><sup><a href="#pub8">[8]</a></sup>
+            The inference of goal-step relations does not have to be confined to texts. Images and videos can also represent procedural events, with potentially richer information. We extend our task to a <b>multimodal</b> setting, showing the potential to generalize from the visuals in wikiHow to other domains.</sup><sup><a href="#pub9">[9]</a></sup>
             <br>
             <br>
-            One of the holy-grails of procedural knowledge is for models to <b>construct</b> complete, high-quality procedures from scratch. We push the limit of our models and explore this difficult task in 18 languages, using techniques in both information retrieval and generation by language models. The task turns out extremely challenging, but not impossible.<sup><a href="#pub7">[7]</a></sup>
+            One of the holy-grails of procedural knowledge is for models to <b>construct</b> complete, high-quality procedures from scratch. We push the limit of our models and explore this difficult task in 18 languages, using techniques in both information retrieval and generation by language models. The task turns out extremely challenging, but not impossible.<sup><a href="#pub8">[8]</a></sup>
             <br>
             <br>
             While all our previous work has treated procedures as a flat structure, procedural events are inherently <b>hierarchical</b>. To "become a great musician", you need to "practice", which in turn requires "making effective plans". We constructed an event hierarchy from wikiHow and showed that it efficiently aided users perform daily tasks and improved performance of downstream tasks such as video retrieval.
@@ -242,11 +242,11 @@
             <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2021 - Aug 2021 <div style="float:right;"> <span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round" >Sentence Semantics</span> </div></h6> (work done as intern at IBM Research) Semantic role labeling answers the question of "who did what to whom, when and how", extracting important information about a predicate. While previous work has treated the semantic role labels as symbolic, we explicitly use their definitions and advance state-of-the-art with some limitations. </p>
             <hr> </div>
             <div class="w3-container">
-            <h5 class="w3-text-gray"><b>Split and Rephrase: Evaluation Benchmarks and Metrics</b> <sup><a href="#pub4">[4]</a></sup> </h5>
+            <h5 class="w3-text-gray"><b>Split and Rephrase: Evaluation Benchmarks and Metrics</b> <sup><a href="#pub5">[5]</a></sup> </h5>
             <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Apr 2019 - Jun 2019 <div style="float:right;"> <span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round" >Text Simplification</span> <span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round">Resources and Evaluation</span></div></h6> (work done as intern at IBM Research) Split and Rephrase is a text simplification task to rewrite a complex sentence into several simpler ones. We show that the existing benchmark is too simplistic, developing a rule-based model using no training data which performs on par with the current state-of-the-art neural model. We then propose two new crowdsourced benchmarks with improved quality. We also provide a study on the flaws of BLEU score, and the cost-efficiency of using crowd workers to evaluate models. </p>
             <hr> </div>
             <div class="w3-container">
-              <h5 class="w3-text-gray"><b>Sentence Embeddings, Transfer Learning and Semantic Similarity</b> <sup><a href="#pub2">[2]</a><a href="#pub3">[3]</a></sup></h5>
+              <h5 class="w3-text-gray"><b>Sentence Embeddings, Transfer Learning and Semantic Similarity</b> <sup><a href="#pub3">[3]</a><a href="#pub4">[4]</a></sup></h5>
               <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Oct 2017 - Sept 2018 <div style="float:right;"> <span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round" >Sentence Semantics</span></div></h6> Recent advancement on neural sentence embeddings show highly competitive performance on semantic similarity tasks. However, the embeddings don't usually just work off-the-shelf, as we show that the transfer learning methodology is crucial to performance. We propose a fine-tuning approach and a multi-label approach which outperforms most alternative transfer learning approaches on semantic similarity tasks, achieving state-of-the-art performance on multiple datasets. </p>
               <hr> </div>
             <div class="w3-container">
@@ -258,7 +258,7 @@
               <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2015 - Apr 2017 <div style="float:right;"> <span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round" >Dialogue</span> <span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round">Resources and Evaluation</span></div></h6> This work is a part of the <a href='http://sapphire.eecs.umich.edu/' target="_blank">UM-IBM Sapphire project</a>. The goal is to build a dialog system able to answer questions about university course information. While tackling the task of translating natural language to SQL, we identified flaws in the current text-to-SQL evaluation scheme and proposed alternatives. I contributed to building the a text-to-SQL dataset and implementing named entitiy recognition as a preprocessing step.</p>
               <hr> </div>
             <div class="w3-container">
-              <h5 class="w3-text-gray"><b>Active Interpretation of Disparate Alternatives</b></h5>
+              <h5 class="w3-text-gray"><b>Active Interpretation of Disparate Alternatives</b><sup><a href="#pub2">[2]</a></sup></h5>
               <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2018 - Feb 2019 </h6>
               <p>This work is a part of the <a href='https://www.darpa.mil/program/active-interpretation-of-disparate-alternatives' target="_blank">DARPA AIDA project</a>. From the texts, audios and videos recounting the Russia-Ukraine conflict in 2014, the goal is to extract knowledge elements and generate hypotheses about real-life events. I used named entity recognition, keyword extraction and word embeddings to extract textual entities from the data and assign them with categories from the given ontology.</p>
               <hr> </div>
@@ -284,8 +284,8 @@
           <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
             <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-paper-plane-o fa-fw w3-margin-right w3-xxlarge w3-text-purple"></i>Publications</h2>
             <div class="w3-container">
-              <a name="pub8"></a>
-              <h5 class="w3-text-gray"><b>[8] Visual Goal-Step Inference using wikiHow</b></h5>
+              <a name="pub9"></a>
+              <h5 class="w3-text-gray"><b>[9] Visual Goal-Step Inference using wikiHow</b></h5>
               <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i>Yue Yang, Artemis Panagopoulou, Qing Lyu, <b>Li Zhang</b>, Mark Yatskar and Chris Callison-Burch</h6>
               <p><a href="https://arxiv.org/abs/2104.05845" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('emnlp2021bib')">BibTeX</span> In <a href="https://2021.emnlp.org/" target="_blank">EMNLP 2021</a>; presented at the <a href="https://alvr-workshop.github.io/" target="_blank">2nd Workshop on Advances in Language and Vision Research</a> at <a href="https://2021.naacl.org/" target="_blank">NAACL 2021</a>.</p>
               <div id="emnlp2021bib" class='hidden'> <pre style="overflow:auto">
@@ -306,8 +306,8 @@
 }
             </pre> </div> </div>
             <div class="w3-container">
-              <a name="pub7"></a>
-              <h5 class="w3-text-gray"><b>[7] Goal-Oriented Script Construction</b></h5>
+              <a name="pub8"></a>
+              <h5 class="w3-text-gray"><b>[8] Goal-Oriented Script Construction</b></h5>
               <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i>Qing Lyu<span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span>, <b>Li Zhang</b><span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span> and Chris Callison-Burch</h6>
               <p><a href="https://aclanthology.org/2021.inlg-1.19/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('inlg2021bib')">BibTeX</span> <a href="https://github.com/veronica320/wikihow-GOSC" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Repo</span></a> In <a href="https://inlg2021.github.io/index.html" target="_blank">INLG 2021</a>.</p>
                            <div id="inlg2021bib" class='hidden'> <pre style="overflow:auto">
@@ -327,8 +327,8 @@
 }
             </pre> </div> </div>
             <div class="w3-container">
-              <a name="pub6"></a>
-              <h5 class="w3-text-gray"><b>[6] Intent Detection with WikiHow</b></h5>
+              <a name="pub7"></a>
+              <h5 class="w3-text-gray"><b>[7] Intent Detection with WikiHow</b></h5>
               <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i><b>Li Zhang</b>, Qing Lyu and Chris Callison-Burch</h6>
               <p><a href="https://www.aclweb.org/anthology/2020.aacl-main.35/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('aacl2020bib')">BibTeX</span> <a href="https://github.com/zharry29/wikihow-intent" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Repo</span></a> &nbsp;In <a href="http://www.aacl2020.org/" target="_blank">AACL-IJCNLP 2020</a>.</p>
               <div id="aacl2020bib" class='hidden'> <pre style="overflow:auto">
@@ -348,8 +348,8 @@
 }
             </pre> </div> </div>
             <div class="w3-container">
-              <a name="pub5"></a>
-              <h5 class="w3-text-gray"><b>[5] Reasoning about Goals, Steps, and Temporal Ordering with WikiHow</b></h5>
+              <a name="pub6"></a>
+              <h5 class="w3-text-gray"><b>[6] Reasoning about Goals, Steps, and Temporal Ordering with WikiHow</b></h5>
               <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i><b>Li Zhang</b><span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span>, Qing Lyu<span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span> and Chris Callison-Burch</h6>
               <p><a href="https://www.aclweb.org/anthology/2020.emnlp-main.374/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('emnlp2020-1bib')">BibTeX</span> <a href="https://github.com/zharry29/wikihow-goal-step" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Repo</span></a> &nbsp;In <a href="https://2020.emnlp.org/" target="_blank">EMNLP 2020</a>; presented at <a href="https://welmworkshop.github.io/" target="_blank">Workshop on Enormous Language Models</a> at ICLR 2021.</p>
               <div id="emnlp2020-1bib" class='hidden'> <pre style="overflow:auto">
@@ -374,8 +374,8 @@
           </div>
           <div id="more_publications" class='hidden'>
                         <div class="w3-container">
-              <a name="pub4"></a>
-              <h5 class="w3-text-gray"><b>[4] Small but Mighty: New Benchmarks for Split and Rephrase</b></h5>
+              <a name="pub5"></a>
+              <h5 class="w3-text-gray"><b>[5] Small but Mighty: New Benchmarks for Split and Rephrase</b></h5>
               <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i><b>Li Zhang</b>, Huaiyu Zhu, Siddhartha Brahma and Yunyao Li</h6>
               <p><a href="https://www.aclweb.org/anthology/2020.emnlp-main.91/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('emnlp2020-2bib')">BibTeX</span> <a href="https://github.com/System-T/TextSimplification" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Repo</span></a> &nbsp;In <a href="https://2020.emnlp.org/" target="_blank">EMNLP 2020</a>.</p>
               <div id="emnlp2020-2bib" class='hidden'> <pre style="overflow:auto">
@@ -395,8 +395,8 @@
 }      
             </pre> </div> </div>
             <div class="w3-container">
-              <a name="pub3"></a>
-              <h5 class="w3-text-gray"><b>[3] Multi-Label Transfer Learning for Multi-Relational Semantic Similarity</b></h5>
+              <a name="pub4"></a>
+              <h5 class="w3-text-gray"><b>[4] Multi-Label Transfer Learning for Multi-Relational Semantic Similarity</b></h5>
               <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i><b>Li Zhang</b>, Steven R. Wilson and Rada Mihalcea</h6>
               <p><a href="https://www.aclweb.org/anthology/S19-1005" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('sem2019bib')">BibTeX</span> <a href="docs/starSEM2019-presentation.pdf" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Slides</span></a> &nbsp; In <a href="https://starsem.org/2019/" target="_blank">*SEM 2019</a>.</p>
               <div id="sem2019bib" class='hidden'> <pre style="overflow:auto">
@@ -416,8 +416,8 @@
 }
             </pre> </div> </div>
             <div class="w3-container">
-              <a name="pub2"></a>
-              <h5 class="w3-text-gray"><b>[2] Direct Network Transfer: Transfer Learning of Sentence Embeddings for Semantic Similarity</b></h5>
+              <a name="pub3"></a>
+              <h5 class="w3-text-gray"><b>[3] Direct Network Transfer: Transfer Learning of Sentence Embeddings for Semantic Similarity</b></h5>
               <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i><b>Li Zhang</b>, Steven R. Wilson and Rada Mihalcea</h6>
               <p><a href="https://arxiv.org/abs/1804.07835" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('dntbib')">BibTeX</span> <a href="docs/ic2s2_18_activities.pptx.pdf"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Poster</span></a> &nbsp; In arXiv pre-print; presented at <a href="https://www.kellogg.northwestern.edu/news-events/conference/ic2s2/2018.aspx" target='_blank'>IC2S2 2018</a>.</p>
               <div id="dntbib" class='hidden'> <pre style="overflow:auto">
@@ -428,6 +428,19 @@
     eprint={1804.07835},
     archivePrefix={arXiv},
     primaryClass={cs.CL}
+}
+            </pre> </div> </div>
+            <div class="w3-container">
+              <a name="pub2"></a>
+              <h5 class="w3-text-gray"><b>[2] Entity and Event Extraction from Scratch Using Minimal Training Data</b></h5>
+              <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i>Laura Burdick, Steven R. Wilson, Oana Ignat, Charles F. Welch, <b>Li Zhang</b>, Mingzhe Wang, Jia Deng and Rada Mihalcea</h6>
+              <p><a href="https://tac.nist.gov/publications/2018/participant.papers/TAC2018.Michigan.proceedings.pdf" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('tac2018bib')">BibTeX</span> <a href="docs/ic2s2_18_activities.pptx.pdf"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Poster</span></a> &nbsp; In <a href="http://www.tac.mta.ca/tac/" target="_blank">TAC 2018.</p>
+              <div id="tac2018bib" class='hidden'> <pre style="overflow:auto">
+@article{Burdick2018EntityAE,
+  title={Entity and Event Extraction from Scratch Using Minimal Training Data},
+  author={Laura Burdick and Steven R. Wilson and Oana Ignat and Charles F Welch and Li Zhang and Mingzhe Wang and Jia Deng and Rada Mihalcea},
+  journal={Theory and Applications of Categories},
+  year={2018}
 }
             </pre> </div> </div>
             <div class="w3-container">
