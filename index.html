@@ -232,9 +232,9 @@
           <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-robot fa-fw w3-margin-right w3-xxlarge w3-text-purple"></i>Research</h2>
           <div class="w3-container">
             <a name="pub6"></a>
-            <h5 class="w3-text-gray"><b>Machine reasoning of Events and Procedures</b></h5>
+            <h5 class="w3-text-gray"><b>Structured Reasoning of Events and Procedures</b></h5>
           <p>
-            <b>Procedures</b>, such as recipes, instructions, or protocals, are all around us. A procedure is a sequence of events or actions, consisting of a goal and some steps. A deep understanding of procedures would greatly advance machines' reasoning ablity, and enable human-centered applications that would guide users through executing a variety of procedures. Such is my main line of work during my PhD studies, which include three fronts:
+            Human language greatly emphasizes <i>events</i> and <i>procedures</i> (sequences of events), describing what happens in the world, and so reasoning about them is crucial to artificial intelligence. My work focuses on <b>structured event reasoning</b>, where I develop systems to automatically extract common, schematic information from texts describing events. Moreover, I inject this structured information to modern language models to advance state-of-the-art on many downstream tasks, such as question answering, dialog, script generation, symbolic planning, etc. 
           </p>
           <p class="w3-text-gray">[14] <i>Reasoning about Procedures with Natural Language Processing: A Tutorial</i>; <b>Li Zhang</b>; in arXiv.<a href="https://arxiv.org/abs/2205.07455" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('wpe2bib')">BibTeX</span></p>
           <div id="wpe2bib" class='hidden'> <pre style="overflow:auto">
@@ -252,7 +252,35 @@
         </div>
         <hr>
         <p>
-          1. Reasoning about the <b>relations among events</b> like goals and steps in procedures.
+          1. Reasoning about <b>entities and events</b> in procedures.
+        </p>
+        <p class="w3-text-gray">[19] <i>Causal Reasoning of Entities and Events in Procedural Texts</i>; <b>Li Zhang</b><span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span>, Hainiu Xu<span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span>, Yue Yang, Shuyan Zhou, Weiqiu You, Manni Arora and Chris Callison-Burch; in <a href="https://2023.eacl.org/" target="_blank">Findings of EACL 2023</a>.<a href="https://arxiv.org/pdf/2301.10896.pdf" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('eacl2023')">BibTeX</span> <a href="https://github.com/zharry29/causal_reasoning_of_entities_and_events" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Repo</span></a></p>
+                         <div id="eacl2023" class='hidden'> <pre style="overflow:auto">
+  @inproceedings{zhang-etal-2023-causal,
+    title = "Causal Reasoning of Entities and Events in Procedural Texts",
+    author = "Zhang, Li  and
+    Xu, Hainiu  and
+    Yang, Yue  and
+    Zhou, Shuyan  and
+    You, Weiqiu  and
+    Arora, Manni  and
+    Callison-Burch, Chris",
+    booktitle = "Findings of the Association for Computational Linguistics: EACL 2023",
+    month = may,
+    year = "2023",
+    address = "Dubrovnik, Croatia",
+    publisher = "Association for Computational Linguistics",
+    url = "https://arxiv.org/pdf/2301.10896.pdf",
+    abstract = "Entities and events have long been regarded as the crux of machine reasoning. Procedural texts have received increasing attention due to the dynamic nature of involved entities and events. Existing work has focused either on entity state tracking (e.g., the temperature of a pan) or on counterfactual event reasoning (e.g., how likely am I to burn myself by touching the pan), while these two tasks are tightly intertwined. In this work, we propose CREPE, the first benchmark on causal reasoning about event plausibility based on entity states. We experiment with strong large language models and show that most models, including GPT3, perform close to chance at .30 F1, lagging far behind the human performance of .87 F1. Inspired by the finding that structured representations such as programming languages benefits event reasoning as a prompt to code language models such as Codex, we creatively inject the causal relations between entities and events through intermediate variables and boost the performance to .67 to .72 F1. Our proposed event representation not only allows for knowledge injection, but also marks the first successful attempt of chain-of-thought reasoning with code language models.",
+  }
+          </pre> </div>
+          <p class="w3-text-gray">[17] <i>Unsupervised Entity Linking with Guided Summarization and Multiple Choice Selection</i>; Young Min Cho, <b>Li Zhang</b> and Chris Callison-Burch; in <a href="https://2022.emnlp.org/" target="_blank">EMNLP 2022</a>.<a href="https://aclanthology.org/2022.emnlp-main.638/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('emnlp2022bib')">BibTeX</span> <a href="https://github.com/JeffreyCh0/SumMC" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Repo</span></a></p>
+                           <div id="emnlp2022bib" class='hidden'> <pre style="overflow:auto">
+    
+            </pre> </div>
+        <hr>
+        <p>
+          2. Reasoning about the <b>relations among events</b> like goals and steps in procedures.
         </p>
             <p class="w3-text-gray">[6] <i>Reasoning about Goals, Steps, and Temporal Ordering with WikiHow</i>; <b>Li Zhang</b><span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span>, Qing Lyu<span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span> and Chris Callison-Burch; in <a href="https://2020.emnlp.org/" target="_blank">EMNLP 2020</a>; presented at <a href="https://welmworkshop.github.io/" target="_blank">ICLR 2021 Workshop on Enormous Language Models</a>.<a href="https://www.aclweb.org/anthology/2020.emnlp-main.374/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('emnlp2020-1bib')">BibTeX</span> <a href="https://github.com/zharry29/wikihow-goal-step" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Repo</span></a></p>
             <div id="emnlp2020-1bib" class='hidden'> <pre style="overflow:auto">
@@ -315,34 +343,7 @@ abstract = "Procedures are inherently hierarchical. To {``}make videos{''}, one 
       </pre> 
     </div>  
       <hr>
-      <p>
-        2. Reasoning about <b>entities and events</b> in procedures.
-      </p>
-      <p class="w3-text-gray">[19] <i>Causal Reasoning of Entities and Events in Procedural Texts</i>; <b>Li Zhang</b><span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span>, Hainiu Xu<span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span>, Yue Yang, Shuyan Zhou, Weiqiu You, Manni Arora and Chris Callison-Burch; in <a href="https://2023.eacl.org/" target="_blank">Findings of EACL 2023</a>.<a href="https://arxiv.org/pdf/2301.10896.pdf" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('eacl2023')">BibTeX</span> <a href="https://github.com/zharry29/causal_reasoning_of_entities_and_events" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Repo</span></a></p>
-                       <div id="eacl2023" class='hidden'> <pre style="overflow:auto">
-@inproceedings{zhang-etal-2023-causal,
-  title = "Causal Reasoning of Entities and Events in Procedural Texts",
-  author = "Zhang, Li  and
-  Xu, Hainiu  and
-  Yang, Yue  and
-  Zhou, Shuyan  and
-  You, Weiqiu  and
-  Arora, Manni  and
-  Callison-Burch, Chris",
-  booktitle = "Findings of the Association for Computational Linguistics: EACL 2023",
-  month = may,
-  year = "2023",
-  address = "Dubrovnik, Croatia",
-  publisher = "Association for Computational Linguistics",
-  url = "https://arxiv.org/pdf/2301.10896.pdf",
-  abstract = "Entities and events have long been regarded as the crux of machine reasoning. Procedural texts have received increasing attention due to the dynamic nature of involved entities and events. Existing work has focused either on entity state tracking (e.g., the temperature of a pan) or on counterfactual event reasoning (e.g., how likely am I to burn myself by touching the pan), while these two tasks are tightly intertwined. In this work, we propose CREPE, the first benchmark on causal reasoning about event plausibility based on entity states. We experiment with strong large language models and show that most models, including GPT3, perform close to chance at .30 F1, lagging far behind the human performance of .87 F1. Inspired by the finding that structured representations such as programming languages benefits event reasoning as a prompt to code language models such as Codex, we creatively inject the causal relations between entities and events through intermediate variables and boost the performance to .67 to .72 F1. Our proposed event representation not only allows for knowledge injection, but also marks the first successful attempt of chain-of-thought reasoning with code language models.",
-}
-        </pre> </div>
-        <p class="w3-text-gray">[17] <i>Unsupervised Entity Linking with Guided Summarization and Multiple Choice Selection</i>; Young Min Cho, <b>Li Zhang</b> and Chris Callison-Burch; in <a href="https://2022.emnlp.org/" target="_blank">EMNLP 2022</a>.<a href="https://aclanthology.org/2022.emnlp-main.638/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('emnlp2022bib')">BibTeX</span> <a href="https://github.com/JeffreyCh0/SumMC" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Repo</span></a></p>
-                         <div id="emnlp2022bib" class='hidden'> <pre style="overflow:auto">
-  
-          </pre> </div>
-      <hr>
+      
           <p>
             3. Applying the above knowledge to <b>downstream applications</b>.
           </p>
