@@ -260,25 +260,15 @@
         <p>
           1. Reasoning about <b>entities and events</b> in procedures.
         </p>
-        <p class="w3-text-gray">[23] <i>OpenPI2.0: An Improved Dataset for Entity Tracking in Texts</i>; <b>Li Zhang</b>, Hainiu Xu, Abhinav Kommula, Niket Tandon and Chris Callison-Burch; in <a href="https://2023.eacl.org/" target="_blank">preprint</a>.<a href="" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('openpi20')">BibTeX</span> <a href="https://github.com/allenai/openpi-dataset/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Repo</span></a></p>
+        <p class="w3-text-gray">[23] <i>OpenPI2.0: An Improved Dataset for Entity Tracking in Texts</i>; <b>Li Zhang</b>, Hainiu Xu, Abhinav Kommula, Niket Tandon and Chris Callison-Burch; in <a href="https://2023.eacl.org/" target="_blank">preprint</a>.<a href="https://arxiv.org/abs/2305.14603" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('openpi20')">BibTeX</span> <a href="https://github.com/allenai/openpi-dataset/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Repo</span></a></p>
         <div id="openpi20" class='hidden'> <pre style="overflow:auto">
-@inproceedings{zhang-etal-2023-causal,
-  title = "Causal Reasoning of Entities and Events in Procedural Texts",
-  author = "Zhang, Li  and
-    Xu, Hainiu  and
-    Yang, Yue  and
-    Zhou, Shuyan  and
-    You, Weiqiu  and
-    Arora, Manni  and
-    Callison-burch, Chris",
-  booktitle = "Findings of the Association for Computational Linguistics: EACL 2023",
-  month = may,
-  year = "2023",
-  address = "Dubrovnik, Croatia",
-  publisher = "Association for Computational Linguistics",
-  url = "https://aclanthology.org/2023.findings-eacl.31",
-  pages = "415--431",
-  abstract = "Entities and events are crucial to natural language reasoning and common in procedural texts. Existing work has focused either exclusively on entity state tracking (e.g., whether a pan is hot) or on event reasoning (e.g., whether one would burn themselves by touching the pan), while these two tasks are often causally related. We propose CREPE, the first benchmark on causal reasoning of event plausibility and entity states. We show that most language models, including GPT-3, perform close to chance at .35 F1, lagging far behind human at .87 F1. We boost model performance to .59 F1 by creatively representing events as programming languages while prompting language models pretrained on code. By injecting the causal relations between entities and events as intermediate reasoning steps in our representation, we further boost the performance to .67 F1. Our findings indicate not only the challenge that CREPE brings for language models, but also the efficacy of code-like prompting combined with chain-of-thought prompting for multihop event reasoning.",
+@misc{zhang2023openpi20,
+  title={OpenPI2.0: An Improved Dataset for Entity Tracking in Texts}, 
+  author={Li Zhang and Hainiu Xu and Abhinav Kommula and Niket Tandon and Chris Callison-Burch},
+  year={2023},
+  eprint={2305.14603},
+  archivePrefix={arXiv},
+  primaryClass={cs.CL}
 }
           </pre> </div>
           
@@ -443,7 +433,7 @@ abstract = "The knowledge of scripts, common chains of events in stereotypical s
       <div class="w3-container">
           <h5 class="w3-text-gray"><b>Exploring the Curious Case of Code Prompts</b></h5>
       <p>Recenlt language models pre-trained on a mixture of text and code show strong reasoning ability. Many previous work has found that creatively prompting them with a code-like representation of textual reasoning tasks brings about improved performance. We port this method to a dozen general NLP tasks and find no consistent performance gain.</p>
-          <p class="w3-text-gray">[22] <i>Exploring the Curious Case of Code Prompts</i>; <b>Li Zhang</b><span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span>, Liam Dugan<span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span>, Hainiu Xu<span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span> and Chris Callison-Burch; in preprint.<a href="https://arxiv.org/abs/2304.13250" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('codexbib')">BibTeX</span> <a href="https://github.com/zharry29/codex_vs_gpt3" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Repo</span></a></p>
+          <p class="w3-text-gray">[22] <i>Exploring the Curious Case of Code Prompts</i>; <b>Li Zhang</b><span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span>, Liam Dugan<span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span>, Hainiu Xu<span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span> and Chris Callison-Burch; in preprint.<a href="https://arxiv.org/abs/2304.13250" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('codexbib')">BibTeX</span> <a href="https://github.com/zharry29/curious_code_prompts" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Repo</span></a></p>
           <div id="codexbib" class='hidden'> <pre style="overflow:auto">
 @misc{zhang2023exploring,
   title={Exploring the Curious Case of Code Prompts}, 
