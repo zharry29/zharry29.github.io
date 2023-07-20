@@ -410,18 +410,34 @@ abstract = "The knowledge of scripts, common chains of events in stereotypical s
         </pre> 
       </div>  
         
-      <p class="w3-text-gray">[21] <i>Human-in-the-Loop Schema Induction</i>; Tianyi Zhang, Isaac Tham, Zhaoyi Hou, Jiaxuan Ren, Liyang Zhou, Hainiu Xu, <b>Li Zhang</b>, Lara J. Martin, Rotem Dror, Sha Li, Heng Ji, Martha Palmer, Susan Brown, Reece Suchocki, Chris Callison-Burch; in <a href="https://2023.aclweb.org/">ACL 2023</a> Demos.<a href="https://arxiv.org/abs/2302.13048" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('schemabib')">BibTeX</span> <a href="https://www.kairos.jiaxuan.me/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Demo</span></a> </p>
+      <p class="w3-text-gray">[21] <i>Human-in-the-Loop Schema Induction</i>; Tianyi Zhang, Isaac Tham, Zhaoyi Hou, Jiaxuan Ren, Liyang Zhou, Hainiu Xu, <b>Li Zhang</b>, Lara J. Martin, Rotem Dror, Sha Li, Heng Ji, Martha Palmer, Susan Brown, Reece Suchocki, Chris Callison-Burch; in <a href="https://2023.aclweb.org/">ACL 2023</a> Demos.<a href="https://aclanthology.org/2023.acl-demo.1/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('schemabib')">BibTeX</span> <a href="https://www.kairos.jiaxuan.me/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Demo</span></a> </p>
       <div id="schemabib" class='hidden'> 
         <pre style="overflow:auto">
-@misc{https://doi.org/10.48550/arxiv.2302.13048,
-  doi = {10.48550/ARXIV.2302.13048},  
-  url = {https://arxiv.org/abs/2302.13048},  
-  author = {Zhang, Tianyi and Tham, Isaac and Hou, Zhaoyi and Ren, Jiaxuan and Zhou, Liyang and Xu, Hainiu and Zhang, Li and Martin, Lara J. and Dror, Rotem and Li, Sha and Ji, Heng and Palmer, Martha and Brown, Susan and Suchocki, Reece and Callison-Burch, Chris}, 
-  keywords = {Human-Computer Interaction (cs.HC), Computation and Language (cs.CL), FOS: Computer and information sciences, FOS: Computer and information sciences},  
-  title = {Human-in-the-Loop Schema Induction},  
-  publisher = {arXiv},  
-  year = {2023},  
-  copyright = {Creative Commons Attribution 4.0 International}
+@inproceedings{zhang-etal-2023-human,
+  title = "Human-in-the-loop Schema Induction",
+  author = "Zhang, Tianyi  and
+    Tham, Isaac  and
+    Hou, Zhaoyi  and
+    Ren, Jiaxuan  and
+    Zhou, Leon  and
+    Xu, Hainiu  and
+    Zhang, Li  and
+    Martin, Lara  and
+    Dror, Rotem  and
+    Li, Sha  and
+    Ji, Heng  and
+    Palmer, Martha  and
+    Brown, Susan Windisch  and
+    Suchocki, Reece  and
+    Callison-Burch, Chris",
+  booktitle = "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 3: System Demonstrations)",
+  month = jul,
+  year = "2023",
+  address = "Toronto, Canada",
+  publisher = "Association for Computational Linguistics",
+  url = "https://aclanthology.org/2023.acl-demo.1",
+  pages = "1--10",
+  abstract = "Schema induction builds a graph representation explaining how events unfold in a scenario. Existing approaches have been based on information retrieval (IR) and information extraction (IE), often with limited human curation. We demonstrate a human-in-the-loop schema induction system powered by GPT-3. We first describe the different modules of our system, including prompting to generate schematic elements, manual edit of those elements, and conversion of those into a schema graph. By qualitatively comparing our system to previous ones, we show that our system not only transfers to new domains more easily than previous approaches, but also reduces efforts of human curation thanks to our interactive interface.",
 }
     </pre> 
   </div> 
@@ -434,15 +450,22 @@ abstract = "The knowledge of scripts, common chains of events in stereotypical s
       <div class="w3-container">
           <h5 class="w3-text-gray"><b>Exploring the Curious Case of Code Prompts</b></h5>
       <p>Recenlt language models pre-trained on a mixture of text and code show strong reasoning ability. Many previous work has found that creatively prompting them with a code-like representation of textual reasoning tasks brings about improved performance. We port this method to a dozen general NLP tasks and find no consistent performance gain.</p>
-          <p class="w3-text-gray">[22] <i>Exploring the Curious Case of Code Prompts</i>; <b>Li Zhang</b><span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span>, Liam Dugan<span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span>, Hainiu Xu<span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span> and Chris Callison-Burch; in <a href="https://nl-reasoning-workshop.github.io/" target="_blank">ACL 2023 1st Workshop on Natural Language Reasoning and Structured Explanations</a>.<a href="https://arxiv.org/abs/2304.13250" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('codexbib')">BibTeX</span> <a href="https://github.com/zharry29/curious_code_prompts" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Repo</span></a></p>
+          <p class="w3-text-gray">[22] <i>Exploring the Curious Case of Code Prompts</i>; <b>Li Zhang</b><span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span>, Liam Dugan<span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span>, Hainiu Xu<span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span> and Chris Callison-Burch; in <a href="https://nl-reasoning-workshop.github.io/" target="_blank">ACL 2023 1st Workshop on Natural Language Reasoning and Structured Explanations</a>.<a href="https://aclanthology.org/2023.nlrse-1.2/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('codexbib')">BibTeX</span> <a href="https://github.com/zharry29/curious_code_prompts" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Repo</span></a></p>
           <div id="codexbib" class='hidden'> <pre style="overflow:auto">
-@misc{zhang2023exploring,
-  title={Exploring the Curious Case of Code Prompts}, 
-  author={Li Zhang and Liam Dugan and Hainiu Xu and Chris Callison-Burch},
-  year={2023},
-  eprint={2304.13250},
-  archivePrefix={arXiv},
-  primaryClass={cs.CL}
+@inproceedings{zhang-etal-2023-exploring,
+  title = "Exploring the Curious Case of Code Prompts",
+  author = "Zhang, Li  and
+    Dugan, Liam  and
+    Xu, Hainiu  and
+    Callison-burch, Chris",
+  booktitle = "Proceedings of the 1st Workshop on Natural Language Reasoning and Structured Explanations (NLRSE)",
+  month = jun,
+  year = "2023",
+  address = "Toronto, Canada",
+  publisher = "Association for Computational Linguistics",
+  url = "https://aclanthology.org/2023.nlrse-1.2",
+  pages = "9--17",
+  abstract = "Recent work has shown that prompting language models with code-like representations of natural language leads to performance improvements on structured reasoning tasks. However, such tasks comprise only a small subset of all natural language tasks. In our work, we seek to answer whether or not code-prompting is the preferred way of interacting with language models in general. We compare code and text prompts across three popular GPT models (davinci, code-davinci-002, and text-davinci-002) on a broader selection of tasks (e.g., QA, sentiment, summarization) and find that with few exceptions, code prompts do not consistently outperform text prompts. Furthermore, we show that the style of code prompt has a large effect on performance for some (but not all) tasks and that fine-tuning on text instructions leads to better relative performance of code prompts.",
 }
         </pre> </div> 
       <hr> </div>
