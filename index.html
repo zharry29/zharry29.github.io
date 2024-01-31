@@ -21,7 +21,10 @@
     font-family: "Roboto", sans-serif
   }
   
-  
+  li {
+    margin: 5px 0;
+  }
+
   img {
     max-width: 100%;
     max-height: 100%;
@@ -294,45 +297,7 @@
   abstract = "Entities and events are crucial to natural language reasoning and common in procedural texts. Existing work has focused either exclusively on entity state tracking (e.g., whether a pan is hot) or on event reasoning (e.g., whether one would burn themselves by touching the pan), while these two tasks are often causally related. We propose CREPE, the first benchmark on causal reasoning of event plausibility and entity states. We show that most language models, including GPT-3, perform close to chance at .35 F1, lagging far behind human at .87 F1. We boost model performance to .59 F1 by creatively representing events as programming languages while prompting language models pretrained on code. By injecting the causal relations between entities and events as intermediate reasoning steps in our representation, we further boost the performance to .67 F1. Our findings indicate not only the challenge that CREPE brings for language models, but also the efficacy of code-like prompting combined with chain-of-thought prompting for multihop event reasoning.",
 }
           </pre> </div>
-          <p class="w3-text-gray">[25] <i>CLIN: A Continually Learning Language Agent for Rapid Task Adaptation and Generalization</i>; Bodhisattwa Prasad Majumder, Bhavana Dalvi Mishra, Peter Jansen, Oyvind Tafjord, Niket Tandon, <b>Li Zhang</b>, Chris Callison-Burch, Peter Clark; in preprint.<a href="https://arxiv.org/abs/2310.10134" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('clin')">BibTeX</span> <a href="https://allenai.github.io/clin/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Repo</span></a></p>
-        <div id="clin" class='hidden'> <pre style="overflow:auto">
-@misc{majumder2023clin,
-  title={CLIN: A Continually Learning Language Agent for Rapid Task Adaptation and Generalization}, 
-  author={Bodhisattwa Prasad Majumder and Bhavana Dalvi Mishra and Peter Jansen and Oyvind Tafjord and Niket Tandon and Li Zhang and Chris Callison-Burch and Peter Clark},
-  year={2023},
-  eprint={2310.10134},
-  archivePrefix={arXiv},
-  primaryClass={cs.CL}
-}
-          </pre> </div>
-          <p class="w3-text-gray">[26] <i>One Size Does Not Fit All: Customizing Open-Domain Procedures</i>; Yash Kumar Lal, <b>Li Zhang</b>, Faeze Brahman, Bodhisattwa Prasad Majumder, Peter Clark, Niket Tandon; in preprint.<a href="https://arxiv.org/abs/2311.09510" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('customize')">BibTeX</span></p>
-        <div id="customize" class='hidden'> <pre style="overflow:auto">
-@misc{lal2023size,
-  title={One Size Does Not Fit All: Customizing Open-Domain Procedures}, 
-  author={Yash Kumar Lal and Li Zhang and Faeze Brahman and Bodhisattwa Prasad Majumder and Peter Clark and Niket Tandon},
-  year={2023},
-  eprint={2311.09510},
-  archivePrefix={arXiv},
-  primaryClass={cs.CL}
-}
-          </pre> </div>
-          <p class="w3-text-gray">[17] <i>Unsupervised Entity Linking with Guided Summarization and Multiple Choice Selection</i>; Young Min Cho<span class="tooltip">^<span class="tooltiptext">Mentored student</span></span>, <b>Li Zhang</b> and Chris Callison-Burch; in <a href="https://2022.emnlp.org/" target="_blank">EMNLP 2022</a>.<a href="https://aclanthology.org/2022.emnlp-main.638/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('emnlp2022bib')">BibTeX</span> <a href="https://github.com/JeffreyCh0/SumMC" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Repo</span></a></p>
-                           <div id="emnlp2022bib" class='hidden'> <pre style="overflow:auto">
-@inproceedings{cho-etal-2022-unsupervised,
-  title = "Unsupervised Entity Linking with Guided Summarization and Multiple-Choice Selection",
-  author = "Cho, Young Min  and
-    Zhang, Li  and
-    Callison-Burch, Chris",
-  booktitle = "Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing",
-  month = dec,
-  year = "2022",
-  address = "Abu Dhabi, United Arab Emirates",
-  publisher = "Association for Computational Linguistics",
-  url = "https://aclanthology.org/2022.emnlp-main.638",
-  pages = "9394--9401",
-  abstract = "Entity linking, the task of linking potentially ambiguous mentions in texts to corresponding knowledge-base entities, is an important component for language understanding. We address two challenge in entity linking: how to leverage wider contexts surrounding a mention, and how to deal with limited training data. We propose a fully unsupervised model called SumMC that first generates a guided summary of the contexts conditioning on the mention, and then casts the task to a multiple-choice problem where the model chooses an entity from a list of candidates. In addition to evaluating our model on existing datasets that focus on named entities, we create a new dataset that links noun phrases from WikiHow to Wikidata. We show that our SumMC model achieves state-of-the-art unsupervised performance on our new dataset and on exiting datasets.",
-}
-            </pre> </div>
+          
         <hr>
         <p>
           2. Reasoning about the <b>relations among events</b> like goals and steps in procedures.
@@ -354,26 +319,6 @@
 }
           </pre> </div> 
           <p class="w3-text-gray">[15] <i>Beyond the Imitation Game: Quantifying and extrapolating the capabilities of language models</i>; ... <b>Li Zhang</b><span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span>, Qing Lyu<span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span> and Chris Callison-Burch; in <a href="https://www.jmlr.org/tmlr/" target="_blank">TMLR</a>.<a href="https://arxiv.org/abs/2206.04615" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a></p>
-          <p class="w3-text-gray">[9] <i>Visual Goal-Step Inference using wikiHow</i>; Yue Yang, Artemis Panagopoulou, Qing Lyu, <b>Li Zhang</b>, Mark Yatskar and Chris Callison-Burch;  In <a href="https://2021.emnlp.org/" target="_blank">EMNLP 2021</a>.<a href="https://aclanthology.org/2021.emnlp-main.165/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('emnlp2021bib')">BibTeX</span></p>
-          <div id="emnlp2021bib" class='hidden'> <pre style="overflow:auto">
-@inproceedings{yang-etal-2021-visual,
-title = "Visual Goal-Step Inference using wiki{H}ow",
-author = "Yang, Yue  and
-  Panagopoulou, Artemis  and
-  Lyu, Qing  and
-  Zhang, Li  and
-  Yatskar, Mark  and
-  Callison-Burch, Chris",
-booktitle = "Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing",
-month = nov,
-year = "2021",
-address = "Online and Punta Cana, Dominican Republic",
-publisher = "Association for Computational Linguistics",
-url = "https://aclanthology.org/2021.emnlp-main.165",
-pages = "2167--2179",
-abstract = "Understanding what sequence of steps are needed to complete a goal can help artificial intelligence systems reason about human activities. Past work in NLP has examined the task of goal-step inference for text. We introduce the visual analogue. We propose the Visual Goal-Step Inference (VGSI) task, where a model is given a textual goal and must choose which of four images represents a plausible step towards that goal. With a new dataset harvested from wikiHow consisting of 772,277 images representing human actions, we show that our task is challenging for state-of-the-art multimodal models. Moreover, the multimodal representation learned from our data can be effectively transferred to other datasets like HowTo100m, increasing the VGSI accuracy by 15 - 20{\%}. Our task will facilitate multimodal reasoning about procedural events.",
-}
-        </pre> </div>
         <p class="w3-text-gray">[10] <i>Show Me More Details: Discovering Hierarchies of Procedures from Semi-structured Web Data</i>; Shuyan Zhou<span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span>, <b>Li Zhang</b><span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span>, Yue Yang, Qing Lyu, Pengcheng Yin, Chris Callison-Burch and Graham Neubig; in <a href="https://www.2022.aclweb.org/" target="_blank">ACL 2022.</a><a href="https://aclanthology.org/2022.acl-long.214/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('hierarchybib')">BibTeX</span> <a href="https://wikihow-hierarchy.github.io/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Demo</span></a> <a href="https://github.com/shuyanzhou/wikihow_hierarchy" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Repo</span></a></p>
         <div id="hierarchybib" class='hidden'> 
           <pre style="overflow:auto">
@@ -431,6 +376,73 @@ abstract = "The knowledge of scripts, common chains of events in stereotypical s
   abstract = "Modern task-oriented dialog systems need to reliably understand users{'} intents. Intent detection is even more challenging when moving to new domains or new languages, since there is little annotated data. To address this challenge, we present a suite of pretrained intent detection models which can predict a broad range of intended goals from many actions because they are trained on wikiHow, a comprehensive instructional website. Our models achieve state-of-the-art results on the Snips dataset, the Schema-Guided Dialogue dataset, and all 3 languages of the Facebook multilingual dialog datasets. Our models also demonstrate strong zero- and few-shot performance, reaching over 75{\%} accuracy using only 100 training examples in all datasets.",
 }
           </pre> </div> 
+          <p class="w3-text-gray">[9] <i>Visual Goal-Step Inference using wikiHow</i>; Yue Yang, Artemis Panagopoulou, Qing Lyu, <b>Li Zhang</b>, Mark Yatskar and Chris Callison-Burch;  In <a href="https://2021.emnlp.org/" target="_blank">EMNLP 2021</a>.<a href="https://aclanthology.org/2021.emnlp-main.165/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('emnlp2021bib')">BibTeX</span></p>
+          <div id="emnlp2021bib" class='hidden'> <pre style="overflow:auto">
+@inproceedings{yang-etal-2021-visual,
+title = "Visual Goal-Step Inference using wiki{H}ow",
+author = "Yang, Yue  and
+  Panagopoulou, Artemis  and
+  Lyu, Qing  and
+  Zhang, Li  and
+  Yatskar, Mark  and
+  Callison-Burch, Chris",
+booktitle = "Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing",
+month = nov,
+year = "2021",
+address = "Online and Punta Cana, Dominican Republic",
+publisher = "Association for Computational Linguistics",
+url = "https://aclanthology.org/2021.emnlp-main.165",
+pages = "2167--2179",
+abstract = "Understanding what sequence of steps are needed to complete a goal can help artificial intelligence systems reason about human activities. Past work in NLP has examined the task of goal-step inference for text. We introduce the visual analogue. We propose the Visual Goal-Step Inference (VGSI) task, where a model is given a textual goal and must choose which of four images represents a plausible step towards that goal. With a new dataset harvested from wikiHow consisting of 772,277 images representing human actions, we show that our task is challenging for state-of-the-art multimodal models. Moreover, the multimodal representation learned from our data can be effectively transferred to other datasets like HowTo100m, increasing the VGSI accuracy by 15 - 20{\%}. Our task will facilitate multimodal reasoning about procedural events.",
+}
+        </pre> </div>
+
+    </div>            <div id='show_more_button'>
+        <button onclick="toggleMoreResearch()" class='button'><span class="w3-tag w3-purple w3-round w3-hover-opacity">See more research projects</span></button>
+      </div>
+      <div id="more_research" class='hidden'>
+        <hr>
+      <div class="w3-container">
+          <h5 class="w3-text-gray"><b>Other Work on Event Reasoning</b></h5>
+          <p class="w3-text-gray">[25] <i>CLIN: A Continually Learning Language Agent for Rapid Task Adaptation and Generalization</i>; Bodhisattwa Prasad Majumder, Bhavana Dalvi Mishra, Peter Jansen, Oyvind Tafjord, Niket Tandon, <b>Li Zhang</b>, Chris Callison-Burch, Peter Clark; in preprint.<a href="https://arxiv.org/abs/2310.10134" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('clin')">BibTeX</span> <a href="https://allenai.github.io/clin/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Repo</span></a></p>
+        <div id="clin" class='hidden'> <pre style="overflow:auto">
+@misc{majumder2023clin,
+  title={CLIN: A Continually Learning Language Agent for Rapid Task Adaptation and Generalization}, 
+  author={Bodhisattwa Prasad Majumder and Bhavana Dalvi Mishra and Peter Jansen and Oyvind Tafjord and Niket Tandon and Li Zhang and Chris Callison-Burch and Peter Clark},
+  year={2023},
+  eprint={2310.10134},
+  archivePrefix={arXiv},
+  primaryClass={cs.CL}
+}
+          </pre> </div>
+          <p class="w3-text-gray">[26] <i>One Size Does Not Fit All: Customizing Open-Domain Procedures</i>; Yash Kumar Lal, <b>Li Zhang</b>, Faeze Brahman, Bodhisattwa Prasad Majumder, Peter Clark, Niket Tandon; in preprint.<a href="https://arxiv.org/abs/2311.09510" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('customize')">BibTeX</span></p>
+        <div id="customize" class='hidden'> <pre style="overflow:auto">
+@misc{lal2023size,
+  title={One Size Does Not Fit All: Customizing Open-Domain Procedures}, 
+  author={Yash Kumar Lal and Li Zhang and Faeze Brahman and Bodhisattwa Prasad Majumder and Peter Clark and Niket Tandon},
+  year={2023},
+  eprint={2311.09510},
+  archivePrefix={arXiv},
+  primaryClass={cs.CL}
+}
+          </pre> </div>
+          <p class="w3-text-gray">[17] <i>Unsupervised Entity Linking with Guided Summarization and Multiple Choice Selection</i>; Young Min Cho<span class="tooltip">^<span class="tooltiptext">Mentored student</span></span>, <b>Li Zhang</b> and Chris Callison-Burch; in <a href="https://2022.emnlp.org/" target="_blank">EMNLP 2022</a>.<a href="https://aclanthology.org/2022.emnlp-main.638/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('emnlp2022bib')">BibTeX</span> <a href="https://github.com/JeffreyCh0/SumMC" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Repo</span></a></p>
+                           <div id="emnlp2022bib" class='hidden'> <pre style="overflow:auto">
+@inproceedings{cho-etal-2022-unsupervised,
+  title = "Unsupervised Entity Linking with Guided Summarization and Multiple-Choice Selection",
+  author = "Cho, Young Min  and
+    Zhang, Li  and
+    Callison-Burch, Chris",
+  booktitle = "Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing",
+  month = dec,
+  year = "2022",
+  address = "Abu Dhabi, United Arab Emirates",
+  publisher = "Association for Computational Linguistics",
+  url = "https://aclanthology.org/2022.emnlp-main.638",
+  pages = "9394--9401",
+  abstract = "Entity linking, the task of linking potentially ambiguous mentions in texts to corresponding knowledge-base entities, is an important component for language understanding. We address two challenge in entity linking: how to leverage wider contexts surrounding a mention, and how to deal with limited training data. We propose a fully unsupervised model called SumMC that first generates a guided summary of the contexts conditioning on the mention, and then casts the task to a multiple-choice problem where the model chooses an entity from a list of candidates. In addition to evaluating our model on existing datasets that focus on named entities, we create a new dataset that links noun phrases from WikiHow to Wikidata. We show that our SumMC model achieves state-of-the-art unsupervised performance on our new dataset and on exiting datasets.",
+}
+            </pre> </div>
           <p class="w3-text-gray">[24] <i>Choice-75: A Dataset on Decision Branching in Script Learning</i>; Zhaoyi Joey Hou<span class="tooltip">^<span class="tooltiptext">Mentored student</span></span>, <b>Li Zhang</b>, Chris Callison-Burch; in preprint.<a href="https://arxiv.org/abs/2309.11737" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('choice75bib')">BibTeX</span> <a href="https://github.com/JoeyHou/branching" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Repo</span></a></p>
           <div id="choice75bib" class='hidden'> <pre style="overflow:auto">
 @misc{hou2023choice75,
@@ -455,8 +467,7 @@ abstract = "The knowledge of scripts, common chains of events in stereotypical s
   }
         </pre> 
       </div>  
-        
-      <p class="w3-text-gray">[21] <i>Human-in-the-Loop Schema Induction</i>; Tianyi Zhang<span class="tooltip">^<span class="tooltiptext">Mentored student</span></span>, Isaac Tham, Zhaoyi Hou<span class="tooltip">^<span class="tooltiptext">Mentored student</span></span>, Jiaxuan Ren, Liyang Zhou<span class="tooltip">^<span class="tooltiptext">Mentored student</span></span>, Hainiu Xu<span class="tooltip">^<span class="tooltiptext">Mentored student</span></span>, <b>Li Zhang</b>, Lara J. Martin, Rotem Dror, Sha Li, Heng Ji, Martha Palmer, Susan Brown, Reece Suchocki, Chris Callison-Burch; in <a href="https://2023.aclweb.org/">ACL 2023</a> Demos.<a href="https://aclanthology.org/2023.acl-demo.1/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('schemabib')">BibTeX</span> <a href="https://www.kairos.jiaxuan.me/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Demo</span></a> </p>
+          <p class="w3-text-gray">[21] <i>Human-in-the-Loop Schema Induction</i>; Tianyi Zhang<span class="tooltip">^<span class="tooltiptext">Mentored student</span></span>, Isaac Tham, Zhaoyi Hou<span class="tooltip">^<span class="tooltiptext">Mentored student</span></span>, Jiaxuan Ren, Liyang Zhou<span class="tooltip">^<span class="tooltiptext">Mentored student</span></span>, Hainiu Xu<span class="tooltip">^<span class="tooltiptext">Mentored student</span></span>, <b>Li Zhang</b>, Lara J. Martin, Rotem Dror, Sha Li, Heng Ji, Martha Palmer, Susan Brown, Reece Suchocki, Chris Callison-Burch; in <a href="https://2023.aclweb.org/">ACL 2023</a> Demos.<a href="https://aclanthology.org/2023.acl-demo.1/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('schemabib')">BibTeX</span> <a href="https://www.kairos.jiaxuan.me/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Demo</span></a> </p>
       <div id="schemabib" class='hidden'> 
         <pre style="overflow:auto">
 @inproceedings{zhang-etal-2023-human,
@@ -487,34 +498,29 @@ abstract = "The knowledge of scripts, common chains of events in stereotypical s
 }
     </pre> 
   </div> 
-
-    </div>            <div id='show_more_button'>
-        <button onclick="toggleMoreResearch()" class='button'><span class="w3-tag w3-purple w3-round w3-hover-opacity">See more research projects</span></button>
-      </div>
-      <div id="more_research" class='hidden'>
-        <hr>
-      <div class="w3-container">
-          <h5 class="w3-text-gray"><b>Exploring the Curious Case of Code Prompts</b></h5>
-      <p>Recenlt language models pre-trained on a mixture of text and code show strong reasoning ability. Many previous work has found that creatively prompting them with a code-like representation of textual reasoning tasks brings about improved performance. We port this method to a dozen general NLP tasks and find no consistent performance gain.</p>
-          <p class="w3-text-gray">[22] <i>Exploring the Curious Case of Code Prompts</i>; <b>Li Zhang</b><span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span>, Liam Dugan<span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span>, Hainiu Xu<span class="tooltip">^<span class="tooltiptext">Mentored student</span></span><span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span> and Chris Callison-Burch; in <a href="https://nl-reasoning-workshop.github.io/" target="_blank">ACL 2023 1st Workshop on Natural Language Reasoning and Structured Explanations</a>.<a href="https://aclanthology.org/2023.nlrse-1.2/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('codexbib')">BibTeX</span> <a href="https://github.com/zharry29/curious_code_prompts" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Repo</span></a></p>
-          <div id="codexbib" class='hidden'> <pre style="overflow:auto">
-@inproceedings{zhang-etal-2023-exploring,
-  title = "Exploring the Curious Case of Code Prompts",
-  author = "Zhang, Li  and
-    Dugan, Liam  and
-    Xu, Hainiu  and
-    Callison-burch, Chris",
-  booktitle = "Proceedings of the 1st Workshop on Natural Language Reasoning and Structured Explanations (NLRSE)",
-  month = jun,
-  year = "2023",
-  address = "Toronto, Canada",
-  publisher = "Association for Computational Linguistics",
-  url = "https://aclanthology.org/2023.nlrse-1.2",
-  pages = "9--17",
-  abstract = "Recent work has shown that prompting language models with code-like representations of natural language leads to performance improvements on structured reasoning tasks. However, such tasks comprise only a small subset of all natural language tasks. In our work, we seek to answer whether or not code-prompting is the preferred way of interacting with language models in general. We compare code and text prompts across three popular GPT models (davinci, code-davinci-002, and text-davinci-002) on a broader selection of tasks (e.g., QA, sentiment, summarization) and find that with few exceptions, code prompts do not consistently outperform text prompts. Furthermore, we show that the style of code prompt has a large effect on performance for some (but not all) tasks and that fine-tuning on text instructions leads to better relative performance of code prompts.",
-}
-        </pre> </div> 
       <hr> </div>
+      <div class="w3-container">
+        <h5 class="w3-text-gray"><b>Exploring the Curious Case of Code Prompts</b></h5>
+    <p>Recenlt language models pre-trained on a mixture of text and code show strong reasoning ability. Many previous work has found that creatively prompting them with a code-like representation of textual reasoning tasks brings about improved performance. We port this method to a dozen general NLP tasks and find no consistent performance gain.</p>
+        <p class="w3-text-gray">[22] <i>Exploring the Curious Case of Code Prompts</i>; <b>Li Zhang</b><span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span>, Liam Dugan<span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span>, Hainiu Xu<span class="tooltip">^<span class="tooltiptext">Mentored student</span></span><span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span> and Chris Callison-Burch; in <a href="https://nl-reasoning-workshop.github.io/" target="_blank">ACL 2023 1st Workshop on Natural Language Reasoning and Structured Explanations</a>.<a href="https://aclanthology.org/2023.nlrse-1.2/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('codexbib')">BibTeX</span> <a href="https://github.com/zharry29/curious_code_prompts" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Repo</span></a></p>
+        <div id="codexbib" class='hidden'> <pre style="overflow:auto">
+@inproceedings{zhang-etal-2023-exploring,
+title = "Exploring the Curious Case of Code Prompts",
+author = "Zhang, Li  and
+  Dugan, Liam  and
+  Xu, Hainiu  and
+  Callison-burch, Chris",
+booktitle = "Proceedings of the 1st Workshop on Natural Language Reasoning and Structured Explanations (NLRSE)",
+month = jun,
+year = "2023",
+address = "Toronto, Canada",
+publisher = "Association for Computational Linguistics",
+url = "https://aclanthology.org/2023.nlrse-1.2",
+pages = "9--17",
+abstract = "Recent work has shown that prompting language models with code-like representations of natural language leads to performance improvements on structured reasoning tasks. However, such tasks comprise only a small subset of all natural language tasks. In our work, we seek to answer whether or not code-prompting is the preferred way of interacting with language models in general. We compare code and text prompts across three popular GPT models (davinci, code-davinci-002, and text-davinci-002) on a broader selection of tasks (e.g., QA, sentiment, summarization) and find that with few exceptions, code prompts do not consistently outperform text prompts. Furthermore, we show that the style of code prompt has a large effect on performance for some (but not all) tasks and that fine-tuning on text instructions leads to better relative performance of code prompts.",
+}
+      </pre> </div> 
+    <hr> </div>
       <div class="w3-container">
         <h5 class="w3-text-gray"><b>Faithful Chain of Thought Reasoning</b></h5>
     <p>The chain-of-though prompting mechanism of language models has been shown to enable multi-step machine reasoning, whereas the reasoning process is not necessarily <i>faithful</i>. For example, a model could arrive at the correct answer by fluke while completely messing up the thought process, which is simply generated alongwith the final answer without any logical constraints therein. We propose a faithful CoT paradigm that breaks down reasoning into two steps: translating the problem into a structured representation, and faithfully solving it by strictly following a set of executions. Our method not only greatly improves model interpretability, but outperforms state-of-the-art baselines in a suite of reasoning tasks.</p>
@@ -696,6 +702,25 @@ year={2018}
       <br> 
           </div>
         
+          <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
+            <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-globe fa-fw w3-margin-right w3-xxlarge w3-text-purple"></i>Activities</h2>
+            <ul>
+              <li>Apr 18, 2024: Talk at the <a href="https://www.pitt.edu/" target="_blank"> University of Pittsburgh</a></li> 
+              <li>May 17, 2024: Attending <a href="https://2024.eacl.org/" target="_blank">EACL 2024</a></li>
+              <li>Feb 1, 2024: Guest lecture at the <a href="https://umich.edu/" target="_blank">University of Michigan</a></li>
+              <li>Jan 31, 2024: Talk at <a href="https://www.kcl.ac.uk/" target="_blank">King's College London</a></li>
+              <li>Jan 30, 2024: Talk at the <a href="https://umich.edu/" target="_blank">University of Michigan</a></li>
+              <li>Dec 6, 2023: Attending <a href="https://2023.emnlp.org/" target="_blank">EMNLP 2023</a></li>
+              <li>Jul 12, 2023: Attending <a href="https://2023.aclweb.org/" target="_blank">ACL 2023</a></li>
+              <li>May 2, 2023: Attending <a href="https://2023.eacl.org/" target="_blank">Findings of EACL 2023</a></li>
+              <li>Dec 7, 2022: Attending <a href="https://2022.emnlp.org/" target="_blank">EMNLP 2022</a></li>
+            </ul>  
+            <br>
+            <!-- End Right Column -->
+          </div>
+          <!-- End Grid -->
+
+
           <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
             <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-headphones fa-fw w3-margin-right w3-xxlarge w3-text-purple"></i>Music</h2>
             <div class="w3-container">
