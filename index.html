@@ -500,16 +500,16 @@ abstract = "Understanding what sequence of steps are needed to complete a goal c
   </div> 
       <hr> </div>
       <div class="w3-container">
-        <h5 class="w3-text-gray"><b>Exploring the Curious Case of Code Prompts</b></h5>
-    <p>Recenlt language models pre-trained on a mixture of text and code show strong reasoning ability. Many previous work has found that creatively prompting them with a code-like representation of textual reasoning tasks brings about improved performance. We port this method to a dozen general NLP tasks and find no consistent performance gain.</p>
-        <p class="w3-text-gray">[22] <i>Exploring the Curious Case of Code Prompts</i>; <b>Li Zhang</b><span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span>, Liam Dugan<span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span>, Hainiu Xu<span class="tooltip">^<span class="tooltiptext">Mentored student</span></span><span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span> and Chris Callison-Burch; in <a href="https://nl-reasoning-workshop.github.io/" target="_blank">ACL 2023 1st Workshop on Natural Language Reasoning and Structured Explanations</a>.<a href="https://aclanthology.org/2023.nlrse-1.2/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('codexbib')">BibTeX</span> <a href="https://github.com/zharry29/curious_code_prompts" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Repo</span></a></p>
-        <div id="codexbib" class='hidden'> <pre style="overflow:auto">
+        <h5 class="w3-text-gray"><b>Interfacing LLMs with Code</b></h5>
+    <p>Modern large language models are pre-trained not only with text but with code. We explore ways to interface LLMs with code, either by superficially representing the problem as pseudo-code, or by having them generate code that can be executed to reach the final answer. We evaluate these methods by their performance as well as faithfulness to the reasoning process.</p>
+    <p class="w3-text-gray">[22] <i>Exploring the Curious Case of Code Prompts</i>; <b>Li Zhang</b><span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span>, Liam Dugan<span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span>, Hainiu Xu<span class="tooltip">^<span class="tooltiptext">Mentored student</span></span><span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span> and Chris Callison-Burch; in <a href="https://nl-reasoning-workshop.github.io/" target="_blank">ACL 2023 1st Workshop on Natural Language Reasoning and Structured Explanations</a>.<a href="https://aclanthology.org/2023.nlrse-1.2/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('codexbib')">BibTeX</span> <a href="https://github.com/zharry29/curious_code_prompts" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Repo</span></a></p>
+    <div id="codexbib" class='hidden'> <pre style="overflow:auto">
 @inproceedings{zhang-etal-2023-exploring,
 title = "Exploring the Curious Case of Code Prompts",
 author = "Zhang, Li  and
-  Dugan, Liam  and
-  Xu, Hainiu  and
-  Callison-burch, Chris",
+Dugan, Liam  and
+Xu, Hainiu  and
+Callison-burch, Chris",
 booktitle = "Proceedings of the 1st Workshop on Natural Language Reasoning and Structured Explanations (NLRSE)",
 month = jun,
 year = "2023",
@@ -519,22 +519,33 @@ url = "https://aclanthology.org/2023.nlrse-1.2",
 pages = "9--17",
 abstract = "Recent work has shown that prompting language models with code-like representations of natural language leads to performance improvements on structured reasoning tasks. However, such tasks comprise only a small subset of all natural language tasks. In our work, we seek to answer whether or not code-prompting is the preferred way of interacting with language models in general. We compare code and text prompts across three popular GPT models (davinci, code-davinci-002, and text-davinci-002) on a broader selection of tasks (e.g., QA, sentiment, summarization) and find that with few exceptions, code prompts do not consistently outperform text prompts. Furthermore, we show that the style of code prompt has a large effect on performance for some (but not all) tasks and that fine-tuning on text instructions leads to better relative performance of code prompts.",
 }
-      </pre> </div> 
-    <hr> </div>
-      <div class="w3-container">
-        <h5 class="w3-text-gray"><b>Faithful Chain of Thought Reasoning</b></h5>
-    <p>The chain-of-though prompting mechanism of language models has been shown to enable multi-step machine reasoning, whereas the reasoning process is not necessarily <i>faithful</i>. For example, a model could arrive at the correct answer by fluke while completely messing up the thought process, which is simply generated alongwith the final answer without any logical constraints therein. We propose a faithful CoT paradigm that breaks down reasoning into two steps: translating the problem into a structured representation, and faithfully solving it by strictly following a set of executions. Our method not only greatly improves model interpretability, but outperforms state-of-the-art baselines in a suite of reasoning tasks.</p>
+  </pre> </div> 
         <p class="w3-text-gray">[20] <i>Faithful Chain of Thought Reasoning</i>; Qing Lyu<span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span>, Shreya Havaldar<span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span>, Adam Stein<span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span>, <b>Li Zhang</b>, Delip Rao, Eric Wong, Marianna Apidianaki and Chris Callison-Burch; in <a href="http://www.ijcnlp-aacl2023.org/" target="_blank">IJCNLP-AACL 2023</a>.<a href="https://arxiv.org/abs/2301.13379" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('fcotbib')">BibTeX</span> <a href="https://github.com/veronica320/Faithful-COT" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Repo</span></a></p>
         <div id="fcotbib" class='hidden'> <pre style="overflow:auto">
-@misc{https://doi.org/10.48550/arxiv.2301.13379,
-doi = {10.48550/ARXIV.2301.13379},  
-url = {https://arxiv.org/abs/2301.13379},  
-author = {Lyu, Qing and Havaldar, Shreya and Stein, Adam and Zhang, Li and Rao, Delip and Wong, Eric and Apidianaki, Marianna and Callison-Burch, Chris},  
-keywords = {Computation and Language (cs.CL), FOS: Computer and information sciences, FOS: Computer and information sciences},  
-title = {Faithful Chain-of-Thought Reasoning},  
-publisher = {arXiv},  
-year = {2023},  
-copyright = {Creative Commons Attribution Non Commercial No Derivatives 4.0 International}
+@inproceedings{lyu-etal-2023-faithful,
+  title = "Faithful Chain-of-Thought Reasoning",
+  author = "Lyu, Qing  and
+    Havaldar, Shreya  and
+    Stein, Adam  and
+    Zhang, Li  and
+    Rao, Delip  and
+    Wong, Eric  and
+    Apidianaki, Marianna  and
+    Callison-Burch, Chris",
+  editor = "Park, Jong C.  and
+    Arase, Yuki  and
+    Hu, Baotian  and
+    Lu, Wei  and
+    Wijaya, Derry  and
+    Purwarianti, Ayu  and
+    Krisnadhi, Adila Alfa",
+  booktitle = "Proceedings of the 13th International Joint Conference on Natural Language Processing and the 3rd Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics (Volume 1: Long Papers)",
+  month = nov,
+  year = "2023",
+  address = "Nusa Dua, Bali",
+  publisher = "Association for Computational Linguistics",
+  url = "https://aclanthology.org/2023.ijcnlp-main.20",
+  pages = "305--329",
 }
       </pre> </div> 
     <hr> </div>
