@@ -153,7 +153,7 @@
             <hr>
             <p class="w3-large w3-text-theme"><b><i class="fa fa-user fa-fw w3-margin-right w3-text-purple"></i>About Me</b></p>
             <p><font color='black'>
-              <b>I will be an assistant professor at Drexel University, starting in December 2024. Prospective students should email me and demonstrate an interest in my ongoing or related work. </b>
+              <font color='red'>I will be an assistant professor at Drexel University, starting in December 2024. I am looking for 1 to 2 PhD students to start in Spring or Fall 2025. Prospective students have an opportunity for immediate collaboration and should email me to demonstrate an interest in my ongoing or related work. </font>
               <br><br>
               I am a 5th- and final-year PhD student researcher focusing on Natural Language Processing and Artificial Intelligence, having the honor to be mentored by <a href="http://www.cis.upenn.edu/~ccb/" target="_blank">Prof. Chris Callison-Burch</a> at the University of Pennsylvania. My thesis committee includes <a href="https://www.cis.upenn.edu/~danroth/" target="_blank">Prof. Dan Roth</a>, <a href="https://web.eecs.umich.edu/~mihalcea/" target="_blank">Prof. Rada Mihalcea</a>, <a href="https://phontron.com/" target="_blank">Prof. Graham Neubig</a>, <a href="https://mariannaapi.github.io/" target="_blank">Dr. Marianna Apidianaki</a>, and <a href="https://www.cis.upenn.edu/~myatskar/" target="_blank">Prof. Mark Yatskar</a>.
               
@@ -271,20 +271,28 @@
         <p>
           1. <b>(ongoing)</b> Use LLMs to predict a structured, fully symbolic representation of events (e.g., in PDDL or Python), to be executed by symbolic solvers (e.g., planners or interpreters) for a more precise and deterministic reasoning process.
         </p>
-        <p class="w3-text-gray">[29] <i>PDDLEGO: Iterative Planning in Textual Environments</i>; <b>Li Zhang</b>, Peter Jansen, Peter Clark, Chris Callison-Burch and Niket Tandon; in <a href="https://sites.google.com/view/starsem2024" target="_blank">*SEM 2024</a>.</p>
+        <p class="w3-text-gray">[29] <i>PDDLEGO: Iterative Planning in Textual Environments</i>; <b>Li Zhang</b>, Peter Jansen, Peter Clark, Chris Callison-Burch and Niket Tandon; in <a href="https://sites.google.com/view/starsem2024" target="_blank">*SEM 2024</a>.<a href="https://arxiv.org/abs/2405.19793" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('pddlego')">BibTeX</span> <a href="https://github.com/zharry29/nl-to-pddl" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Repo</span></a></p>
         <div id="pddlego" class='hidden'> <pre style="overflow:auto">
-
+@inproceedings{zhang-etal-2024-pddlego,
+  title = "PDDLEGO: Iterative Planning in Textual Environments",
+  author = "Zhang, Li and Jansen, Peter and Zhang, Tianyi and Clark, Peter and Callison-Burch, Chris and Tandon, Niket",
+  booktitle = "Proceedings of the 13th Joint Conference on Lexical and Computational Semantics (*SEM 2024)",
+  month = jun,
+  year = "2024",
+  address = "Mexico City, Mexico",
+  publisher = "Association for Computational Linguistics"
+}
           </pre> </div>
         <hr>
         <p class="w3-text-gray">[28] <i>PROC2PDDL: Open-Domain Planning Representations from Texts</i>; Tianyi Zhang<span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span><span class="tooltip">^<span class="tooltiptext">Mentored student</span></span>, <b>Li Zhang</b><span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span>, Zhaoyi Hou<span class="tooltip">^<span class="tooltiptext">Mentored student</span></span>, Ziyu Wang<span class="tooltip">^<span class="tooltiptext">Mentored student</span></span>, Yuling Gu, Peter Clark, Chris Callison-Burch and Niket Tandon; in preprint.<a href="https://arxiv.org/abs/2403.00092" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('proc2pddl')">BibTeX</span> <a href="https://github.com/zharry29/proc2pddl" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Repo</span></a></p>
         <div id="openpi20" class='hidden'> <pre style="overflow:auto">
 @misc{zhang2024proc2pddl,
-title={PROC2PDDL: Open-Domain Planning Representations from Texts}, 
-author={Tianyi Zhang and Li Zhang and Zhaoyi Hou and Ziyu Wang and Yuling Gu and Peter Clark and Chris Callison-Burch and Niket Tandon},
-year={2024},
-eprint={2403.00092},
-archivePrefix={arXiv},
-primaryClass={cs.CL}
+  title={PROC2PDDL: Open-Domain Planning Representations from Texts}, 
+  author={Tianyi Zhang and Li Zhang and Zhaoyi Hou and Ziyu Wang and Yuling Gu and Peter Clark and Chris Callison-Burch and Niket Tandon},
+  year={2024},
+  eprint={2403.00092},
+  archivePrefix={arXiv},
+  primaryClass={cs.CL}
 }
           </pre> </div>
         <hr>
@@ -754,6 +762,8 @@ year={2018}
           <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
             <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-globe fa-fw w3-margin-right w3-xxlarge w3-text-purple"></i>Activities</h2>
             <ul>
+              <li>June 21, 2024: Presenting at <a href="https://sites.google.com/view/starsem2024" target="_blank">*SEM 2024</a></li> 
+              <li>June 18, 2024: Attending <a href="https://2024.naacl.org/" target="_blank">NAACL 2024</a></li>
               <li>Apr 18, 2024: Talk at the <a href="https://www.pitt.edu/" target="_blank">University of Pittsburgh</a></li> 
               <li>March 17, 2024: Presenting at <a href="https://2024.eacl.org/" target="_blank">EACL 2024</a></li>
               <li>March 13, 2024: Talk at <a href="https://drexel.edu/" target="_blank">Drexel University</a></li> 
