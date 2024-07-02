@@ -271,16 +271,26 @@
         <p>
           1. <b>(ongoing)</b> Use LLMs to predict a structured, fully symbolic representation of events (e.g., in PDDL or Python), to be executed by symbolic solvers (e.g., planners or interpreters) for a more precise and deterministic reasoning process.
         </p>
-        <p class="w3-text-gray">[29] <i>PDDLEGO: Iterative Planning in Textual Environments</i>; <b>Li Zhang</b>, Peter Jansen, Peter Clark, Chris Callison-Burch and Niket Tandon; in <a href="https://sites.google.com/view/starsem2024" target="_blank">*SEM 2024</a>.<a href="https://arxiv.org/abs/2405.19793" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('pddlego')">BibTeX</span> <a href="https://github.com/zharry29/nl-to-pddl" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Repo</span></a></p>
+        <p class="w3-text-gray">[29] <i>PDDLEGO: Iterative Planning in Textual Environments</i>; <b>Li Zhang</b>, Peter Jansen, Peter Clark, Chris Callison-Burch and Niket Tandon; in <a href="https://sites.google.com/view/starsem2024" target="_blank">*SEM 2024</a>.<a href="https://aclanthology.org/2024.starsem-1.17/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('pddlego')">BibTeX</span> <a href="https://github.com/zharry29/nl-to-pddl" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Repo</span></a></p>
         <div id="pddlego" class='hidden'> <pre style="overflow:auto">
 @inproceedings{zhang-etal-2024-pddlego,
-  title = "PDDLEGO: Iterative Planning in Textual Environments",
-  author = "Zhang, Li and Jansen, Peter and Zhang, Tianyi and Clark, Peter and Callison-Burch, Chris and Tandon, Niket",
+  title = "{PDDLEGO}: Iterative Planning in Textual Environments",
+  author = "Zhang, Li  and
+    Jansen, Peter  and
+    Zhang, Tianyi  and
+    Clark, Peter  and
+    Callison-Burch, Chris  and
+    Tandon, Niket",
+  editor = "Bollegala, Danushka  and
+    Shwartz, Vered",
   booktitle = "Proceedings of the 13th Joint Conference on Lexical and Computational Semantics (*SEM 2024)",
   month = jun,
   year = "2024",
   address = "Mexico City, Mexico",
-  publisher = "Association for Computational Linguistics"
+  publisher = "Association for Computational Linguistics",
+  url = "https://aclanthology.org/2024.starsem-1.17",
+  pages = "212--221",
+  abstract = "Planning in textual environments have been shown to be a long-standing challenge even for current models. A recent, promising line of work uses LLMs to generate a formal representation of the environment that can be solved by a symbolic planner. However, existing methods rely on a fully-observed environment where all entity states are initially known, so a one-off representation can be constructed, leading to a complete plan. In contrast, we tackle partially-observed environments where there is initially no sufficient information to plan for the end-goal. We propose PDDLEGO that iteratively construct a planning representation that can lead to a partial plan for a given sub-goal. By accomplishing the sub-goal, more information is acquired to augment the representation, eventually achieving the end-goal. We show that plans produced by few-shot PDDLEGO are 43{\%} more efficient than generating plans end-to-end on the Coin Collector simulation, with strong performance (98{\%}) on the more complex Cooking World simulation where end-to-end LLMs fail to generate coherent plans (4{\%}).",
 }
           </pre> </div>
         <hr>
