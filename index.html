@@ -91,8 +91,8 @@
   <script>
   function toggleMoreResearch() {
     var x = document.getElementById("more_research");
-    var y = document.getElementById("show_more_button");
-    var z = document.getElementById("show_less_button");
+    var y = document.getElementById("show_more_button_res");
+    var z = document.getElementById("show_less_button_res");
     x.style.display = "block";
     y.style.display = "none";
     z.style.display = "block";
@@ -100,25 +100,26 @@
 
   function toggleCollapseResearch() {
     var x = document.getElementById("more_research");
-    var y = document.getElementById("show_more_button");
-    var z = document.getElementById("show_less_button");
+    var y = document.getElementById("show_more_button_res");
+    var z = document.getElementById("show_less_button_res");
     x.style.display = "none";
     y.style.display = "block";
     z.style.display = "none";
   }
-  function toggleMorePublications() {
-    var x = document.getElementById("more_publications");
-    var y = document.getElementById("show_more_button_pub");
-    var z = document.getElementById("show_less_button_pub");
+  
+  function toggleMoreActivities() {
+    var x = document.getElementById("more_activities");
+    var y = document.getElementById("show_more_button_act");
+    var z = document.getElementById("show_less_button_act");
     x.style.display = "block";
     y.style.display = "none";
     z.style.display = "block";
   }
 
-  function toggleCollapsePublications() {
-    var x = document.getElementById("more_publications");
-    var y = document.getElementById("show_more_button_pub");
-    var z = document.getElementById("show_less_button_pub");
+  function toggleCollapseActivities() {
+    var x = document.getElementById("more_activities");
+    var y = document.getElementById("show_more_button_act");
+    var z = document.getElementById("show_less_button_act");
     x.style.display = "none";
     y.style.display = "block";
     z.style.display = "none";
@@ -207,7 +208,7 @@
               <h6 class="w3-text-black"><i class="fa fa-user fa-fw w3-margin-right"></i><a href="https://joeyhou.github.io/" target="_blank">Zhaoyi Hou</a>, University of Pittsburg</h6>
               <h6 class="w3-text-black"><i class="fa fa-user fa-fw w3-margin-right"></i><a href="https://www.linkedin.com/in/jeffrey-young-min-cho-888105180" target="_blank">Young-Min Cho</a>, University of Pennsylvania</h6>
               <h6 class="w3-text-black"><i class="fa fa-user fa-fw w3-margin-right"></i><a href="https://www.linkedin.com/in/manni-arora-50a978a2" target="_blank">Manni Arora</a>, Apple</h6>
-              <p>I mentored each for more than 1 year. All graduated with a Master's degree from the University of Pennsylvania.</p>
+              <p>During my time as a PhD student at the University of Pennsylvania, I mentored the above talented Master students.</p>
               <br> </div>
             <div class="w3-container">
               <h5 class="w3-text-black">Teaching Assistant<a href="https://www.upenn.edu" target="_blank"><img src="image/penn_logo.png" alt="Penn" style="float:right;width:60px;"></a></h5>
@@ -454,7 +455,7 @@ abstract = "Understanding what sequence of steps are needed to complete a goal c
 }
         </pre> </div>
 
-    </div>            <div id='show_more_button'>
+    </div>            <div id='show_more_button_res'>
         <button onclick="toggleMoreResearch()" class='button'><span class="w3-tag w3-purple w3-round w3-hover-opacity">See more research projects</span></button>
       </div>
       <div id="more_research" class='hidden'>
@@ -806,7 +807,13 @@ year={2018}
               <li>Feb 1, 2024: Guest lecture at the <a href="https://umich.edu/" target="_blank">University of Michigan</a></li>
               <li>Jan 31, 2024: Talk at <a href="https://www.kcl.ac.uk/" target="_blank">King's College London</a></li>
               <li>Jan 30, 2024: Talk at the <a href="https://umich.edu/" target="_blank">University of Michigan</a></li>
-              <li>Dec 6, 2023: Attending <a href="https://2023.emnlp.org/" target="_blank">EMNLP 2023</a></li>
+            </ul>  
+        <div id='show_more_button_act'>
+          <button onclick="toggleMoreActivities()" class='button'><span class="w3-tag w3-purple w3-round w3-hover-opacity">See past activities</span></button>
+        </div>
+        <div id="more_activities" class='hidden'>
+          <ul>
+            <li>Dec 6, 2023: Attending <a href="https://2023.emnlp.org/" target="_blank">EMNLP 2023</a></li>
               <li>Nov 6, 2023: Attending <a href="https://devday.openai.com/" target="_blank">OpenAI DevDay</a></li>
               <li>Jul 12, 2023: Presenting at <a href="https://2023.aclweb.org/" target="_blank">ACL 2023</a></li>
               <li>May 2, 2023: Presenting at <a href="https://2023.eacl.org/" target="_blank">EACL 2023</a></li>
@@ -815,11 +822,14 @@ year={2018}
               <li>Feb 7, 2023: Guest lecture at <a href="https://oakland.edu/index" target="_blank">Oakland University</a></li>
               <li>Feb 7, 2023: Talk at the <a href="https://umich.edu/" target="_blank">University of Michigan</a></li>
               <li>Dec 7, 2022: Presenting at <a href="https://2022.emnlp.org/" target="_blank">EMNLP 2022</a></li>
-            </ul>  
-            <br>
-            <!-- End Right Column -->
-          </div>
-          <!-- End Grid -->
+          </ul>
+        </div>
+        <div id='show_less_button' class='hidden'>
+          <hr>
+          <button onclick="toggleCollapseActivities()" class='button'><span class="w3-tag w3-purple w3-round w3-hover-opacity">Collapse</span></button>
+        </div>
+        <br> 
+        </div>
 
 
           <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
