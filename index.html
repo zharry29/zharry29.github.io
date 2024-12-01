@@ -464,14 +464,27 @@ abstract = "Understanding what sequence of steps are needed to complete a goal c
           <h5 class="w3-text-gray"><b>More Work on Structured Reasoning of Events</b></h5>
           <p class="w3-text-gray">[26] <i>One Size Does Not Fit All: Customizing Open-Domain Procedures</i>; Yash Kumar Lal, <b>Li Zhang</b>, Faeze Brahman, Bodhisattwa Prasad Majumder, Peter Clark, Niket Tandon; in Findings of <a href="https://2024.aclweb.org/" target="_blank">ACL 2024</a>.<a href="https://arxiv.org/abs/2311.09510" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('customize')">BibTeX</span></p>
         <div id="customize" class='hidden'> <pre style="overflow:auto">
-@misc{lal2023size,
-  title={One Size Does Not Fit All: Customizing Open-Domain Procedures}, 
-  author={Yash Kumar Lal and Li Zhang and Faeze Brahman and Bodhisattwa Prasad Majumder and Peter Clark and Niket Tandon},
-  year={2023},
-  eprint={2311.09510},
-  archivePrefix={arXiv},
-  primaryClass={cs.CL}
-}
+@inproceedings{lal-etal-2024-tailoring,
+  title = "Tailoring with Targeted Precision: Edit-Based Agents for Open-Domain Procedure Customization",
+  author = "Lal, Yash Kumar  and
+    Zhang, Li  and
+    Brahman, Faeze  and
+    Majumder, Bodhisattwa Prasad  and
+    Clark, Peter  and
+    Tandon, Niket",
+  editor = "Ku, Lun-Wei  and
+    Martins, Andre  and
+    Srikumar, Vivek",
+  booktitle = "Findings of the Association for Computational Linguistics: ACL 2024",
+  month = aug,
+  year = "2024",
+  address = "Bangkok, Thailand",
+  publisher = "Association for Computational Linguistics",
+  url = "https://aclanthology.org/2024.findings-acl.921",
+  doi = "10.18653/v1/2024.findings-acl.921",
+  pages = "15597--15611",
+  abstract = "How-to procedures, such as how to plant a garden, are now used by millions of users, but sometimes need customizing to meet a user{'}s specific needs, e.g., planting a garden without pesticides. Our goal is to measure and improve an LLM{'}s ability to perform such customization. Our approach is to test several simple multi-LLM-agent architectures for customization, as well as an end-to-end LLM, using a new evaluation set, called CustomPlans, of over 200 WikiHow procedures each with a customization need. We find that a simple architecture with two LLM agents used sequentially performs best, one that edits a generic how-to procedure and one that verifies its executability, significantly outperforming (10.5{\%} absolute) an end-to-end prompted LLM. This suggests that LLMs can be configured reasonably effectively for procedure customization. This also suggests that multi-agent editing architectures may be worth exploring further for other customization applications (e.g. coding, creative writing) in the future.",
+}        
           </pre> </div>
           <p class="w3-text-gray">[25] <i>CLIN: A Continually Learning Language Agent for Rapid Task Adaptation and Generalization</i>; Bodhisattwa Prasad Majumder, Bhavana Dalvi Mishra, Peter Jansen, Oyvind Tafjord, Niket Tandon, <b>Li Zhang</b>, Chris Callison-Burch, Peter Clark; in <a href="https://colmweb.org/" target="_blank">COLM 2024</a>.<a href="https://arxiv.org/abs/2310.10134" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('clin')">BibTeX</span> <a href="https://allenai.github.io/clin/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Repo</span></a></p>
         <div id="clin" class='hidden'> <pre style="overflow:auto">
