@@ -221,7 +221,8 @@
               </div>
             <div class="w3-container">
               <h5 class="w3-text-black">Teaching</h5>
-              <p><i class="fa fa-book fa-fw w3-margin-right"></i>Instructor: CS T780-001: Applied NLP (Spring 2025 at Drexel)</p>
+              <p><i class="fa fa-book fa-fw w3-margin-right"></i>Instructor: CS T780-001: Applied NLP (Spring 2025, Spring 2026 at Drexel)</p>
+              <p><i class="fa fa-book fa-fw w3-margin-right"></i>Instructor: CS 614: Applied AI (Spring 2026 at Drexel)</p>
               <p><i class="fa fa-book fa-fw w3-margin-right"></i>TA: CIS 530: Computational Linguistics (Winter, Fall 2020 at Penn)</p>
               <p><i class="fa fa-book fa-fw w3-margin-right"></i>TA: EECS 595: Natural Language Processing (Fall 2018 at Michigan)</p>
               <p><i class="fa fa-book fa-fw w3-margin-right"></i>TA: EECS 280: Programming and Introductory Data Structures (Winter, Fall 2016 at Michigan)</p>
@@ -425,16 +426,29 @@
       url={https://arxiv.org/abs/2510.05498}, 
 }
           </pre> </div>
-        <p class="w3-text-gray">[36] <i>TurnaboutLLM: A Deductive Reasoning Benchmark from Detective Games</i>; Yuan Yuan<span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span>, Muyu He<span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span>, Adil Shahid, Jiani Huang, Ziyang Li and <b>Li Zhang</b>; in <a href="https://2025.emnlp.org/" target="_blank">EMNLP 2025</a>.<a href="https://arxiv.org/abs/2505.15712" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('turnaboutllm')">BibTeX</span> <a href="https://github.com/zharry29/turnabout_llm" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Code</span></a></p>
+        <p class="w3-text-gray">[36] <i>TurnaboutLLM: A Deductive Reasoning Benchmark from Detective Games</i>; Yuan Yuan<span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span>, Muyu He<span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span>, Adil Shahid, Jiani Huang, Ziyang Li and <b>Li Zhang</b>; in <a href="https://2025.emnlp.org/" target="_blank">EMNLP 2025</a>.<a href="https://aclanthology.org/2025.emnlp-main.101/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('turnaboutllm')">BibTeX</span> <a href="https://github.com/zharry29/turnabout_llm" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Code</span></a></p>
         <div id="turnaboutllm" class='hidden'> <pre style="overflow:auto">
-@misc{yuan2025turnaboutllmdeductivereasoningbenchmark,
-      title={TurnaboutLLM: A Deductive Reasoning Benchmark from Detective Games}, 
-      author={Yuan Yuan and Muyu He and Muhammad Adil Shahid and Jiani Huang and Ziyang Li and Li Zhang},
-      year={2025},
-      eprint={2505.15712},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2505.15712}, 
+@inproceedings{yuan-etal-2025-turnaboutllm,
+    title = "{T}urnabout{LLM}: A Deductive Reasoning Benchmark from Detective Games",
+    author = "Yuan, Yuan  and
+      He, Muyu  and
+      Shahid, Muhammad Adil  and
+      Li, Ziyang  and
+      Huang, Jiani  and
+      Zhang, Li",
+    editor = "Christodoulopoulos, Christos  and
+      Chakraborty, Tanmoy  and
+      Rose, Carolyn  and
+      Peng, Violet",
+    booktitle = "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing",
+    month = nov,
+    year = "2025",
+    address = "Suzhou, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.emnlp-main.101/",
+    pages = "1951--1965",
+    ISBN = "979-8-89176-332-6",
+    abstract = "This paper introduces TurnaboutLLM, a novel framework and dataset for evaluating the deductive reasoning abilities of Large Language Models (LLMs) by leveraging the interactive gameplay of detective games Ace Attorney and Danganronpa. The framework tasks LLMs with identifying contradictions between testimonies and evidences within long narrative contexts, a challenging task due to the large answer space and diverse reasoning types presented by its questions. We evaluate twelve state-of-the-art LLMs on the dataset, hinting at limitations of popular strategies for enhancing deductive reasoning such as extensive thinking and Chain-of-Thought prompting. The results also suggest varying effects of context size, reasoning steps and answer space size on model performance. Overall, TurnaboutLLM presents a substantial challenge for LLMs' deductive reasoning abilities in complex, narrative-rich environments."
 }
           </pre> </div>
     
