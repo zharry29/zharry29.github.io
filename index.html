@@ -1,282 +1,282 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <title>Li "Harry" Zhang</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="favicon.ico" sizes="16x16">
-  <link rel="stylesheet" href="./w3.css">
-  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <style>
-  html,
-  body,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: "Roboto", sans-serif
-  }
-  
-  li {
-    margin: 5px 0;
-  }
+  <head>
+    <title>Li "Harry" Zhang</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favicon.ico" sizes="16x16">
+    <link rel="stylesheet" href="./w3.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      html,
+      body,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Roboto", sans-serif
+      }
 
-  img {
-    max-width: 100%;
-    max-height: 100%;
-  }
+      li {
+        margin: 5px 0;
+      }
 
-  iframe {
-    aspect-ratio: 16 / 9;
-    height: auto;
-    width: 100%;
-  }
-  
-  .tooltip {
-    position: relative;
-    display: inline-block;
-    border-bottom: 1px dotted black;
-  }
-  
-  .tooltip .tooltiptext {
-    visibility: hidden;
-    width: 140px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-    /* Position the tooltip */
-    position: absolute;
-    z-index: 1;
-  }
-  
-  .tooltip:hover .tooltiptext {
-    visibility: visible;
-  }
-  
-  .hidden {
-    display: none;
-  }
-  
-  .button {
-    background-color: Transparent;
-    background-repeat: no-repeat;
-    border: none;
-    cursor: pointer;
-    overflow: hidden;
-    outline: none;
-  }
-  
-  a {
-    color: #9900cc;
-    text-decoration: none;
-  }
-  
-  .fab {
-    position: relative;
-    top: 3px;
-  }
-  
-  .help {
-    cursor: help;
-  }
-  </style>
-  <!-- Place your kit's code here -->
-  <script src="https://kit.fontawesome.com/e86b39c03c.js" crossorigin="anonymous"></script>
-  <script>
-  function toggleMoreResearch() {
-    var x = document.getElementById("more_research");
-    var y = document.getElementById("show_more_button_res");
-    var z = document.getElementById("show_less_button_res");
-    x.style.display = "block";
-    y.style.display = "none";
-    z.style.display = "block";
-  }
+      img {
+        max-width: 100%;
+        max-height: 100%;
+      }
 
-  function toggleCollapseResearch() {
-    var x = document.getElementById("more_research");
-    var y = document.getElementById("show_more_button_res");
-    var z = document.getElementById("show_less_button_res");
-    x.style.display = "none";
-    y.style.display = "block";
-    z.style.display = "none";
-  }
-  
-  function toggleMoreActivities() {
-    var x = document.getElementById("more_activities");
-    var y = document.getElementById("show_more_button_act");
-    var z = document.getElementById("show_less_button_act");
-    x.style.display = "block";
-    y.style.display = "none";
-    z.style.display = "block";
-  }
+      iframe {
+        aspect-ratio: 16 / 9;
+        height: auto;
+        width: 100%;
+      }
 
-  function toggleCollapseActivities() {
-    var x = document.getElementById("more_activities");
-    var y = document.getElementById("show_more_button_act");
-    var z = document.getElementById("show_less_button_act");
-    x.style.display = "none";
-    y.style.display = "block";
-    z.style.display = "none";
-  }
+      .tooltip {
+        position: relative;
+        display: inline-block;
+        border-bottom: 1px dotted black;
+      }
 
-  function toggle(bib) {
-    var x = document.getElementById(bib);
-    if(x.style.display === "block") {
-      x.style.display = "none";
-    } else {
-      x.style.display = "block";
-    }
-  }
-  </script>
-</head>
+      .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 140px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        /* Position the tooltip */
+        position: absolute;
+        z-index: 1;
+      }
 
-<body class="w3-light-grey">
-  <!-- Page Container -->
-  <div class="w3-content w3-margin-top" style="max-width:1400px;">
-    <!-- The Grid -->
-    <div class="w3-row-padding">
-      <!-- Left Column -->
-      <div class="w3-third">
-        <div class="w3-white w3-text-grey w3-card-4">
-          <div class="w3-display-container">
-            <!--
-          <img src="avatar.jpg" style="width:100%" alt="Avatar">
-    --><img src="image/drums.jpg" style="width:100%" alt="Avatar"> </div>
-          <center>
-            <h2><font face="georgia"> Li "Harry" Zhang &nbsp;</font><b>张力 </b></h2></center>
-          <div class="w3-container">
-            <hr>
-            <p class="w3-large w3-text-theme"><b><i class="fa fa-user fa-fw w3-margin-right w3-text-purple"></i>About Me</b></p>
-            <p><font color='black'>
-              <font color='black'>I am an assistant professor at Drexel University focusing on Natural Language Processing and Artificial Intelligence. I'm interested in planning and reasoning using Large Language Models. I earned my PhD (<a href="https://arxiv.org/abs/2408.16098" target="_blank">thesis</a>) from the University of Pennsylvania, having the honor to be mentored by <a href="http://www.cis.upenn.edu/~ccb/" target="_blank">Prof. Chris Callison-Burch</a>, with a thesis committee chaired by <a href="https://www.cis.upenn.edu/~danroth/" target="_blank">Prof. Dan Roth</a>. I earned my BS from the University of Michigan in 2018, mentored by <a href="https://web.eecs.umich.edu/~mihalcea/" target="_blank">Prof. Rada Mihalcea</a> and <a href="http://www.cs.yale.edu/homes/radev/" target="_blank">Prof. Dragomir Radev</a>.</font>
-              <br><br>
-              I offer systematic research mentorship (remote and in-person, undergraduate and graduate, paid and unpaid) to selected interns and volunteers. Past participants implemented existing ideas and published within a few months. Demonstration of prior experience to lead a complete research project (e.g., publication in NLP or other fields) is required. Motivation to apply for a PhD program at the end of 2026 is strongly preferred. Those interested should <a href="https://forms.gle/uvUjbq3xcDpxQzva9" target="_blank">fill out this form</a>. I cannot respond to emails on this matter. <b>I am currently not hiring PhD students</b>.
-              <br><br>
-              <a href="docs/CV.pdf" target="_blank"><span class="w3-tag w3-purple w3-round w3-hover-opacity">CV</span></a> <a href="https://www.semanticscholar.org/author/72436283" target="_blank"><button class='button'><span class="w3-tag w3-purple w3-round w3-hover-opacity">Semantic Scholar</span></button></a> <a href="https://scholar.google.com/citations?user=JIkAjV4AAAAJ" target="_blank"><button class='button'><span class="w3-tag w3-purple w3-round w3-hover-opacity">Google Scholar</span></button></a> 
-            <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-purple"></i>Harry.Zhang@drexel.edu</p>
-            
-            <!--
-            <p><i class="fa fa-university fa-fw w3-margin-right w3-large w3-text-purple"></i>University of Pennsylvania</p>
-            <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-purple"></i>Shenzhen, China</p>-->
-            <hr>
-            <p class="w3-large w3-text-theme"><b><i class="fa fa-school fa-fw w3-margin-right w3-text-purple"></i>Affiliations</b></p>
-            <div class="w3-container">
-              <h5 class="w3-text-black">Drexel University<a href="https://drexel.edu/" target="_blank"><img src="image/drexel_logo.png" alt="drexel logo" style="float:right;width:80px;height:80px;"></a></h5>
-              <h6 class="w3-text-purple"><i class="fa fa-graduation-cap fa-fw w3-margin-right"></i>Assistant Professor; <br>Dec 2024 to Present</h6>
-              <br> </div>
-            <div class="w3-container">
-              <h5 class="w3-text-black">University of Pennsylvania<a href="https://www.upenn.edu/" target="_blank"><img src="image/upenn-logo.png" alt="upenn logo" style="float:right;width:80px;height:80px;"></a></h5>
-              <h6 class="w3-text-purple"><i class="fa fa-graduation-cap fa-fw w3-margin-right"></i>Ph.D.; Aug 2019 to Aug 2024</h6>
-              <br> </div>
-            <div class="w3-container">
-              <h5 class="w3-text-black">Allen Institute for Artifical Intelligence<a href="https://allenai.org" target="_blank"><img src="image/AI2_logo.png" alt="AI2" style="float:right;height:40px;"></a></h5>
-              <h6 class="w3-text-purple"><i class="fa fa-suitcase fa-fw w3-margin-right"></i>Research Intern; <br>April 2023 to Dec 2023</h6>
-              <!--<p>I did NLP research and software development on semantic role labeling, and previously, text simplification.</p>-->
-              <br> </div>
-            <div class="w3-container">
-              <h5 class="w3-text-black">IBM Research<a href="https://research.ibm.com" target="_blank"><img src="image/ibm-logo.05dc870.png" alt="IBM Research" style="float:right;height:20px;"></a></h5>
-              <h6 class="w3-text-purple"><i class="fa fa-suitcase fa-fw w3-margin-right"></i>Research Intern; May 2021 to Aug 2021, <br>April 2019 to June 2019</h6>
-              <!--<p>I did NLP research and software development on semantic role labeling, and previously, text simplification.</p>-->
-              <br> </div>
-              <div class="w3-container">
-                <h5 class="w3-text-black">University of Michigan<img src="image/umich-logo.png" alt="umich logo" style="float:right;width:80px;height:80px;"></h5>
-                <h6 class="w3-text-purple"><i class="fa fa-graduation-cap fa-fw w3-margin-right"></i>B.S.E.; Aug 2015 to Dec 2018</h6>
-                <!--
-                <br> </div>
+      .tooltip:hover .tooltiptext {
+        visibility: visible;
+      }
+
+      .hidden {
+        display: none;
+      }
+
+      .button {
+        background-color: Transparent;
+        background-repeat: no-repeat;
+        border: none;
+        cursor: pointer;
+        overflow: hidden;
+        outline: none;
+      }
+
+      a {
+        color: #9900cc;
+        text-decoration: none;
+      }
+
+      .fab {
+        position: relative;
+        top: 3px;
+      }
+
+      .help {
+        cursor: help;
+      }
+    </style>
+    <!-- Place your kit's code here -->
+    <script src="https://kit.fontawesome.com/e86b39c03c.js" crossorigin="anonymous"></script>
+    <script>
+      function toggleMoreResearch() {
+        var x = document.getElementById("more_research");
+        var y = document.getElementById("show_more_button_res");
+        var z = document.getElementById("show_less_button_res");
+        x.style.display = "block";
+        y.style.display = "none";
+        z.style.display = "block";
+      }
+
+      function toggleCollapseResearch() {
+        var x = document.getElementById("more_research");
+        var y = document.getElementById("show_more_button_res");
+        var z = document.getElementById("show_less_button_res");
+        x.style.display = "none";
+        y.style.display = "block";
+        z.style.display = "none";
+      }
+
+      function toggleMoreActivities() {
+        var x = document.getElementById("more_activities");
+        var y = document.getElementById("show_more_button_act");
+        var z = document.getElementById("show_less_button_act");
+        x.style.display = "block";
+        y.style.display = "none";
+        z.style.display = "block";
+      }
+
+      function toggleCollapseActivities() {
+        var x = document.getElementById("more_activities");
+        var y = document.getElementById("show_more_button_act");
+        var z = document.getElementById("show_less_button_act");
+        x.style.display = "none";
+        y.style.display = "block";
+        z.style.display = "none";
+      }
+
+      function toggle(bib) {
+        var x = document.getElementById(bib);
+        if(x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+  </head>
+
+  <body class="w3-light-grey">
+    <!-- Page Container -->
+    <div class="w3-content w3-margin-top" style="max-width:1400px;">
+      <!-- The Grid -->
+      <div class="w3-row-padding">
+        <!-- Left Column -->
+        <div class="w3-third">
+          <div class="w3-white w3-text-grey w3-card-4">
+            <div class="w3-display-container">
+              <!--
+              <img src="avatar.jpg" style="width:100%" alt="Avatar">
+              --><img src="image/drums.jpg" style="width:100%" alt="Avatar"> </div>
+              <center>
+                <h2><font face="georgia"> Li "Harry" Zhang &nbsp;</font><b>张力 </b></h2></center>
                 <div class="w3-container">
-                  <h5 class="w3-text-black">Goldman Sachs<a href="https://www.goldmansachs.com" target="_blank"><img src="image/GoldmanSachsLogo.jpg" alt="Goldman Sachs" style="float:right;height:40px;"></a></h5>
-                  <h6 class="w3-text-purple"><i class="fa fa-suitcase fa-fw w3-margin-right"></i>Summer Analyst; <br>May 2017 to Aug 2017</h6>
-                  <br> </div>
-              <div class="w3-container">
-                <h5 class="w3-text-black">Shenzhen Middle School<img src="image/sms-logo.jpg" alt="SMS logo" style="float:right;width:80px;height:80px;"></h5>
-                <h6 class="w3-text-purple"><i class="fa fa-graduation-cap fa-fw w3-margin-right"></i>High School Diploma; <br>Sept 2012 to Jun 2015</h6>
-              -->
-                </div>
-              <hr>
-            <p class="w3-large w3-text-theme"><b><i class="fa fa-book fa-fw w3-margin-right w3-text-purple"></i>Mentorship and Teaching</b></p>
-            <div class="w3-container">
-              <h5 class="w3-text-black"><a href="https://zharry29.github.io/hazlab/" target="_blank">Haz Lab</a> at Drexel<a href="https://zharry29.github.io/hazlab/" target="_blank"><img src="image/hazlab.png" alt="Haz Lab logo" style="float:right;width:80px;height:80px;"></a></h5>
-              </div>
-            <div class="w3-container">
-              <h5 class="w3-text-black">Teaching</h5>
-              <p><i class="fa fa-book fa-fw w3-margin-right"></i>Instructor: CS T780-001: Applied NLP (Spring 2025, Spring 2026 at Drexel)</p>
-              <p><i class="fa fa-book fa-fw w3-margin-right"></i>Instructor: CS 614: Applied AI (Spring 2026 at Drexel)</p>
-              <p><i class="fa fa-book fa-fw w3-margin-right"></i>TA: CIS 530: Computational Linguistics (Winter, Fall 2020 at Penn)</p>
-              <p><i class="fa fa-book fa-fw w3-margin-right"></i>TA: EECS 595: Natural Language Processing (Fall 2018 at Michigan)</p>
-              <p><i class="fa fa-book fa-fw w3-margin-right"></i>TA: EECS 280: Programming and Introductory Data Structures (Winter, Fall 2016 at Michigan)</p>
-              </div>
-            <hr>
-            <p class="w3-large w3-text-theme"><b><i class="fas fa-scroll fa-fw w3-margin-right w3-text-purple"></i>Service</b></p>
-            <p>I have reviewed more than 50 papers of and chaired for many NLP conferences and workshops.</p>
-            <div class="w3-container">
-            <h6 class="w3-text-black"><i class="fa fa-chair fa-fw w3-margin-right"></i>Area Chair of <a href='https://openreview.net/group?id=aclweb.org/ACL/ARR/2025/February'  target="_blank">ARR Feb 2025</a> / <a href='https://2025.aclweb.org/' target="_blank">ACL 2025</a>, <a href='https://openreview.net/group?id=aclweb.org/ACL/ARR/2024/December'  target="_blank">ARR Dec 2024</a>, <a href='https://coling2025.org/'  target="_blank">COLING 2025</a>, <a href='https://openreview.net/group?id=aclweb.org/ACL/ARR/2024/August'  target="_blank">ARR Aug 2024</a>, <a href='https://openreview.net/group?id=aclweb.org/ACL/ARR/2024/June'  target="_blank">ARR Jun 2024</a> / <a href='https://2024.emnlp.org/' target="_blank">EMNLP 2024</a>, <a href='https://openreview.net/group?id=aclweb.org/ACL/ARR/2024/February'  target="_blank">ARR Feb 2024</a> / <a href='https://2024.aclweb.org/' target="_blank">ACL 2024</a></h6>
-            <h6 class="w3-text-black"><i class="fa fa-chair fa-fw w3-margin-right"></i>Session Chair of <a href='https://2024.aclweb.org/' target="_blank">ACL 2024</a>, <a href='http://www.aacl2020.org/'  target="_blank">AACL-IJCNLP 2020</a></h6>
-            <h6 class="w3-text-black"><i class="fa fa-chair fa-fw w3-margin-right"></i>Program Chair of <a href='https://www.mascsll.org/'  target="_blank">MASC-SLL 2023</a>, <a href='https://www.mascsll.org/'  target="_blank">MASC-SLL 2021</a></h6>
-            <h6 class="w3-text-black"><i class="fa fa-pen-nib fa-fw w3-margin-right"></i>Reviewer of <a href='https://lrec-coling-2024.org/2nd-call-for-papers/'  target="_blank">LREC-COLING 2024</a>, <a href='https://2023.emnlp.org/'  target="_blank">EMNLP 2023</a>, <a href='https://2023.aclweb.org/' target="_blank">ACL 2023</a>, <a href='https://openreview.net/group?id=aclweb.org/ACL/ARR'  target="_blank">ARR Mar 2022</a>, <a href='https://www.dashworkshops.org/'  target="_blank">DaSH Workshop @ EMNLP 2022</a>, <a href='https://coling2022.org/coling'  target="_blank">COLING 2022</a>, <a href='https://lrec2022.lrec-conf.org/en/'  target="_blank">LREC 2022</a>, <a href='https://openreview.net/group?id=aclweb.org/ACL/ARR'  target="_blank">ARR Nov 2021</a>, <a href='https://coling2020.org/'  target="_blank">COLING 2020</a>, <a href='https://www.journals.elsevier.com/computer-speech-and-language'  target="_blank">Computer Speech and Language 2018</a> </h6>
-          </div>
-            <br> </div>
-        </div>
-        <br>
-        <!-- End Left Column -->
-      </div>
-      <!-- Right Column -->
-      <div class="w3-twothird">
-        <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
-          <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-robot fa-fw w3-margin-right w3-xxlarge w3-text-purple"></i>Research</h2>
-          <div class="w3-container">
-            <a name="pub6"></a>
-            <h5 class="w3-text-gray"><b>LLM-as-Formalizer: Executable and Trustworthy Planning and Problem-Solving</b></h5>
-          <p>
-            Despite recent efforts in using large language models (LLMs) to plan and solve problems as agents, their hallucinations and lack of verifiability undermine executability and trust, preventing real-world deployment. My work advances an alternative paradigm: LLM-as-formalizer. Instead of relying on LLMs to generate plans directly, we use them as a code generator to translate a user’s environment and goal into formal languages that can be deterministically solved by off-the-shelf solvers. 
-          </p>
-        <hr>
-        <p>
-          My primary efforts lie in using LLMs to generate formal language, such as <a href="https://planning.wiki/guide/whatis/pddl" target="_blank">PDDL</a> that describes the planning environment. 
-        </p>
-        <p class="w3-text-gray">[40] <i>	Language Model Planners do not Scale, but do Formalizers? </i> Owen Jiang, Cassie Huang, Ashish Sabharwal and <b>Li Zhang</b>; preprint.<a href="https://arxiv.org/abs/2603.23844" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('scale')">BibTeX</span> <a href="" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Code</span></a></p>
-        <div id="scale" class='hidden'> <pre style="overflow:auto">
+                  <hr>
+                  <p class="w3-large w3-text-theme"><b><i class="fa fa-user fa-fw w3-margin-right w3-text-purple"></i>About Me</b></p>
+                  <p><font color='black'>
+                    <font color='black'>I am an assistant professor at Drexel University focusing on Natural Language Processing and Artificial Intelligence. I'm interested in planning and reasoning using Large Language Models. I earned my PhD (<a href="https://arxiv.org/abs/2408.16098" target="_blank">thesis</a>) from the University of Pennsylvania, having the honor to be mentored by <a href="http://www.cis.upenn.edu/~ccb/" target="_blank">Prof. Chris Callison-Burch</a>, with a thesis committee chaired by <a href="https://www.cis.upenn.edu/~danroth/" target="_blank">Prof. Dan Roth</a>. I earned my BS from the University of Michigan in 2018, mentored by <a href="https://web.eecs.umich.edu/~mihalcea/" target="_blank">Prof. Rada Mihalcea</a> and <a href="http://www.cs.yale.edu/homes/radev/" target="_blank">Prof. Dragomir Radev</a>.</font>
+                    <br><br>
+                    I offer systematic research mentorship (remote and in-person, undergraduate and graduate, paid and unpaid) to selected interns and volunteers. Past participants implemented existing ideas and published within a few months. Demonstration of prior experience to lead a complete research project (e.g., publication in NLP or other fields) is required. Motivation to apply for a PhD program at the end of 2026 is strongly preferred. Those interested should <a href="https://forms.gle/uvUjbq3xcDpxQzva9" target="_blank">fill out this form</a>. I cannot respond to emails on this matter. <b>I am currently not hiring PhD students</b>.
+                    <br><br>
+                    <a href="docs/CV.pdf" target="_blank"><span class="w3-tag w3-purple w3-round w3-hover-opacity">CV</span></a> <a href="https://www.semanticscholar.org/author/72436283" target="_blank"><button class='button'><span class="w3-tag w3-purple w3-round w3-hover-opacity">Semantic Scholar</span></button></a> <a href="https://scholar.google.com/citations?user=JIkAjV4AAAAJ" target="_blank"><button class='button'><span class="w3-tag w3-purple w3-round w3-hover-opacity">Google Scholar</span></button></a>
+                  <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-purple"></i>Harry.Zhang@drexel.edu</p>
+
+                  <!--
+                  <p><i class="fa fa-university fa-fw w3-margin-right w3-large w3-text-purple"></i>University of Pennsylvania</p>
+                  <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-purple"></i>Shenzhen, China</p>-->
+                  <hr>
+                  <p class="w3-large w3-text-theme"><b><i class="fa fa-school fa-fw w3-margin-right w3-text-purple"></i>Affiliations</b></p>
+                  <div class="w3-container">
+                    <h5 class="w3-text-black">Drexel University<a href="https://drexel.edu/" target="_blank"><img src="image/drexel_logo.png" alt="drexel logo" style="float:right;width:80px;height:80px;"></a></h5>
+                    <h6 class="w3-text-purple"><i class="fa fa-graduation-cap fa-fw w3-margin-right"></i>Assistant Professor; <br>Dec 2024 to Present</h6>
+                    <br> </div>
+                    <div class="w3-container">
+                      <h5 class="w3-text-black">University of Pennsylvania<a href="https://www.upenn.edu/" target="_blank"><img src="image/upenn-logo.png" alt="upenn logo" style="float:right;width:80px;height:80px;"></a></h5>
+                      <h6 class="w3-text-purple"><i class="fa fa-graduation-cap fa-fw w3-margin-right"></i>Ph.D.; Aug 2019 to Aug 2024</h6>
+                      <br> </div>
+                      <div class="w3-container">
+                        <h5 class="w3-text-black">Allen Institute for Artifical Intelligence<a href="https://allenai.org" target="_blank"><img src="image/AI2_logo.png" alt="AI2" style="float:right;height:40px;"></a></h5>
+                        <h6 class="w3-text-purple"><i class="fa fa-suitcase fa-fw w3-margin-right"></i>Research Intern; <br>April 2023 to Dec 2023</h6>
+                        <!--<p>I did NLP research and software development on semantic role labeling, and previously, text simplification.</p>-->
+                        <br> </div>
+                        <div class="w3-container">
+                        <h5 class="w3-text-black">IBM Research<a href="https://research.ibm.com" target="_blank"><img src="image/ibm-logo.05dc870.png" alt="IBM Research" style="float:right;height:20px;"></a></h5>
+                        <h6 class="w3-text-purple"><i class="fa fa-suitcase fa-fw w3-margin-right"></i>Research Intern; May 2021 to Aug 2021, <br>April 2019 to June 2019</h6>
+                        <!--<p>I did NLP research and software development on semantic role labeling, and previously, text simplification.</p>-->
+                        <br> </div>
+                        <div class="w3-container">
+                        <h5 class="w3-text-black">University of Michigan<img src="image/umich-logo.png" alt="umich logo" style="float:right;width:80px;height:80px;"></h5>
+                        <h6 class="w3-text-purple"><i class="fa fa-graduation-cap fa-fw w3-margin-right"></i>B.S.E.; Aug 2015 to Dec 2018</h6>
+                        <!--
+                        <br> </div>
+                        <div class="w3-container">
+                        <h5 class="w3-text-black">Goldman Sachs<a href="https://www.goldmansachs.com" target="_blank"><img src="image/GoldmanSachsLogo.jpg" alt="Goldman Sachs" style="float:right;height:40px;"></a></h5>
+                        <h6 class="w3-text-purple"><i class="fa fa-suitcase fa-fw w3-margin-right"></i>Summer Analyst; <br>May 2017 to Aug 2017</h6>
+                        <br> </div>
+                        <div class="w3-container">
+                        <h5 class="w3-text-black">Shenzhen Middle School<img src="image/sms-logo.jpg" alt="SMS logo" style="float:right;width:80px;height:80px;"></h5>
+                        <h6 class="w3-text-purple"><i class="fa fa-graduation-cap fa-fw w3-margin-right"></i>High School Diploma; <br>Sept 2012 to Jun 2015</h6>
+                        -->
+                      </div>
+                      <hr>
+                      <p class="w3-large w3-text-theme"><b><i class="fa fa-book fa-fw w3-margin-right w3-text-purple"></i>Mentorship and Teaching</b></p>
+                      <div class="w3-container">
+                        <h5 class="w3-text-black"><a href="https://zharry29.github.io/hazlab/" target="_blank">Haz Lab</a> at Drexel<a href="https://zharry29.github.io/hazlab/" target="_blank"><img src="image/hazlab.png" alt="Haz Lab logo" style="float:right;width:80px;height:80px;"></a></h5>
+                      </div>
+                      <div class="w3-container">
+                        <h5 class="w3-text-black">Teaching</h5>
+                        <p><i class="fa fa-book fa-fw w3-margin-right"></i>Instructor: CS T780-001: Applied NLP (Spring 2025, Spring 2026 at Drexel)</p>
+                        <p><i class="fa fa-book fa-fw w3-margin-right"></i>Instructor: CS 614: Applied AI (Spring 2026 at Drexel)</p>
+                        <p><i class="fa fa-book fa-fw w3-margin-right"></i>TA: CIS 530: Computational Linguistics (Winter, Fall 2020 at Penn)</p>
+                        <p><i class="fa fa-book fa-fw w3-margin-right"></i>TA: EECS 595: Natural Language Processing (Fall 2018 at Michigan)</p>
+                        <p><i class="fa fa-book fa-fw w3-margin-right"></i>TA: EECS 280: Programming and Introductory Data Structures (Winter, Fall 2016 at Michigan)</p>
+                      </div>
+                      <hr>
+                      <p class="w3-large w3-text-theme"><b><i class="fas fa-scroll fa-fw w3-margin-right w3-text-purple"></i>Service</b></p>
+                      <p>I have reviewed more than 50 papers of and chaired for many NLP conferences and workshops.</p>
+                      <div class="w3-container">
+                        <h6 class="w3-text-black"><i class="fa fa-chair fa-fw w3-margin-right"></i>Area Chair of <a href='https://openreview.net/group?id=aclweb.org/ACL/ARR/2025/February'  target="_blank">ARR Feb 2025</a> / <a href='https://2025.aclweb.org/' target="_blank">ACL 2025</a>, <a href='https://openreview.net/group?id=aclweb.org/ACL/ARR/2024/December'  target="_blank">ARR Dec 2024</a>, <a href='https://coling2025.org/'  target="_blank">COLING 2025</a>, <a href='https://openreview.net/group?id=aclweb.org/ACL/ARR/2024/August'  target="_blank">ARR Aug 2024</a>, <a href='https://openreview.net/group?id=aclweb.org/ACL/ARR/2024/June'  target="_blank">ARR Jun 2024</a> / <a href='https://2024.emnlp.org/' target="_blank">EMNLP 2024</a>, <a href='https://openreview.net/group?id=aclweb.org/ACL/ARR/2024/February'  target="_blank">ARR Feb 2024</a> / <a href='https://2024.aclweb.org/' target="_blank">ACL 2024</a></h6>
+                        <h6 class="w3-text-black"><i class="fa fa-chair fa-fw w3-margin-right"></i>Session Chair of <a href='https://2024.aclweb.org/' target="_blank">ACL 2024</a>, <a href='http://www.aacl2020.org/'  target="_blank">AACL-IJCNLP 2020</a></h6>
+                        <h6 class="w3-text-black"><i class="fa fa-chair fa-fw w3-margin-right"></i>Program Chair of <a href='https://www.mascsll.org/'  target="_blank">MASC-SLL 2023</a>, <a href='https://www.mascsll.org/'  target="_blank">MASC-SLL 2021</a></h6>
+                        <h6 class="w3-text-black"><i class="fa fa-pen-nib fa-fw w3-margin-right"></i>Reviewer of <a href='https://lrec-coling-2024.org/2nd-call-for-papers/'  target="_blank">LREC-COLING 2024</a>, <a href='https://2023.emnlp.org/'  target="_blank">EMNLP 2023</a>, <a href='https://2023.aclweb.org/' target="_blank">ACL 2023</a>, <a href='https://openreview.net/group?id=aclweb.org/ACL/ARR'  target="_blank">ARR Mar 2022</a>, <a href='https://www.dashworkshops.org/'  target="_blank">DaSH Workshop @ EMNLP 2022</a>, <a href='https://coling2022.org/coling'  target="_blank">COLING 2022</a>, <a href='https://lrec2022.lrec-conf.org/en/'  target="_blank">LREC 2022</a>, <a href='https://openreview.net/group?id=aclweb.org/ACL/ARR'  target="_blank">ARR Nov 2021</a>, <a href='https://coling2020.org/'  target="_blank">COLING 2020</a>, <a href='https://www.journals.elsevier.com/computer-speech-and-language'  target="_blank">Computer Speech and Language 2018</a> </h6>
+                      </div>
+                      <br> </div>
+                    </div>
+                    <br>
+                    <!-- End Left Column -->
+                  </div>
+                  <!-- Right Column -->
+                  <div class="w3-twothird">
+                    <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
+                      <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-robot fa-fw w3-margin-right w3-xxlarge w3-text-purple"></i>Research</h2>
+                      <div class="w3-container">
+                        <a name="pub6"></a>
+                        <h5 class="w3-text-gray"><b>LLM-as-Formalizer: Executable and Trustworthy Planning and Problem-Solving</b></h5>
+                        <p>
+                        Despite recent efforts in using large language models (LLMs) to plan and solve problems as agents, their hallucinations and lack of verifiability undermine executability and trust, preventing real-world deployment. My work advances an alternative paradigm: LLM-as-formalizer. Instead of relying on LLMs to generate plans directly, we use them as a code generator to translate a user’s environment and goal into formal languages that can be deterministically solved by off-the-shelf solvers.
+                      </p>
+                      <hr>
+                      <p>
+                        My primary efforts lie in using LLMs to generate formal language, such as <a href="https://planning.wiki/guide/whatis/pddl" target="_blank">PDDL</a> that describes the planning environment.
+                      </p>
+                      <p class="w3-text-gray">[40] <i>	Language Model Planners do not Scale, but do Formalizers? </i> Owen Jiang, Cassie Huang, Ashish Sabharwal and <b>Li Zhang</b>; preprint.<a href="https://arxiv.org/abs/2603.23844" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('scale')">BibTeX</span> <a href="" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Code</span></a></p>
+                      <div id="scale" class='hidden'> <pre style="overflow:auto">
 @misc{jiang2026languagemodelplannersscale,
-      title={Language Model Planners do not Scale, but do Formalizers?}, 
+      title={Language Model Planners do not Scale, but do Formalizers?},
       author={Owen Jiang and Cassie Huang and Ashish Sabharwal and Li Zhang},
       year={2026},
       eprint={2603.23844},
       archivePrefix={arXiv},
       primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2603.23844}, 
+      url={https://arxiv.org/abs/2603.23844},
 }
           </pre> </div>
-        <p class="w3-text-gray">[39] <i>	Language Model as Planner and Formalizer under Constraints </i> Cassie Huang, Stuti Mohan, Ziyi Yang, Stefanie Tellex and <b>Li Zhang</b>; in <a href="https://2026.aclweb.org/" target="_blank">ACL 2026</a>.<a href="https://arxiv.org/abs/2510.05486" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('constraint')">BibTeX</span> <a href="https://github.com/CassieHuang22/llm-as-formalizer-constraints" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Code</span></a></p>
-        <div id="constraint" class='hidden'> <pre style="overflow:auto">
+                      <p class="w3-text-gray">[39] <i>	Language Model as Planner and Formalizer under Constraints </i> Cassie Huang, Stuti Mohan, Ziyi Yang, Stefanie Tellex and <b>Li Zhang</b>; in <a href="https://2026.aclweb.org/" target="_blank">ACL 2026</a>.<a href="https://arxiv.org/abs/2510.05486" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('constraint')">BibTeX</span> <a href="https://github.com/CassieHuang22/llm-as-formalizer-constraints" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Code</span></a></p>
+                      <div id="constraint" class='hidden'> <pre style="overflow:auto">
 @misc{huang2025languagemodelplannerformalizer,
-      title={Language Model as Planner and Formalizer under Constraints}, 
+      title={Language Model as Planner and Formalizer under Constraints},
       author={Cassie Huang and Stuti Mohan and Ziyi Yang and Stefanie Tellex and Li Zhang},
       year={2025},
       eprint={2510.05486},
       archivePrefix={arXiv},
       primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2510.05486}, 
+      url={https://arxiv.org/abs/2510.05486},
 }
           </pre> </div>
-        <p class="w3-text-gray">[37] <i>Vision Language Models Cannot Plan, but Can They Formalize?</i> Muyu He, Yuxi Zheng, Yuchen Liu, Zijian An, Bill Cai, Jiani Huang, Lifeng Zhou, Feng Liu, Ziyang Li and <b>Li Zhang</b>; preprint.<a href="https://arxiv.org/abs/2509.21576" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('visualpddl')">BibTeX</span> <a href="https://github.com/RiddleHe/vllm_as_formalizer" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Code</span></a></p>
-        <div id="visualpddl" class='hidden'> <pre style="overflow:auto">
+                      <p class="w3-text-gray">[37] <i>Vision Language Models Cannot Plan, but Can They Formalize?</i> Muyu He, Yuxi Zheng, Yuchen Liu, Zijian An, Bill Cai, Jiani Huang, Lifeng Zhou, Feng Liu, Ziyang Li and <b>Li Zhang</b>; preprint.<a href="https://arxiv.org/abs/2509.21576" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('visualpddl')">BibTeX</span> <a href="https://github.com/RiddleHe/vllm_as_formalizer" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Code</span></a></p>
+                      <div id="visualpddl" class='hidden'> <pre style="overflow:auto">
 @misc{he2025visionlanguagemodelsplan,
-      title={Vision Language Models Cannot Plan, but Can They Formalize?}, 
+      title={Vision Language Models Cannot Plan, but Can They Formalize?},
       author={Muyu He and Yuxi Zheng and Yuchen Liu and Zijian An and Bill Cai and Jiani Huang and Lifeng Zhou and Feng Liu and Ziyang Li and Li Zhang},
       year={2025},
       eprint={2509.21576},
       archivePrefix={arXiv},
       primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2509.21576}, 
+      url={https://arxiv.org/abs/2509.21576},
 }
           </pre> </div>
-        <p class="w3-text-gray">[36] <i>Documentation Retrieval Improves Planning Language Generation</i>; Renxiang Wang and <b>Li Zhang</b>; in <a href="https://www.afnlp.org/conferences/ijcnlp2025/" target="_blank">AACL 2025</a>.<a href="https://aclanthology.org/2025.ijcnlp-short.14/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('docpddl')">BibTeX</span> <a href="https://github.com/Nangxxxxx/PDDL-RAG" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Code</span></a></p>
-        <div id="docpddl" class='hidden'> <pre style="overflow:auto">
+                      <p class="w3-text-gray">[36] <i>Documentation Retrieval Improves Planning Language Generation</i>; Renxiang Wang and <b>Li Zhang</b>; in <a href="https://www.afnlp.org/conferences/ijcnlp2025/" target="_blank">AACL 2025</a>.<a href="https://aclanthology.org/2025.ijcnlp-short.14/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('docpddl')">BibTeX</span> <a href="https://github.com/Nangxxxxx/PDDL-RAG" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Code</span></a></p>
+                      <div id="docpddl" class='hidden'> <pre style="overflow:auto">
 @inproceedings{wang-zhang-2025-documentation,
     title = "Documentation Retrieval Improves Planning Language Generation",
     author = "Wang, Renxiang  and
@@ -301,44 +301,44 @@
     abstract = "Certain strong LLMs have shown promise for zero-shot formal planning by generating planning languages like PDDL. Yet, performance of most open-source models under 50B parameters has been reported to be close to zero due to the low-resource nature of these languages. We significantly improve their performance via a series of lightweight pipelines that integrates documentation retrieval with modular code generation and error refinement. With models like Llama-4-Maverick, our best pipeline improves plan correctness from 0{\%} to over 80{\%} on the common BlocksWorld domain. However, while syntactic errors are substantially reduced, semantic errors persist in more challenging domains, revealing fundamental limitations in current models' reasoning capabilities."
 }
           </pre> </div>
-        <p class="w3-text-gray">[35] <i>Zero-Shot Iterative Formalization and Planning in Partially Observable Environments</i>; Liancheng Gong, Wang Zhu, Jesse Thomason and <b>Li Zhang</b>; in Findings of <a href="https://2026.aclweb.org/" target="_blank">ACL 2026</a>.<a href="https://arxiv.org/abs/2505.13126" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('pddlego+')">BibTeX</span> <a href="https://github.com/zharry29/pddlego-plus" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Code</span></a></p>
-        <div id="pddlego+" class='hidden'> <pre style="overflow:auto">
+                      <p class="w3-text-gray">[35] <i>Zero-Shot Iterative Formalization and Planning in Partially Observable Environments</i>; Liancheng Gong, Wang Zhu, Jesse Thomason and <b>Li Zhang</b>; in Findings of <a href="https://2026.aclweb.org/" target="_blank">ACL 2026</a>.<a href="https://arxiv.org/abs/2505.13126" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('pddlego+')">BibTeX</span> <a href="https://github.com/zharry29/pddlego-plus" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Code</span></a></p>
+                      <div id="pddlego+" class='hidden'> <pre style="overflow:auto">
 @misc{gong2025zeroshotiterativeformalizationplanning,
-  title={Zero-Shot Iterative Formalization and Planning in Partially Observable Environments}, 
+  title={Zero-Shot Iterative Formalization and Planning in Partially Observable Environments},
   author={Liancheng Gong and Wang Zhu and Jesse Thomason and Li Zhang},
   year={2025},
   eprint={2505.13126},
   archivePrefix={arXiv},
   primaryClass={cs.AI},
-  url={https://arxiv.org/abs/2505.13126}, 
+  url={https://arxiv.org/abs/2505.13126},
 }
           </pre> </div>
-        <p class="w3-text-gray">[34] <i>Unifying Inference-Time Planning Language Generation </i>; Prabhu Prakash Kagitha, Bo Sun, Ishan Desai, Andrew Zhu, Cassie Huang, Manling Li, Ziyang Li and <b>Li Zhang</b>; in Findings of <a href="https://2026.aclweb.org/" target="_blank">ACL 2026</a>.<a href="https://arxiv.org/abs/2505.14763" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('pddlgen')">BibTeX</span> <a href="https://github.com/prakashkagitha/llm-pddl-gen" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Code</span></a></p>
-        <div id="pddlgen" class='hidden'> <pre style="overflow:auto">
+                      <p class="w3-text-gray">[34] <i>Unifying Inference-Time Planning Language Generation </i>; Prabhu Prakash Kagitha, Bo Sun, Ishan Desai, Andrew Zhu, Cassie Huang, Manling Li, Ziyang Li and <b>Li Zhang</b>; in Findings of <a href="https://2026.aclweb.org/" target="_blank">ACL 2026</a>.<a href="https://arxiv.org/abs/2505.14763" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('pddlgen')">BibTeX</span> <a href="https://github.com/prakashkagitha/llm-pddl-gen" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Code</span></a></p>
+                      <div id="pddlgen" class='hidden'> <pre style="overflow:auto">
 @misc{kagitha2025unifyinginferencetimeplanninglanguage,
-      title={Unifying Inference-Time Planning Language Generation}, 
+      title={Unifying Inference-Time Planning Language Generation},
       author={Prabhu Prakash Kagitha and Bo Sun and Ishan Desai and Andrew Zhu and Cassie Huang and Manling Li and Ziyang Li and Li Zhang},
       year={2025},
       eprint={2505.14763},
       archivePrefix={arXiv},
       primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2505.14763}, 
+      url={https://arxiv.org/abs/2505.14763},
 }
           </pre> </div>
-        <p class="w3-text-gray">[33] <i>A Reality Check of Language Models as Formalizers on Constraint Satisfaction Problems</i>; Rikhil Amonkar<span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span>, Ceyhun Efe Kayan<span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span>, Qimei Lai, Ronan Le Bras and <b>Li Zhang</b>; preprint.<br><a href="https://arxiv.org/abs/2505.13252" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('natrualplan')">BibTeX</span> <a href="https://github.com/rikhil-amonkar/calendar-planning" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Code</span></a></p>
-        <div id="natrualplan" class='hidden'> <pre style="overflow:auto">
+                      <p class="w3-text-gray">[33] <i>A Reality Check of Language Models as Formalizers on Constraint Satisfaction Problems</i>; Rikhil Amonkar<span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span>, Ceyhun Efe Kayan<span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span>, Qimei Lai, Ronan Le Bras and <b>Li Zhang</b>; preprint.<br><a href="https://arxiv.org/abs/2505.13252" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('natrualplan')">BibTeX</span> <a href="https://github.com/rikhil-amonkar/calendar-planning" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Code</span></a></p>
+                      <div id="natrualplan" class='hidden'> <pre style="overflow:auto">
 @misc{amonkar2025naturallanguageplanningcoding,
-  title={A Reality Check of Language Models as Formalizers on Constraint Satisfaction Problems}, 
+  title={A Reality Check of Language Models as Formalizers on Constraint Satisfaction Problems},
   author={Rikhil Amonkar and Ceyhun Efe Kayan and May Lai and Ronan Le Bras and Li Zhang},
   year={2025},
   eprint={2505.13252},
   archivePrefix={arXiv},
   primaryClass={cs.CL},
-  url={https://arxiv.org/abs/2505.13252}, 
+  url={https://arxiv.org/abs/2505.13252},
 }
           </pre> </div>
-        <p class="w3-text-gray">[30] <i>On the Limit of Language Models as Planning Formalizers</i>; Cassie Huang and <b>Li Zhang</b>; in <a href="https://2025.aclweb.org/" target="_blank">ACL 2025</a>.<br><a href="https://aclanthology.org/2025.acl-long.242/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('pddleval')">BibTeX</span> <a href="https://github.com/CassieHuang22/llm-as-pddl-formalizer" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Code</span></a></p>
-        <div id="pddleval" class='hidden'> <pre style="overflow:auto">
+                      <p class="w3-text-gray">[30] <i>On the Limit of Language Models as Planning Formalizers</i>; Cassie Huang and <b>Li Zhang</b>; in <a href="https://2025.aclweb.org/" target="_blank">ACL 2025</a>.<br><a href="https://aclanthology.org/2025.acl-long.242/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('pddleval')">BibTeX</span> <a href="https://github.com/CassieHuang22/llm-as-pddl-formalizer" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Code</span></a></p>
+                      <div id="pddleval" class='hidden'> <pre style="overflow:auto">
 @inproceedings{huang-zhang-2025-limit,
     title = "On the Limit of Language Models as Planning Formalizers",
     author = "Huang, Cassie  and
@@ -358,8 +358,8 @@
     abstract = "Large Language Models have been found to create plans that are neither executable nor verifiable in grounded environments. An emerging line of work demonstrates success in using the LLM as a formalizer to generate a formal representation of the planning domain in some language, such as Planning Domain Definition Language (PDDL). This formal representation can be deterministically solved to find a plan. We systematically evaluate this methodology while bridging some major gaps. While previous work only generates a partial PDDL representation, given templated, and therefore unrealistic environment descriptions, we generate the complete representation given descriptions of various naturalness levels. Among an array of observations critical to improve LLMs' formal planning abilities, we note that most large enough models can effectively formalize descriptions as PDDL, outperforming those directly generating plans, while being robust to lexical perturbation. As the descriptions become more natural-sounding, we observe a decrease in performance and provide detailed error analysis."
 }
           </pre> </div>
-        <p class="w3-text-gray">[29] <i>PDDLEGO: Iterative Planning in Textual Environments</i>; <b>Li Zhang</b>, Peter Jansen, Peter Clark, Chris Callison-Burch and Niket Tandon; in <a href="https://sites.google.com/view/starsem2024" target="_blank">*SEM 2024</a>.<a href="https://aclanthology.org/2024.starsem-1.17/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('pddlego')">BibTeX</span> <a href="https://github.com/zharry29/nl-to-pddl" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Code</span></a></p>
-        <div id="pddlego" class='hidden'> <pre style="overflow:auto">
+                      <p class="w3-text-gray">[29] <i>PDDLEGO: Iterative Planning in Textual Environments</i>; <b>Li Zhang</b>, Peter Jansen, Peter Clark, Chris Callison-Burch and Niket Tandon; in <a href="https://sites.google.com/view/starsem2024" target="_blank">*SEM 2024</a>.<a href="https://aclanthology.org/2024.starsem-1.17/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('pddlego')">BibTeX</span> <a href="https://github.com/zharry29/nl-to-pddl" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Code</span></a></p>
+                      <div id="pddlego" class='hidden'> <pre style="overflow:auto">
 @inproceedings{zhang-etal-2024-pddlego,
   title = "{PDDLEGO}: Iterative Planning in Textual Environments",
   author = "Zhang, Li  and
@@ -380,8 +380,8 @@
   abstract = "Planning in textual environments have been shown to be a long-standing challenge even for current models. A recent, promising line of work uses LLMs to generate a formal representation of the environment that can be solved by a symbolic planner. However, existing methods rely on a fully-observed environment where all entity states are initially known, so a one-off representation can be constructed, leading to a complete plan. In contrast, we tackle partially-observed environments where there is initially no sufficient information to plan for the end-goal. We propose PDDLEGO that iteratively construct a planning representation that can lead to a partial plan for a given sub-goal. By accomplishing the sub-goal, more information is acquired to augment the representation, eventually achieving the end-goal. We show that plans produced by few-shot PDDLEGO are 43{\%} more efficient than generating plans end-to-end on the Coin Collector simulation, with strong performance (98{\%}) on the more complex Cooking World simulation where end-to-end LLMs fail to generate coherent plans (4{\%}).",
 }
           </pre> </div>
-    <p class="w3-text-gray">[28] <i>PROC2PDDL: Open-Domain Planning Representations from Texts</i>; Tianyi Zhang<span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span><span class="tooltip">^<span class="tooltiptext">Mentored student</span></span>, <b>Li Zhang</b><span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span>, Zhaoyi Hou<span class="tooltip">^<span class="tooltiptext">Mentored student</span></span>, Ziyu Wang<span class="tooltip">^<span class="tooltiptext">Mentored student</span></span>, Yuling Gu, Peter Clark, Chris Callison-Burch and Niket Tandon; in <a href="https://nl-reasoning-workshop.github.io/" target="_blank">ACL 2024 2st Workshop on Natural Language Reasoning and Structured Explanations</a>.<a href="https://aclanthology.org/2024.nlrse-1.2/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('proc2pddl')">BibTeX</span> <a href="https://github.com/zharry29/proc2pddl" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Code</span></a></p>
-        <div id="proc2pddl" class='hidden'> <pre style="overflow:auto">
+                      <p class="w3-text-gray">[28] <i>PROC2PDDL: Open-Domain Planning Representations from Texts</i>; Tianyi Zhang<span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span><span class="tooltip">^<span class="tooltiptext">Mentored student</span></span>, <b>Li Zhang</b><span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span>, Zhaoyi Hou<span class="tooltip">^<span class="tooltiptext">Mentored student</span></span>, Ziyu Wang<span class="tooltip">^<span class="tooltiptext">Mentored student</span></span>, Yuling Gu, Peter Clark, Chris Callison-Burch and Niket Tandon; in <a href="https://nl-reasoning-workshop.github.io/" target="_blank">ACL 2024 2st Workshop on Natural Language Reasoning and Structured Explanations</a>.<a href="https://aclanthology.org/2024.nlrse-1.2/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('proc2pddl')">BibTeX</span> <a href="https://github.com/zharry29/proc2pddl" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Code</span></a></p>
+                      <div id="proc2pddl" class='hidden'> <pre style="overflow:auto">
 @inproceedings{zhang-etal-2024-proc2pddl,
   title = "PROC2PDDL: Open-Domain Planning Representations from Texts",
   author = "Zhang, Tianyi and Zhang, Li  and Hou, Zhaoyi and Wang, Ziyu and Gu, Yuling and Clark, Peter and Callison-Burch, Chris and Tandon, Niket",
@@ -391,9 +391,9 @@
   address = "Bangkok, Thailand",
   publisher = "Association for Computational Linguistics",
 }
-</pre> </div> 
-<p class="w3-text-gray">[20] <i>Faithful Chain of Thought Reasoning</i>; Qing Lyu<span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span>, Shreya Havaldar<span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span>, Adam Stein<span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span>, <b>Li Zhang</b>, Delip Rao, Eric Wong, Marianna Apidianaki and Chris Callison-Burch; in <a href="http://www.ijcnlp-aacl2023.org/" target="_blank">AACL 2023</a>. Won <a href="https://www.afnlp.org/conferences/ijcnlp2023/wp/best-paper-awards/" target="_blank">Area Chair Award</a>.<a href="https://aclanthology.org/2023.ijcnlp-main.20/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('fcotbib')">BibTeX</span> <a href="https://github.com/veronica320/Faithful-COT" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Code</span></a></p>
-<div id="fcotbib" class='hidden'> <pre style="overflow:auto">
+</pre> </div>
+                      <p class="w3-text-gray">[20] <i>Faithful Chain of Thought Reasoning</i>; Qing Lyu<span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span>, Shreya Havaldar<span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span>, Adam Stein<span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span>, <b>Li Zhang</b>, Delip Rao, Eric Wong, Marianna Apidianaki and Chris Callison-Burch; in <a href="http://www.ijcnlp-aacl2023.org/" target="_blank">AACL 2023</a>. Won <a href="https://www.afnlp.org/conferences/ijcnlp2023/wp/best-paper-awards/" target="_blank">Area Chair Award</a>.<a href="https://aclanthology.org/2023.ijcnlp-main.20/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('fcotbib')">BibTeX</span> <a href="https://github.com/veronica320/Faithful-COT" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Code</span></a></p>
+                      <div id="fcotbib" class='hidden'> <pre style="overflow:auto">
 @inproceedings{lyu-etal-2023-faithful,
   title = "Faithful Chain-of-Thought Reasoning",
   author = "Lyu, Qing  and
@@ -419,25 +419,28 @@
   url = "https://aclanthology.org/2023.ijcnlp-main.20",
   pages = "305--329",
 }
-    </pre> </div> 
-            <hr>
-    <p>
-          My secondary efforts lie in using LLMs to generate solutions directly, using techniques like agents, chain-of-thought, steering...
-    </p>
-        <p class="w3-text-gray">[38] <i>Prototype-Based Dynamic Steering for Large Language Models</i>; Ceyhun Efe Kayan and <b>Li Zhang</b>; preprint.<a href="https://arxiv.org/abs/2510.05498" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('protosteering')">BibTeX</span> <a href="" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Code</span></a></p>
-        <div id="protosteering" class='hidden'> <pre style="overflow:auto">
+    </pre> </div>
+
+                    </div>            <div id='show_more_button_res'>
+                    <button onclick="toggleMoreResearch()" class='button'><span class="w3-tag w3-purple w3-round w3-hover-opacity">See all publications</span></button>
+                  </div>
+                  <div id="more_research" class='hidden'>
+                    <hr>
+                    <div class="w3-container">
+                      <p class="w3-text-gray">[38] <i>Prototype-Based Dynamic Steering for Large Language Models</i>; Ceyhun Efe Kayan and <b>Li Zhang</b>; preprint.<a href="https://arxiv.org/abs/2510.05498" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('protosteering')">BibTeX</span> <a href="" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Code</span></a></p>
+                      <div id="protosteering" class='hidden'> <pre style="overflow:auto">
 @misc{kayan2025prototypebaseddynamicsteeringlarge,
-      title={Prototype-Based Dynamic Steering for Large Language Models}, 
+      title={Prototype-Based Dynamic Steering for Large Language Models},
       author={Ceyhun Efe Kayan and Li Zhang},
       year={2025},
       eprint={2510.05498},
       archivePrefix={arXiv},
       primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2510.05498}, 
+      url={https://arxiv.org/abs/2510.05498},
 }
           </pre> </div>
-        <p class="w3-text-gray">[36] <i>TurnaboutLLM: A Deductive Reasoning Benchmark from Detective Games</i>; Yuan Yuan<span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span>, Muyu He<span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span>, Adil Shahid, Jiani Huang, Ziyang Li and <b>Li Zhang</b>; in <a href="https://2025.emnlp.org/" target="_blank">EMNLP 2025</a>.<a href="https://aclanthology.org/2025.emnlp-main.101/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('turnaboutllm')">BibTeX</span> <a href="https://github.com/zharry29/turnabout_llm" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Code</span></a></p>
-        <div id="turnaboutllm" class='hidden'> <pre style="overflow:auto">
+                      <p class="w3-text-gray">[36] <i>TurnaboutLLM: A Deductive Reasoning Benchmark from Detective Games</i>; Yuan Yuan<span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span>, Muyu He<span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span>, Adil Shahid, Jiani Huang, Ziyang Li and <b>Li Zhang</b>; in <a href="https://2025.emnlp.org/" target="_blank">EMNLP 2025</a>.<a href="https://aclanthology.org/2025.emnlp-main.101/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('turnaboutllm')">BibTeX</span> <a href="https://github.com/zharry29/turnabout_llm" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Code</span></a></p>
+                      <div id="turnaboutllm" class='hidden'> <pre style="overflow:auto">
 @inproceedings{yuan-etal-2025-turnaboutllm,
     title = "{T}urnabout{LLM}: A Deductive Reasoning Benchmark from Detective Games",
     author = "Yuan, Yuan  and
@@ -461,19 +464,8 @@
     abstract = "This paper introduces TurnaboutLLM, a novel framework and dataset for evaluating the deductive reasoning abilities of Large Language Models (LLMs) by leveraging the interactive gameplay of detective games Ace Attorney and Danganronpa. The framework tasks LLMs with identifying contradictions between testimonies and evidences within long narrative contexts, a challenging task due to the large answer space and diverse reasoning types presented by its questions. We evaluate twelve state-of-the-art LLMs on the dataset, hinting at limitations of popular strategies for enhancing deductive reasoning such as extensive thinking and Chain-of-Thought prompting. The results also suggest varying effects of context size, reasoning steps and answer space size on model performance. Overall, TurnaboutLLM presents a substantial challenge for LLMs' deductive reasoning abilities in complex, narrative-rich environments."
 }
           </pre> </div>
-    
-
-    </div>            <div id='show_more_button_res'>
-        <button onclick="toggleMoreResearch()" class='button'><span class="w3-tag w3-purple w3-round w3-hover-opacity">See all publications</span></button>
-      </div>
-      <div id="more_research" class='hidden'>
-        <hr>
-      <div class="w3-container">
-    <p>
-          My other efforts touch on all aspects of NLP and AI.
-    </p>
-        <p class="w3-text-gray">[40] Evaluating the Impact of LLM-guided Reflection on Learning Outcomes with Interactive AI-Generated Educational Podcasts; Vishnu Menon, Andy Cherney, Elizabeth B. Cloude, <b>Li Zhang</b>, Tiffany Diem Do; in <a href="https://www.ncme.org/event/special-conferences/aime-conference" target="_blank">AIME-Con 2025</a>.<a href="https://aclanthology.org/2025.aimecon-main.11/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('notebookllm')">BibTeX</span></p>
-        <div id="notebookllm" class='hidden'> <pre style="overflow:auto">
+                      <p class="w3-text-gray">[40] Evaluating the Impact of LLM-guided Reflection on Learning Outcomes with Interactive AI-Generated Educational Podcasts; Vishnu Menon, Andy Cherney, Elizabeth B. Cloude, <b>Li Zhang</b>, Tiffany Diem Do; in <a href="https://www.ncme.org/event/special-conferences/aime-conference" target="_blank">AIME-Con 2025</a>.<a href="https://aclanthology.org/2025.aimecon-main.11/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('notebookllm')">BibTeX</span></p>
+                      <div id="notebookllm" class='hidden'> <pre style="overflow:auto">
 @inproceedings{menon-etal-2025-evaluating,
     title = "Evaluating the Impact of {LLM}-guided Reflection on Learning Outcomes with Interactive {AI}-Generated Educational Podcasts",
     author = "Menon, Vishnu  and
@@ -495,20 +487,20 @@
     abstract = "This study examined whether embedding LLM-guided reflection prompts in an interactive AI-generated podcast improved learning and user experience compared to a version without prompts. Thirty-six undergraduates participated, and while learning outcomes were similar across conditions, reflection prompts reduced perceived attractiveness, highlighting a call for more research on reflective interactivity design."
 }
           </pre> </div>
-        <p class="w3-text-gray">[31] DynaCode: A Dynamic Complexity-Aware Code Benchmark for Evaluating Large Language Models in Code Generation; Wenhao Hu, Jinhao Duan, Chunchen Wei, <b>Li Zhang</b>, Yue Zhang, Kaidi Xu; in Findings of <a href="https://arxiv.org/abs/2503.10452/" target="_blank">ACL 2025</a>.<a href="https://arxiv.org/abs/2503.10452/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('dynacode')">BibTeX</span></p>
-        <div id="dynacode" class='hidden'> <pre style="overflow:auto">
+                      <p class="w3-text-gray">[31] DynaCode: A Dynamic Complexity-Aware Code Benchmark for Evaluating Large Language Models in Code Generation; Wenhao Hu, Jinhao Duan, Chunchen Wei, <b>Li Zhang</b>, Yue Zhang, Kaidi Xu; in Findings of <a href="https://arxiv.org/abs/2503.10452/" target="_blank">ACL 2025</a>.<a href="https://arxiv.org/abs/2503.10452/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('dynacode')">BibTeX</span></p>
+                      <div id="dynacode" class='hidden'> <pre style="overflow:auto">
 @misc{hu2025dynacodedynamiccomplexityawarecode,
-  title={DynaCode: A Dynamic Complexity-Aware Code Benchmark for Evaluating Large Language Models in Code Generation}, 
+  title={DynaCode: A Dynamic Complexity-Aware Code Benchmark for Evaluating Large Language Models in Code Generation},
   author={Wenhao Hu and Jinhao Duan and Chunchen Wei and Li Zhang and Yue Zhang and Kaidi Xu},
   year={2025},
   eprint={2503.10452},
   archivePrefix={arXiv},
   primaryClass={cs.CL},
-  url={https://arxiv.org/abs/2503.10452}, 
+  url={https://arxiv.org/abs/2503.10452},
 }
           </pre> </div>
-    <p class="w3-text-gray">[27] <i>Calibrating Large Language Models with Sample Consistency</i>; Qing Lyu<span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span>, Kumar Shridhar<span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span>, Chaitanya Malaviya, Li Zhang, Yanai Elazar, Niket Tandon, Marianna Apidianaki, Mrinmaya Sachan and Chris Callison-Burch; in <a href="https://aaai.org/conference/aaai/aaai-25/" target="_blank">AAAI 2025</a>.<a href="https://ojs.aaai.org/index.php/AAAI/article/view/34120" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('consistencybib')">BibTeX</span></p>
-    <div id="consistencybib" class='hidden'> <pre style="overflow:auto">
+                      <p class="w3-text-gray">[27] <i>Calibrating Large Language Models with Sample Consistency</i>; Qing Lyu<span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span>, Kumar Shridhar<span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span>, Chaitanya Malaviya, Li Zhang, Yanai Elazar, Niket Tandon, Marianna Apidianaki, Mrinmaya Sachan and Chris Callison-Burch; in <a href="https://aaai.org/conference/aaai/aaai-25/" target="_blank">AAAI 2025</a>.<a href="https://ojs.aaai.org/index.php/AAAI/article/view/34120" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('consistencybib')">BibTeX</span></p>
+                      <div id="consistencybib" class='hidden'> <pre style="overflow:auto">
 @inproceedings{lyu2025calibrating,
   title={Calibrating large language models with sample consistency},
   author={Lyu, Qing and Shridhar, Kumar and Malaviya, Chaitanya and Zhang, Li and Elazar, Yanai and Tandon, Niket and Apidianaki, Marianna and Sachan, Mrinmaya and Callison-Burch, Chris},
@@ -518,9 +510,9 @@
   pages={19260--19268},
   year={2025}
 }
-  </pre> </div> 
-  <p class="w3-text-gray">[26] <i>Tailoring with Targeted Precision: Edit-Based Agents for Open-Domain Procedure Customization</i>; Yash Kumar Lal, <b>Li Zhang</b>, Faeze Brahman, Bodhisattwa Prasad Majumder, Peter Clark, Niket Tandon; in Findings of <a href="https://2024.aclweb.org/" target="_blank">ACL 2024</a>.<a href="https://2024.aclweb.org/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('customize')">BibTeX</span></p>
-        <div id="customize" class='hidden'> <pre style="overflow:auto">
+  </pre> </div>
+                      <p class="w3-text-gray">[26] <i>Tailoring with Targeted Precision: Edit-Based Agents for Open-Domain Procedure Customization</i>; Yash Kumar Lal, <b>Li Zhang</b>, Faeze Brahman, Bodhisattwa Prasad Majumder, Peter Clark, Niket Tandon; in Findings of <a href="https://2024.aclweb.org/" target="_blank">ACL 2024</a>.<a href="https://2024.aclweb.org/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('customize')">BibTeX</span></p>
+                      <div id="customize" class='hidden'> <pre style="overflow:auto">
 @inproceedings{lal-etal-2024-tailoring,
   title = "Tailoring with Targeted Precision: Edit-Based Agents for Open-Domain Procedure Customization",
   author = "Lal, Yash Kumar  and
@@ -541,12 +533,12 @@
   doi = "10.18653/v1/2024.findings-acl.921",
   pages = "15597--15611",
   abstract = "How-to procedures, such as how to plant a garden, are now used by millions of users, but sometimes need customizing to meet a user`s specific needs, e.g., planting a garden without pesticides. Our goal is to measure and improve an LLM`s ability to perform such customization. Our approach is to test several simple multi-LLM-agent architectures for customization, as well as an end-to-end LLM, using a new evaluation set, called CustomPlans, of over 200 WikiHow procedures each with a customization need. We find that a simple architecture with two LLM agents used sequentially performs best, one that edits a generic how-to procedure and one that verifies its executability, significantly outperforming (10.5{\%} absolute) an end-to-end prompted LLM. This suggests that LLMs can be configured reasonably effectively for procedure customization. This also suggests that multi-agent editing architectures may be worth exploring further for other customization applications (e.g. coding, creative writing) in the future."
-}     
+}
           </pre> </div>
-          <p class="w3-text-gray">[25] <i>CLIN: A Continually Learning Language Agent for Rapid Task Adaptation and Generalization</i>; Bodhisattwa Prasad Majumder, Bhavana Dalvi Mishra, Peter Jansen, Oyvind Tafjord, Niket Tandon, <b>Li Zhang</b>, Chris Callison-Burch, Peter Clark; in <a href="https://colmweb.org/" target="_blank">COLM 2024</a>.<a href="https://arxiv.org/abs/2310.10134" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('clin')">BibTeX</span> <a href="https://allenai.github.io/clin/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Code</span></a></p>
-        <div id="clin" class='hidden'> <pre style="overflow:auto">
+                      <p class="w3-text-gray">[25] <i>CLIN: A Continually Learning Language Agent for Rapid Task Adaptation and Generalization</i>; Bodhisattwa Prasad Majumder, Bhavana Dalvi Mishra, Peter Jansen, Oyvind Tafjord, Niket Tandon, <b>Li Zhang</b>, Chris Callison-Burch, Peter Clark; in <a href="https://colmweb.org/" target="_blank">COLM 2024</a>.<a href="https://arxiv.org/abs/2310.10134" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('clin')">BibTeX</span> <a href="https://allenai.github.io/clin/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Code</span></a></p>
+                      <div id="clin" class='hidden'> <pre style="overflow:auto">
 @misc{majumder2023clin,
-  title={CLIN: A Continually Learning Language Agent for Rapid Task Adaptation and Generalization}, 
+  title={CLIN: A Continually Learning Language Agent for Rapid Task Adaptation and Generalization},
   author={Bodhisattwa Prasad Majumder and Bhavana Dalvi Mishra and Peter Jansen and Oyvind Tafjord and Niket Tandon and Li Zhang and Chris Callison-Burch and Peter Clark},
   year={2023},
   eprint={2310.10134},
@@ -554,8 +546,8 @@
   primaryClass={cs.CL}
 }
           </pre> </div>
-          <p class="w3-text-gray">[24] <i>Choice-75: A Dataset on Decision Branching in Script Learning</i>; Zhaoyi Joey Hou<span class="tooltip">^<span class="tooltiptext">Mentored student</span></span>, <b>Li Zhang</b>, Chris Callison-Burch; in <a href="lrec-coling-2024.org" target="_blank">LREC-COLING 2024</a>.<a href="https://aclanthology.org/2024.lrec-main.285/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('choice75bib')">BibTeX</span> <a href="https://github.com/JoeyHou/branching" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Code</span></a></p>
-          <div id="choice75bib" class='hidden'> <pre style="overflow:auto">
+                      <p class="w3-text-gray">[24] <i>Choice-75: A Dataset on Decision Branching in Script Learning</i>; Zhaoyi Joey Hou<span class="tooltip">^<span class="tooltiptext">Mentored student</span></span>, <b>Li Zhang</b>, Chris Callison-Burch; in <a href="lrec-coling-2024.org" target="_blank">LREC-COLING 2024</a>.<a href="https://aclanthology.org/2024.lrec-main.285/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('choice75bib')">BibTeX</span> <a href="https://github.com/JoeyHou/branching" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Code</span></a></p>
+                      <div id="choice75bib" class='hidden'> <pre style="overflow:auto">
 @inproceedings{hou-etal-2024-choice-75,
   title = "Choice-75: A Dataset on Decision Branching in Script Learning",
   author = "Hou, Zhaoyi  and
@@ -576,9 +568,9 @@
   pages = "3215--3223",
   abstract = "Script learning studies how daily events unfold. It enables machines to reason about narratives with implicit information. Previous works mainly consider a script as a linear sequence of events while ignoring the potential branches that arise due to people{'}s circumstantial choices. We hence propose Choice-75, the first benchmark that challenges intelligent systems to make decisions given descriptive scenarios, containing 75 scripts and more than 600 scenarios. We also present preliminary results with current large language models (LLM). Although they demonstrate overall decent performances, there is still notable headroom in hard scenarios.",
 }
-        </pre> </div> 
-        <p class="w3-text-gray">[23] <i>OpenPI2.0: An Improved Dataset for Entity Tracking in Texts</i>; <b>Li Zhang</b>, Hainiu Xu<span class="tooltip">^<span class="tooltiptext">Mentored student</span></span>, Abhinav Kommula, Chris Callison-Burch and Niket Tandon; in <a href="https://2024.eacl.org/" target="_blank">EACL 2024</a>.<a href="https://aclanthology.org/2024.eacl-long.10/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('openpi20')">BibTeX</span> <a href="https://github.com/allenai/openpi-dataset/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Code</span></a></p>
-        <div id="openpi20" class='hidden'> <pre style="overflow:auto">
+        </pre> </div>
+                      <p class="w3-text-gray">[23] <i>OpenPI2.0: An Improved Dataset for Entity Tracking in Texts</i>; <b>Li Zhang</b>, Hainiu Xu<span class="tooltip">^<span class="tooltiptext">Mentored student</span></span>, Abhinav Kommula, Chris Callison-Burch and Niket Tandon; in <a href="https://2024.eacl.org/" target="_blank">EACL 2024</a>.<a href="https://aclanthology.org/2024.eacl-long.10/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('openpi20')">BibTeX</span> <a href="https://github.com/allenai/openpi-dataset/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Code</span></a></p>
+                      <div id="openpi20" class='hidden'> <pre style="overflow:auto">
 @inproceedings{zhang-etal-2024-openpi2,
   title = "{O}pen{PI}2.0: An Improved Dataset for Entity Tracking in Texts",
   author = "Zhang, Li  and
@@ -598,8 +590,8 @@
   abstract = "Much texts describe a changing world (e.g., procedures, stories, newswires), and understanding them requires tracking how entities change. An earlier dataset, OpenPI, provided crowdsourced annotations of entity state changes in text. However, a major limitation was that those annotations were free-form and did not identify salient changes, hampering model evaluation. To overcome these limitations, we present an improved dataset, OpenPI2.0, where entities and attributes are fully canonicalized and additional entity salience annotations are added. On our fairer evaluation setting, we find that current state-of-the-art language models are far from competent. We also show that using state changes of salient entities as a chain-of-thought prompt, downstream performance is improved on tasks such as question answering and classical planning, outperforming the setting involving all related entities indiscriminately. We offer OpenPI2.0 for the continued development of models that can understand the dynamics of entities in text.",
 }
           </pre> </div>
-    <p class="w3-text-gray">[22] <i>Exploring the Curious Case of Code Prompts</i>; <b>Li Zhang</b><span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span>, Liam Dugan<span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span>, Hainiu Xu<span class="tooltip">^<span class="tooltiptext">Mentored student</span></span><span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span> and Chris Callison-Burch; in <a href="https://nl-reasoning-workshop.github.io/" target="_blank">ACL 2023 1st Workshop on Natural Language Reasoning and Structured Explanations</a>.<a href="https://aclanthology.org/2023.nlrse-1.2/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('codexbib')">BibTeX</span> <a href="https://github.com/zharry29/curious_code_prompts" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Code</span></a></p>
-    <div id="codexbib" class='hidden'> <pre style="overflow:auto">
+                      <p class="w3-text-gray">[22] <i>Exploring the Curious Case of Code Prompts</i>; <b>Li Zhang</b><span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span>, Liam Dugan<span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span>, Hainiu Xu<span class="tooltip">^<span class="tooltiptext">Mentored student</span></span><span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span> and Chris Callison-Burch; in <a href="https://nl-reasoning-workshop.github.io/" target="_blank">ACL 2023 1st Workshop on Natural Language Reasoning and Structured Explanations</a>.<a href="https://aclanthology.org/2023.nlrse-1.2/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('codexbib')">BibTeX</span> <a href="https://github.com/zharry29/curious_code_prompts" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Code</span></a></p>
+                      <div id="codexbib" class='hidden'> <pre style="overflow:auto">
 @inproceedings{zhang-etal-2023-exploring,
 title = "Exploring the Curious Case of Code Prompts",
 author = "Zhang, Li  and
@@ -616,10 +608,10 @@ pages = "9--17",
 abstract = "Recent work has shown that prompting language models with code-like representations of natural language leads to performance improvements on structured reasoning tasks. However, such tasks comprise only a small subset of all natural language tasks. In our work, we seek to answer whether or not code-prompting is the preferred way of interacting with language models in general. We compare code and text prompts across three popular GPT models (davinci, code-davinci-002, and text-davinci-002) on a broader selection of tasks (e.g., QA, sentiment, summarization) and find that with few exceptions, code prompts do not consistently outperform text prompts. Furthermore, we show that the style of code prompt has a large effect on performance for some (but not all) tasks and that fine-tuning on text instructions leads to better relative performance of code prompts.",
 }
 
-      </pre> </div> 
-      <p class="w3-text-gray">[21] <i>Human-in-the-Loop Schema Induction</i>; Tianyi Zhang<span class="tooltip">^<span class="tooltiptext">Mentored student</span></span>, Isaac Tham, Zhaoyi Hou<span class="tooltip">^<span class="tooltiptext">Mentored student</span></span>, Jiaxuan Ren, Liyang Zhou<span class="tooltip">^<span class="tooltiptext">Mentored student</span></span>, Hainiu Xu<span class="tooltip">^<span class="tooltiptext">Mentored student</span></span>, <b>Li Zhang</b>, Lara J. Martin, Rotem Dror, Sha Li, Heng Ji, Martha Palmer, Susan Brown, Reece Suchocki, Chris Callison-Burch; in <a href="https://2023.aclweb.org/">ACL 2023</a> Demos.<a href="https://aclanthology.org/2023.acl-demo.1/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('schemabib')">BibTeX</span> <a href="https://www.kairos.jiaxuan.me/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Demo</span></a> </p>
-      <div id="schemabib" class='hidden'> 
-        <pre style="overflow:auto">
+      </pre> </div>
+                      <p class="w3-text-gray">[21] <i>Human-in-the-Loop Schema Induction</i>; Tianyi Zhang<span class="tooltip">^<span class="tooltiptext">Mentored student</span></span>, Isaac Tham, Zhaoyi Hou<span class="tooltip">^<span class="tooltiptext">Mentored student</span></span>, Jiaxuan Ren, Liyang Zhou<span class="tooltip">^<span class="tooltiptext">Mentored student</span></span>, Hainiu Xu<span class="tooltip">^<span class="tooltiptext">Mentored student</span></span>, <b>Li Zhang</b>, Lara J. Martin, Rotem Dror, Sha Li, Heng Ji, Martha Palmer, Susan Brown, Reece Suchocki, Chris Callison-Burch; in <a href="https://2023.aclweb.org/">ACL 2023</a> Demos.<a href="https://aclanthology.org/2023.acl-demo.1/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('schemabib')">BibTeX</span> <a href="https://www.kairos.jiaxuan.me/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Demo</span></a> </p>
+                      <div id="schemabib" class='hidden'>
+                        <pre style="overflow:auto">
 @inproceedings{zhang-etal-2023-human,
   title = "Human-in-the-loop Schema Induction",
   author = "Zhang, Tianyi  and
@@ -646,11 +638,11 @@ abstract = "Recent work has shown that prompting language models with code-like 
   pages = "1--10",
   abstract = "Schema induction builds a graph representation explaining how events unfold in a scenario. Existing approaches have been based on information retrieval (IR) and information extraction (IE), often with limited human curation. We demonstrate a human-in-the-loop schema induction system powered by GPT-3. We first describe the different modules of our system, including prompting to generate schematic elements, manual edit of those elements, and conversion of those into a schema graph. By qualitatively comparing our system to previous ones, we show that our system not only transfers to new domains more easily than previous approaches, but also reduces efforts of human curation thanks to our interactive interface.",
 }
-    </pre> 
-  </div> 
-  
-    <p class="w3-text-gray">[19] <i>Causal Reasoning of Entities and Events in Procedural Texts</i>; <b>Li Zhang</b><span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span>, Hainiu Xu<span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span><span class="tooltip">^<span class="tooltiptext">Mentored student</span></span>, Yue Yang, Shuyan Zhou, Weiqiu You, Manni Arora and Chris Callison-Burch; in Findings of <a href="https://2023.eacl.org/" target="_blank">EACL 2023</a>.<a href="https://aclanthology.org/2023.findings-eacl.31/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('eacl2023')">BibTeX</span> <a href="https://github.com/zharry29/causal_reasoning_of_entities_and_events" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Code</span></a></p>
-        <div id="eacl2023" class='hidden'> <pre style="overflow:auto">
+    </pre>
+                      </div>
+
+                      <p class="w3-text-gray">[19] <i>Causal Reasoning of Entities and Events in Procedural Texts</i>; <b>Li Zhang</b><span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span>, Hainiu Xu<span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span><span class="tooltip">^<span class="tooltiptext">Mentored student</span></span>, Yue Yang, Shuyan Zhou, Weiqiu You, Manni Arora and Chris Callison-Burch; in Findings of <a href="https://2023.eacl.org/" target="_blank">EACL 2023</a>.<a href="https://aclanthology.org/2023.findings-eacl.31/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('eacl2023')">BibTeX</span> <a href="https://github.com/zharry29/causal_reasoning_of_entities_and_events" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Code</span></a></p>
+                      <div id="eacl2023" class='hidden'> <pre style="overflow:auto">
 @inproceedings{zhang-etal-2023-causal,
   title = "Causal Reasoning of Entities and Events in Procedural Texts",
   author = "Zhang, Li  and
@@ -670,8 +662,8 @@ abstract = "Recent work has shown that prompting language models with code-like 
   abstract = "Entities and events are crucial to natural language reasoning and common in procedural texts. Existing work has focused either exclusively on entity state tracking (e.g., whether a pan is hot) or on event reasoning (e.g., whether one would burn themselves by touching the pan), while these two tasks are often causally related. We propose CREPE, the first benchmark on causal reasoning of event plausibility and entity states. We show that most language models, including GPT-3, perform close to chance at .35 F1, lagging far behind human at .87 F1. We boost model performance to .59 F1 by creatively representing events as programming languages while prompting language models pretrained on code. By injecting the causal relations between entities and events as intermediate reasoning steps in our representation, we further boost the performance to .67 F1. Our findings indicate not only the challenge that CREPE brings for language models, but also the efficacy of code-like prompting combined with chain-of-thought prompting for multihop event reasoning.",
 }
           </pre> </div>
-          <p class="w3-text-gray">[17] <i>Unsupervised Entity Linking with Guided Summarization and Multiple Choice Selection</i>; Young Min Cho<span class="tooltip">^<span class="tooltiptext">Mentored student</span></span>, <b>Li Zhang</b> and Chris Callison-Burch; in <a href="https://2022.emnlp.org/" target="_blank">EMNLP 2022</a>.<a href="https://aclanthology.org/2022.emnlp-main.638/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('emnlp2022bib')">BibTeX</span> <a href="https://github.com/JeffreyCh0/SumMC" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Code</span></a></p>
-                   <div id="emnlp2022bib" class='hidden'> <pre style="overflow:auto">
+                      <p class="w3-text-gray">[17] <i>Unsupervised Entity Linking with Guided Summarization and Multiple Choice Selection</i>; Young Min Cho<span class="tooltip">^<span class="tooltiptext">Mentored student</span></span>, <b>Li Zhang</b> and Chris Callison-Burch; in <a href="https://2022.emnlp.org/" target="_blank">EMNLP 2022</a>.<a href="https://aclanthology.org/2022.emnlp-main.638/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('emnlp2022bib')">BibTeX</span> <a href="https://github.com/JeffreyCh0/SumMC" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Code</span></a></p>
+                      <div id="emnlp2022bib" class='hidden'> <pre style="overflow:auto">
 @inproceedings{cho-etal-2022-unsupervised,
 title = "Unsupervised Entity Linking with Guided Summarization and Multiple-Choice Selection",
 author = "Cho, Young Min  and
@@ -687,12 +679,12 @@ pages = "9394--9401",
 abstract = "Entity linking, the task of linking potentially ambiguous mentions in texts to corresponding knowledge-base entities, is an important component for language understanding. We address two challenge in entity linking: how to leverage wider contexts surrounding a mention, and how to deal with limited training data. We propose a fully unsupervised model called SumMC that first generates a guided summary of the contexts conditioning on the mention, and then casts the task to a multiple-choice problem where the model chooses an entity from a list of candidates. In addition to evaluating our model on existing datasets that focus on named entities, we create a new dataset that links noun phrases from WikiHow to Wikidata. We show that our SumMC model achieves state-of-the-art unsupervised performance on our new dataset and on exiting datasets.",
 }
     </pre> </div>
-    <p class="w3-text-gray">[16] <i>GEMv2: Multilingual NLG Benchmarking in a Single Line of Code</i>; ... <b>Li Zhang</b>, Huaiyu Zhu, Siddhartha Brahma, Yunyao Li, ...; in <a href="https://2020.emnlp.org/" target="_blank">EMNLP 2022</a> Demos.<a href="https://arxiv.org/abs/2206.11249" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a></p>
-        <p class="w3-text-gray">[15] <i>Beyond the Imitation Game: Quantifying and extrapolating the capabilities of language models</i>; ... <b>Li Zhang</b><span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span>, Qing Lyu<span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span> and Chris Callison-Burch; in <a href="https://www.jmlr.org/tmlr/" target="_blank">TMLR</a>.<a href="https://arxiv.org/abs/2206.04615" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a></p>
-        
-    <p class="w3-text-gray">[13] <i>QuakerBot: A Household Dialog System Powered by Large Language Models</i>; Artemis Panagopoulou, Manni Arora<span class="tooltip">^<span class="tooltiptext">Mentored student</span></span>, <b>Li Zhang</b>, Dimitri Cugini, Weiqiu You, Yue Yang, Liyang Zhou<span class="tooltip">^<span class="tooltiptext">Mentored student</span></span>, Yuxuan Wang, Zhaoyi Hou<span class="tooltip">^<span class="tooltiptext">Mentored student</span></span>, Alyssa Hwang, Lara Martin, Sherry Shi, Chris Callison-Burch and Mark Yatskar; in <a href="https://www.amazon.science/alexa-prize/proceedings" target="_blank">Alexa Prize Proceedings 2022</a>.<a href="https://www.amazon.science/alexa-prize/proceedings/quakerbot-a-household-dialog-system-powered-by-large-language-models" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('quakerbotbib')">BibTeX</span></p>
-  <div id="quakerbotbib" class='hidden'> 
-    <pre style="overflow:auto">
+                      <p class="w3-text-gray">[16] <i>GEMv2: Multilingual NLG Benchmarking in a Single Line of Code</i>; ... <b>Li Zhang</b>, Huaiyu Zhu, Siddhartha Brahma, Yunyao Li, ...; in <a href="https://2020.emnlp.org/" target="_blank">EMNLP 2022</a> Demos.<a href="https://arxiv.org/abs/2206.11249" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a></p>
+                      <p class="w3-text-gray">[15] <i>Beyond the Imitation Game: Quantifying and extrapolating the capabilities of language models</i>; ... <b>Li Zhang</b><span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span>, Qing Lyu<span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span> and Chris Callison-Burch; in <a href="https://www.jmlr.org/tmlr/" target="_blank">TMLR</a>.<a href="https://arxiv.org/abs/2206.04615" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a></p>
+
+                      <p class="w3-text-gray">[13] <i>QuakerBot: A Household Dialog System Powered by Large Language Models</i>; Artemis Panagopoulou, Manni Arora<span class="tooltip">^<span class="tooltiptext">Mentored student</span></span>, <b>Li Zhang</b>, Dimitri Cugini, Weiqiu You, Yue Yang, Liyang Zhou<span class="tooltip">^<span class="tooltiptext">Mentored student</span></span>, Yuxuan Wang, Zhaoyi Hou<span class="tooltip">^<span class="tooltiptext">Mentored student</span></span>, Alyssa Hwang, Lara Martin, Sherry Shi, Chris Callison-Burch and Mark Yatskar; in <a href="https://www.amazon.science/alexa-prize/proceedings" target="_blank">Alexa Prize Proceedings 2022</a>.<a href="https://www.amazon.science/alexa-prize/proceedings/quakerbot-a-household-dialog-system-powered-by-large-language-models" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('quakerbotbib')">BibTeX</span></p>
+                      <div id="quakerbotbib" class='hidden'>
+                        <pre style="overflow:auto">
 @Inproceedings{Pennsylvania2022,
 author = {Panagopoulou, Artemis and Arora, Manni and Zhang, Li and Cugini, Dimitri and You, Weiqiu and Yang, Yue and Zhou, Liyang and Wang, Yuxuan and Hou, Zhaoyi and Hwang, Alyssa and Martin, Lara and Shi, Sherry and Callison-Burch, Chris and Yatskar, Mark},
 title = {QuakerBot: A household dialog system powered by large language models},
@@ -700,10 +692,10 @@ year = {2022},
 url = {https://www.amazon.science/alexa-prize/proceedings/quakerbot-a-household-dialog-system-powered-by-large-language-models},
 booktitle = {Alexa Prize TaskBot Challenge Proceedings},
 }
-</pre> 
-</div>  
-<p class="w3-text-gray">[12] <i>Is "my favorite new movie" my favorite movie? Probing the Understanding of Recursive Noun Phrases</i>; Qing Lyu, Hua Zheng, Daoxin Li, <b>Li Zhang</b>, Marianna Apidianaki and Chris Callison-Burch; in <a href="https://2022.naacl.org/" target="_blank">NAACL 2022</a>.<a href="https://aclanthology.org/2022.naacl-main.388/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('npbib')">BibTeX</span> <a href="https://github.com/veronica320/Recursive-NPs" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Code</span></a></p>
-          <div id="npbib" class='hidden'> <pre style="overflow:auto">
+</pre>
+                      </div>
+                      <p class="w3-text-gray">[12] <i>Is "my favorite new movie" my favorite movie? Probing the Understanding of Recursive Noun Phrases</i>; Qing Lyu, Hua Zheng, Daoxin Li, <b>Li Zhang</b>, Marianna Apidianaki and Chris Callison-Burch; in <a href="https://2022.naacl.org/" target="_blank">NAACL 2022</a>.<a href="https://aclanthology.org/2022.naacl-main.388/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('npbib')">BibTeX</span> <a href="https://github.com/veronica320/Recursive-NPs" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Code</span></a></p>
+                      <div id="npbib" class='hidden'> <pre style="overflow:auto">
 @inproceedings{lyu-etal-2022-favorite,
     title = "Is {``}My Favorite New Movie{''} My Favorite Movie? Probing the Understanding of Recursive Noun Phrases",
     author = "Lyu, Qing  and
@@ -721,9 +713,9 @@ booktitle = {Alexa Prize TaskBot Challenge Proceedings},
     pages = "5286--5302",
     abstract = "Recursive noun phrases (NPs) have interesting semantic properties. For example, {``}my favorite new movie{''} is not necessarily my favorite movie, whereas {``}my new favorite movie{''} is. This is common sense to humans, yet it is unknown whether language models have such knowledge. We introduce the Recursive Noun Phrase Challenge (RNPC), a dataset of three textual inference tasks involving textual entailment and event plausibility comparison, precisely targeting the understanding of recursive NPs. When evaluated on RNPC, state-of-the-art Transformer models only perform around chance. Still, we show that such knowledge is learnable with appropriate data. We further probe the models for relevant linguistic features that can be learned from our tasks, including modifier semantic category and modifier scope. Finally, models trained on RNPC achieve strong zero-shot performance on an extrinsic Harm Detection evaluation task, showing the usefulness of the understanding of recursive NPs in downstream applications.",
 }
-        </pre> </div> 
-        <p class="w3-text-gray">[11] <i>Label Definitions Improve Semantic Role Labeling</i>; <b>Li Zhang</b>, Ishan Jindal, Yunyao Li; in <a href="https://2022.naacl.org/" target="_blank">NAACL 2022</a>.<a href="https://aclanthology.org/2022.naacl-main.411/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('srlbib')">BibTeX</span> <a href="https://github.com/System-T/LabelAwareSRL" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Code</span></a></p>
-            <div id="srlbib" class='hidden'> <pre style="overflow:auto">
+        </pre> </div>
+                      <p class="w3-text-gray">[11] <i>Label Definitions Improve Semantic Role Labeling</i>; <b>Li Zhang</b>, Ishan Jindal, Yunyao Li; in <a href="https://2022.naacl.org/" target="_blank">NAACL 2022</a>.<a href="https://aclanthology.org/2022.naacl-main.411/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('srlbib')">BibTeX</span> <a href="https://github.com/System-T/LabelAwareSRL" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Code</span></a></p>
+                      <div id="srlbib" class='hidden'> <pre style="overflow:auto">
 @inproceedings{zhang-etal-2022-label-definitions,
     title = "Label Definitions Improve Semantic Role Labeling",
     author = "Zhang, Li  and
@@ -738,10 +730,10 @@ booktitle = {Alexa Prize TaskBot Challenge Proceedings},
     pages = "5613--5620",
     abstract = "Argument classification is at the core of Semantic Role Labeling. Given a sentence and the predicate, a semantic role label is assigned to each argument of the predicate. While semantic roles come with meaningful definitions, existing work has treated them as symbolic. Learning symbolic labels usually requires ample training data, which is frequently unavailable due to the cost of annotation. We instead propose to retrieve and leverage the definitions of these labels from the annotation guidelines. For example, the verb predicate {``}work{''} has arguments defined as {``}worker{''}, {``}job{''}, {``}employer{''}, etc. Our model achieves state-of-the-art performance on the CoNLL09 dataset injected with label definitions given the predicate senses. The performance improvement is even more pronounced in low-resource settings when training data is scarce.",
 }
-          </pre> </div> 
-          <p class="w3-text-gray">[10] <i>Show Me More Details: Discovering Hierarchies of Procedures from Semi-structured Web Data</i>; Shuyan Zhou<span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span>, <b>Li Zhang</b><span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span>, Yue Yang, Qing Lyu, Pengcheng Yin, Chris Callison-Burch and Graham Neubig; in <a href="https://www.2022.aclweb.org/" target="_blank">ACL 2022.</a><a href="https://aclanthology.org/2022.acl-long.214/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('hierarchybib')">BibTeX</span> <a href="https://wikihow-hierarchy.github.io/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Demo</span></a> <a href="https://github.com/shuyanzhou/wikihow_hierarchy" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Code</span></a></p>
-        <div id="hierarchybib" class='hidden'> 
-          <pre style="overflow:auto">
+          </pre> </div>
+                      <p class="w3-text-gray">[10] <i>Show Me More Details: Discovering Hierarchies of Procedures from Semi-structured Web Data</i>; Shuyan Zhou<span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span>, <b>Li Zhang</b><span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span>, Yue Yang, Qing Lyu, Pengcheng Yin, Chris Callison-Burch and Graham Neubig; in <a href="https://www.2022.aclweb.org/" target="_blank">ACL 2022.</a><a href="https://aclanthology.org/2022.acl-long.214/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('hierarchybib')">BibTeX</span> <a href="https://wikihow-hierarchy.github.io/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Demo</span></a> <a href="https://github.com/shuyanzhou/wikihow_hierarchy" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Code</span></a></p>
+                      <div id="hierarchybib" class='hidden'>
+                        <pre style="overflow:auto">
 @inproceedings{zhou-etal-2022-show,
 title = "Show Me More Details: Discovering Hierarchies of Procedures from Semi-structured Web Data",
 author = "Zhou, Shuyan  and
@@ -760,10 +752,10 @@ url = "https://aclanthology.org/2022.acl-long.214",
 pages = "2998--3012",
 abstract = "Procedures are inherently hierarchical. To {``}make videos{''}, one may need to {``}purchase a camera{''}, which in turn may require one to {``}set a budget{''}. While such hierarchical knowledge is critical for reasoning about complex procedures, most existing work has treated procedures as shallow structures without modeling the parent-child relation. In this work, we attempt to construct an open-domain hierarchical knowledge-base (KB) of procedures based on wikiHow, a website containing more than 110k instructional articles, each documenting the steps to carry out a complex procedure. To this end, we develop a simple and efficient method that links steps (e.g., {``}purchase a camera{''}) in an article to other articles with similar goals (e.g., {``}how to choose a camera{''}), recursively constructing the KB. Our method significantly outperforms several strong baselines according to automatic evaluation, human judgment, and application to downstream tasks such as instructional video retrieval.",
 }
-      </pre> 
-    </div>  
-    <p class="w3-text-gray">[9] <i>Visual Goal-Step Inference using wikiHow</i>; Yue Yang, Artemis Panagopoulou, Qing Lyu, <b>Li Zhang</b>, Mark Yatskar and Chris Callison-Burch;  In <a href="https://2021.emnlp.org/" target="_blank">EMNLP 2021</a>.<a href="https://aclanthology.org/2021.emnlp-main.165/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('emnlp2021bib')">BibTeX</span></p>
-          <div id="emnlp2021bib" class='hidden'> <pre style="overflow:auto">
+      </pre>
+                      </div>
+                      <p class="w3-text-gray">[9] <i>Visual Goal-Step Inference using wikiHow</i>; Yue Yang, Artemis Panagopoulou, Qing Lyu, <b>Li Zhang</b>, Mark Yatskar and Chris Callison-Burch;  In <a href="https://2021.emnlp.org/" target="_blank">EMNLP 2021</a>.<a href="https://aclanthology.org/2021.emnlp-main.165/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('emnlp2021bib')">BibTeX</span></p>
+                      <div id="emnlp2021bib" class='hidden'> <pre style="overflow:auto">
 @inproceedings{yang-etal-2021-visual,
 title = "Visual Goal-Step Inference using wiki{H}ow",
 author = "Yang, Yue  and
@@ -782,8 +774,8 @@ pages = "2167--2179",
 abstract = "Understanding what sequence of steps are needed to complete a goal can help artificial intelligence systems reason about human activities. Past work in NLP has examined the task of goal-step inference for text. We introduce the visual analogue. We propose the Visual Goal-Step Inference (VGSI) task, where a model is given a textual goal and must choose which of four images represents a plausible step towards that goal. With a new dataset harvested from wikiHow consisting of 772,277 images representing human actions, we show that our task is challenging for state-of-the-art multimodal models. Moreover, the multimodal representation learned from our data can be effectively transferred to other datasets like HowTo100m, increasing the VGSI accuracy by 15 - 20{\%}. Our task will facilitate multimodal reasoning about procedural events.",
 }
         </pre> </div>
-        <p class="w3-text-gray">[8] <i>Goal-Oriented Script Construction</i>; Qing Lyu<span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span>, <b>Li Zhang</b><span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span> and Chris Callison-Burch; in <a href="https://inlg2021.github.io/index.html" target="_blank">INLG 2021</a>.<a href="https://aclanthology.org/2021.inlg-1.19/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('inlg2021bib')">BibTeX</span> <a href="https://github.com/veronica320/wikihow-GOSC" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Code</span></a></p>
-                     <div id="inlg2021bib" class='hidden'> <pre style="overflow:auto">
+                      <p class="w3-text-gray">[8] <i>Goal-Oriented Script Construction</i>; Qing Lyu<span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span>, <b>Li Zhang</b><span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span> and Chris Callison-Burch; in <a href="https://inlg2021.github.io/index.html" target="_blank">INLG 2021</a>.<a href="https://aclanthology.org/2021.inlg-1.19/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('inlg2021bib')">BibTeX</span> <a href="https://github.com/veronica320/wikihow-GOSC" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Code</span></a></p>
+                      <div id="inlg2021bib" class='hidden'> <pre style="overflow:auto">
 @inproceedings{lyu-etal-2021-goal,
 title = "Goal-Oriented Script Construction",
 author = "Lyu, Qing  and
@@ -799,8 +791,8 @@ pages = "184--200",
 abstract = "The knowledge of scripts, common chains of events in stereotypical scenarios, is a valuable asset for task-oriented natural language understanding systems. We propose the Goal-Oriented Script Construction task, where a model produces a sequence of steps to accomplish a given goal. We pilot our task on the first multilingual script learning dataset supporting 18 languages collected from wikiHow, a website containing half a million how-to articles. For baselines, we consider both a generation-based approach using a language model and a retrieval-based approach by first retrieving the relevant steps from a large candidate pool and then ordering them. We show that our task is practical, feasible but challenging for state-of-the-art Transformer models, and that our methods can be readily deployed for various other datasets and domains with decent zero-shot performance.",
 }
       </pre> </div>
-            <p class="w3-text-gray">[7] <i>Intent Detection with WikiHow</i>; <b>Li Zhang</b>, Qing Lyu, Chris Callison-Burch; in <a href="http://www.aacl2020.org/" target="_blank">AACL-IJCNLP 2020</a>.<a href="https://www.aclweb.org/anthology/2020.aacl-main.35/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('aacl2020bib')">BibTeX</span> <a href="https://github.com/zharry29/wikihow-intent" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Code</span></a></p>
-            <div id="aacl2020bib" class='hidden'> <pre style="overflow:auto">
+                      <p class="w3-text-gray">[7] <i>Intent Detection with WikiHow</i>; <b>Li Zhang</b>, Qing Lyu, Chris Callison-Burch; in <a href="http://www.aacl2020.org/" target="_blank">AACL-IJCNLP 2020</a>.<a href="https://www.aclweb.org/anthology/2020.aacl-main.35/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('aacl2020bib')">BibTeX</span> <a href="https://github.com/zharry29/wikihow-intent" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Code</span></a></p>
+                      <div id="aacl2020bib" class='hidden'> <pre style="overflow:auto">
 @inproceedings{zhang-etal-2020-intent,
   title = "Intent Detection with {W}iki{H}ow",
   author = "Zhang, Li  and
@@ -815,10 +807,10 @@ abstract = "The knowledge of scripts, common chains of events in stereotypical s
   pages = "328--333",
   abstract = "Modern task-oriented dialog systems need to reliably understand users{'} intents. Intent detection is even more challenging when moving to new domains or new languages, since there is little annotated data. To address this challenge, we present a suite of pretrained intent detection models which can predict a broad range of intended goals from many actions because they are trained on wikiHow, a comprehensive instructional website. Our models achieve state-of-the-art results on the Snips dataset, the Schema-Guided Dialogue dataset, and all 3 languages of the Facebook multilingual dialog datasets. Our models also demonstrate strong zero- and few-shot performance, reaching over 75{\%} accuracy using only 100 training examples in all datasets.",
 }
-          </pre> </div> 
+          </pre> </div>
 
-          <p class="w3-text-gray">[6] <i>Reasoning about Goals, Steps, and Temporal Ordering with WikiHow</i>; <b>Li Zhang</b><span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span>, Qing Lyu<span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span> and Chris Callison-Burch; in <a href="https://2020.emnlp.org/" target="_blank">EMNLP 2020</a>.<a href="https://www.aclweb.org/anthology/2020.emnlp-main.374/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('emnlp2020-1bib')">BibTeX</span> <a href="https://github.com/zharry29/wikihow-goal-step" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Code</span></a></p>
-            <div id="emnlp2020-1bib" class='hidden'> <pre style="overflow:auto">
+                      <p class="w3-text-gray">[6] <i>Reasoning about Goals, Steps, and Temporal Ordering with WikiHow</i>; <b>Li Zhang</b><span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span>, Qing Lyu<span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span> and Chris Callison-Burch; in <a href="https://2020.emnlp.org/" target="_blank">EMNLP 2020</a>.<a href="https://www.aclweb.org/anthology/2020.emnlp-main.374/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('emnlp2020-1bib')">BibTeX</span> <a href="https://github.com/zharry29/wikihow-goal-step" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Code</span></a></p>
+                      <div id="emnlp2020-1bib" class='hidden'> <pre style="overflow:auto">
 @inproceedings{zhang-etal-2020-reasoning,
   title = "Reasoning about Goals, Steps, and Temporal Ordering with {W}iki{H}ow",
   author = "Zhang, Li  and
@@ -832,9 +824,9 @@ abstract = "The knowledge of scripts, common chains of events in stereotypical s
   url = "https://www.aclweb.org/anthology/2020.emnlp-main.374",
   pages = "4630--4639",
 }
-          </pre> </div> 
-          <p class="w3-text-gray">[5] <i>Small but Mighty: New Benchmarks for Split and Rephrase</i>; <b>Li Zhang</b>, Huaiyu Zhu, Siddhartha Brahma and Yunyao Li; in <a href="https://2020.emnlp.org/" target="_blank">EMNLP 2020</a>; a part of the <a href="https://gem-benchmark.com" target="_blank">GEM Benchmark</a>.<a href="https://www.aclweb.org/anthology/2020.emnlp-main.91/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('emnlp2020-2bib')">BibTeX</span> <a href="https://github.com/System-T/TextSimplification" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Code</span></a></p>
-          <div id="emnlp2020-2bib" class='hidden'> <pre style="overflow:auto">
+          </pre> </div>
+                      <p class="w3-text-gray">[5] <i>Small but Mighty: New Benchmarks for Split and Rephrase</i>; <b>Li Zhang</b>, Huaiyu Zhu, Siddhartha Brahma and Yunyao Li; in <a href="https://2020.emnlp.org/" target="_blank">EMNLP 2020</a>; a part of the <a href="https://gem-benchmark.com" target="_blank">GEM Benchmark</a>.<a href="https://www.aclweb.org/anthology/2020.emnlp-main.91/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('emnlp2020-2bib')">BibTeX</span> <a href="https://github.com/System-T/TextSimplification" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Code</span></a></p>
+                      <div id="emnlp2020-2bib" class='hidden'> <pre style="overflow:auto">
 @inproceedings{zhang-etal-2020-small,
 title = "Small but Mighty: New Benchmarks for Split and Rephrase",
 author = "Zhang, Li  and
@@ -848,11 +840,11 @@ address = "Online",
 publisher = "Association for Computational Linguistics",
 url = "https://www.aclweb.org/anthology/2020.emnlp-main.91",
 pages = "1198--1205",
-}      
-        </pre> </div> 
-        
-          <p class="w3-text-gray">[4] <i>Multi-Label Transfer Learning for Multi-Relational Semantic Similarity</i>; <b>Li Zhang</b>, Steven R. Wilson and Rada Mihalcea; In <a href="https://starsem.org/2019/" target="_blank">*SEM 2019</a>. <a href="https://www.aclweb.org/anthology/S19-1005" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('sem2019bib')">BibTeX</span> <a href="docs/starSEM2019-presentation.pdf" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Slides</span></a></p>
-          <div id="sem2019bib" class='hidden'> <pre style="overflow:auto">
+}
+        </pre> </div>
+
+                      <p class="w3-text-gray">[4] <i>Multi-Label Transfer Learning for Multi-Relational Semantic Similarity</i>; <b>Li Zhang</b>, Steven R. Wilson and Rada Mihalcea; In <a href="https://starsem.org/2019/" target="_blank">*SEM 2019</a>. <a href="https://www.aclweb.org/anthology/S19-1005" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('sem2019bib')">BibTeX</span> <a href="docs/starSEM2019-presentation.pdf" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Slides</span></a></p>
+                      <div id="sem2019bib" class='hidden'> <pre style="overflow:auto">
 @inproceedings{zhang-etal-2019-multi,
 title = "Multi-Label Transfer Learning for Multi-Relational Semantic Similarity",
 author = "Zhang, Li  and
@@ -868,8 +860,8 @@ pages = "44--50",
 abstract = "Multi-relational semantic similarity datasets define the semantic relations between two short texts in multiple ways, e.g., similarity, relatedness, and so on. Yet, all the systems to date designed to capture such relations target one relation at a time. We propose a multi-label transfer learning approach based on LSTM to make predictions for several relations simultaneously and aggregate the losses to update the parameters. This multi-label regression approach jointly learns the information provided by the multiple relations, rather than treating them as separate tasks. Not only does this approach outperform the single-task approach and the traditional multi-task learning approach, but it also achieves state-of-the-art performance on all but one relation of the Human Activity Phrase dataset.",
 }
         </pre> </div>
-          <p class="w3-text-gray">[3] <i>Direct Network Transfer: Transfer Learning of Sentence Embeddings for Semantic Similarity</i>; <b>Li Zhang</b>, Steven R. Wilson and Rada Mihalcea; preprint pre-print; presented at <a href="https://www.kellogg.northwestern.edu/news-events/conference/ic2s2/2018.aspx" target='_blank'>IC2S2 2018</a>.<a href="https://arxiv.org/abs/1804.07835" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('dntbib')">BibTeX</span> <a href="docs/ic2s2_18_activities.pptx.pdf"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Poster</span></a></p>
-          <div id="dntbib" class='hidden'> <pre style="overflow:auto">
+                      <p class="w3-text-gray">[3] <i>Direct Network Transfer: Transfer Learning of Sentence Embeddings for Semantic Similarity</i>; <b>Li Zhang</b>, Steven R. Wilson and Rada Mihalcea; preprint pre-print; presented at <a href="https://www.kellogg.northwestern.edu/news-events/conference/ic2s2/2018.aspx" target='_blank'>IC2S2 2018</a>.<a href="https://arxiv.org/abs/1804.07835" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('dntbib')">BibTeX</span> <a href="docs/ic2s2_18_activities.pptx.pdf"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Poster</span></a></p>
+                      <div id="dntbib" class='hidden'> <pre style="overflow:auto">
 @misc{zhang2018direct,
 title={Direct Network Transfer: Transfer Learning of Sentence Embeddings for Semantic Similarity},
 author={Li Zhang and Steven R. Wilson and Rada Mihalcea},
@@ -879,8 +871,8 @@ archivePrefix={arXiv},
 primaryClass={cs.CL}
 }
         </pre> </div>
-        <p class="w3-text-gray">[2] <i>Entity and Event Extraction from Scratch Using Minimal Training Data</i>; Laura Burdick, Steven R. Wilson, Oana Ignat, Charles F. Welch, <b>Li Zhang</b>, Mingzhe Wang, Jia Deng and Rada Mihalcea; in <a href="http://www.tac.mta.ca/tac/" target="_blank">TAC 2018.<a href="https://tac.nist.gov/publications/2018/participant.papers/TAC2018.Michigan.proceedings.pdf" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('tac2018bib')">BibTeX</span> <a href="docs/ic2s2_18_activities.pptx.pdf"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Poster</span></a></p>
-            <div id="tac2018bib" class='hidden'> <pre style="overflow:auto">
+                      <p class="w3-text-gray">[2] <i>Entity and Event Extraction from Scratch Using Minimal Training Data</i>; Laura Burdick, Steven R. Wilson, Oana Ignat, Charles F. Welch, <b>Li Zhang</b>, Mingzhe Wang, Jia Deng and Rada Mihalcea; in <a href="http://www.tac.mta.ca/tac/" target="_blank">TAC 2018.<a href="https://tac.nist.gov/publications/2018/participant.papers/TAC2018.Michigan.proceedings.pdf" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('tac2018bib')">BibTeX</span> <a href="docs/ic2s2_18_activities.pptx.pdf"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Poster</span></a></p>
+                      <div id="tac2018bib" class='hidden'> <pre style="overflow:auto">
 @article{Burdick2018EntityAE,
 title={Entity and Event Extraction from Scratch Using Minimal Training Data},
 author={Laura Burdick and Steven R. Wilson and Oana Ignat and Charles F Welch and Li Zhang and Mingzhe Wang and Jia Deng and Rada Mihalcea},
@@ -888,11 +880,11 @@ journal={Theory and Applications of Categories},
 year={2018}
 }
           </pre> </div>
-            <p class="w3-text-gray">[1] <i>Improving Text-to-SQL Evaluation Methodology</i>; Catherine Finegan-Dollak, Jonathan K. Kummerfeld,
-         <b>Li Zhang</b>, Karthik Ramanathan Dhanalakshmi
-         Ramanathan, Sesh Sadasivam, Rui Zhang and Dragomir
-         Radev; in <a href='https://acl2018.org/' target="_blank">ACL 2018</a>.<a href="https://www.aclweb.org/anthology/P18-1033/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('acl2018bib')">BibTeX</span> <a href="https://github.com/jkkummerfeld/text2sql-data"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Code</span></a> <a href="docs/acl2018_poster - final.pdf"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Poster</span></a></p>
-            <div id="acl2018bib" class='hidden'> <pre style="overflow:auto">
+                      <p class="w3-text-gray">[1] <i>Improving Text-to-SQL Evaluation Methodology</i>; Catherine Finegan-Dollak, Jonathan K. Kummerfeld,
+                      <b>Li Zhang</b>, Karthik Ramanathan Dhanalakshmi
+                      Ramanathan, Sesh Sadasivam, Rui Zhang and Dragomir
+                      Radev; in <a href='https://acl2018.org/' target="_blank">ACL 2018</a>.<a href="https://www.aclweb.org/anthology/P18-1033/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('acl2018bib')">BibTeX</span> <a href="https://github.com/jkkummerfeld/text2sql-data"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Code</span></a> <a href="docs/acl2018_poster - final.pdf"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Poster</span></a></p>
+                      <div id="acl2018bib" class='hidden'> <pre style="overflow:auto">
 @InProceedings{acl18sql,
   author    = {Catherine Finegan-Dollak\*  and  Jonathan K. Kummerfeld\*  and  Li Zhang  and  Karthik Ramanathan  and  Sesh Sadasivam  and  Rui Zhang  and  Dragomir Radev},
   title     = {Improving Text-to-SQL Evaluation Methodology},
@@ -908,112 +900,111 @@ year={2018}
   data      = {https://github.com/jkkummerfeld/text2sql-data},
 }
           </pre> </div>
-          </div>
-      </div>
-      <div id='show_less_button' class='hidden'>
-        <hr>
-        <button onclick="toggleCollapseResearch()" class='button'><span class="w3-tag w3-purple w3-round w3-hover-opacity">Collapse</span></button>
-      </div>
-      <br> 
-          </div>
-        
-          <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
-            <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-globe fa-fw w3-margin-right w3-xxlarge w3-text-purple"></i>Activities</h2>
-            <ul>
-              <li>Mar 11, 2026: Talk at <a href="https://www.northwestern.edu/" target="_blank">Northwestern University</a></li>
-              <li>Feb 13, 2026: Talk at <a href="https://allenai.org/" target="_blank">Allen Institute for AI</a></li>
-              <li>Nov 3, 2025: Accepted to <a href="https://aaai.org/conference/aaai/aaai-26/nfh-call/" target="_blank">AAAI 2026 New Faculty Highlights</a></li> 
-              <li>May 7, 2025: Talk at <a href="https://www.brown.edu/" target="_blank">Brown University</a></li> 
-              <li>Apr 3, 2025: Talk at <a href="https://www.temple.edu/" target="_blank">Temple University</a></li> 
-              <li>Mar 19, 2025: Talk at <a href="https://msu.edu/" target="_blank">Michigan State University</a></li>
-              <li>Mar 18, 2025: Talk at the <a href="https://umich.edu/" target="_blank">University of Michigan</a></li>
-              <li>Mar 4, 2025: Talk at <a href="https://knowledgeable-lm.github.io/" target="_blank">AAAI 2025 workshop: Towards Knowledgeable Foundation Models</a></li>
-              <li>Feb 27, 2025: Attending <a href="https://2024.naacl.org/" target="_blank">AAAI 2025</a></li>
-              <li>Feb 21, 2025: Talk at <a href="https://allenai.org/" target="_blank">Allen Institute for AI</a></li> 
-              <li>Feb 17, 2025: Talk at the <a href="https://www.upenn.edu/" target="_blank">University of Pennsylvania</a></li> 
-              <li>Dec 1, 2024: Join <a href="https://drexel.edu/" target="_blank">Drexel University</a> as an assistant professor</li> 
-            </ul>  
-        <div id='show_more_button_act'>
-          <button onclick="toggleMoreActivities()" class='button'><span class="w3-tag w3-purple w3-round w3-hover-opacity">See past activities</span></button>
-        </div>
-        <div id="more_activities" class='hidden'>
-          <ul>
-              <li>Oct 1, 2024: Talk at <a href="https://www.stonybrook.edu/" target="_blank">Adobe World Headquarters</a></li> 
-              <li>Sept 24, 2024: Talk at <a href="https://www.stonybrook.edu/" target="_blank">Stony Brook University</a></li> 
-              <li>Aug 22, 2024: Talk at <a href="https://www.stanford.edu/" target="_blank">Stanford University</a></li> 
-              <li>June 21, 2024: Presenting at <a href="https://sites.google.com/view/starsem2024" target="_blank">*SEM 2024</a></li> 
-              <li>June 18, 2024: Attending <a href="https://2024.naacl.org/" target="_blank">NAACL 2024</a></li>
-              <li>Apr 18, 2024: Talk at the <a href="https://www.pitt.edu/" target="_blank">University of Pittsburgh</a></li> 
-              <li>March 17, 2024: Presenting at <a href="https://2024.eacl.org/" target="_blank">EACL 2024</a></li>
-              <li>March 13, 2024: Talk at <a href="https://drexel.edu/" target="_blank">Drexel University</a></li> 
-              <li>March 8, 2024: Talk at <a href="https://www.brandeis.edu/" target="_blank">Brandeis University</a></li> 
-              <li>March 5, 2024: Talk at <a href="https://umbc.edu/" target="_blank">University of Maryland, Baltimore County</a></li> 
-              <li>Feb 1, 2024: Guest lecture at the <a href="https://umich.edu/" target="_blank">University of Michigan</a></li>
-              <li>Jan 31, 2024: Talk at <a href="https://www.kcl.ac.uk/" target="_blank">King's College London</a></li>
-              <li>Jan 30, 2024: Talk at the <a href="https://umich.edu/" target="_blank">University of Michigan</a></li>
-            <li>Dec 6, 2023: Attending <a href="https://2023.emnlp.org/" target="_blank">EMNLP 2023</a></li>
-              <li>Nov 6, 2023: Attending <a href="https://devday.openai.com/" target="_blank">OpenAI DevDay</a></li>
-              <li>Jul 12, 2023: Presenting at <a href="https://2023.aclweb.org/" target="_blank">ACL 2023</a></li>
-              <li>May 2, 2023: Presenting at <a href="https://2023.eacl.org/" target="_blank">EACL 2023</a></li>
-              <li>Feb 13, 2023: Presenting at <a href="https://aaai-23.aaai.org/" target="_blank">AAAI 2023</a></li>
-              <li>Feb 8, 2023: Talk at <a href="https://www.cmu.edu/" target="_blank">Carnegie Mellon University</a></li>
-              <li>Feb 7, 2023: Guest lecture at <a href="https://oakland.edu/index" target="_blank">Oakland University</a></li>
-              <li>Feb 7, 2023: Talk at the <a href="https://umich.edu/" target="_blank">University of Michigan</a></li>
-              <li>Dec 7, 2022: Presenting at <a href="https://2022.emnlp.org/" target="_blank">EMNLP 2022</a></li>
-          </ul>
-        </div>
-        <div id='show_less_button' class='hidden'>
-          <hr>
-          <button onclick="toggleCollapseActivities()" class='button'><span class="w3-tag w3-purple w3-round w3-hover-opacity">Collapse</span></button>
-        </div>
-        <br> 
-        </div>
+                    </div>
+                  </div>
+                  <div id='show_less_button' class='hidden'>
+                    <hr>
+                    <button onclick="toggleCollapseResearch()" class='button'><span class="w3-tag w3-purple w3-round w3-hover-opacity">Collapse</span></button>
+                  </div>
+                  <br>
+                </div>
 
+                <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
+                  <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-globe fa-fw w3-margin-right w3-xxlarge w3-text-purple"></i>Activities</h2>
+                  <ul>
+                    <li>Mar 11, 2026: Talk at <a href="https://www.northwestern.edu/" target="_blank">Northwestern University</a></li>
+                    <li>Feb 13, 2026: Talk at <a href="https://allenai.org/" target="_blank">Allen Institute for AI</a></li>
+                    <li>Nov 3, 2025: Accepted to <a href="https://aaai.org/conference/aaai/aaai-26/nfh-call/" target="_blank">AAAI 2026 New Faculty Highlights</a></li>
+                    <li>May 7, 2025: Talk at <a href="https://www.brown.edu/" target="_blank">Brown University</a></li>
+                    <li>Apr 3, 2025: Talk at <a href="https://www.temple.edu/" target="_blank">Temple University</a></li>
+                    <li>Mar 19, 2025: Talk at <a href="https://msu.edu/" target="_blank">Michigan State University</a></li>
+                    <li>Mar 18, 2025: Talk at the <a href="https://umich.edu/" target="_blank">University of Michigan</a></li>
+                    <li>Mar 4, 2025: Talk at <a href="https://knowledgeable-lm.github.io/" target="_blank">AAAI 2025 workshop: Towards Knowledgeable Foundation Models</a></li>
+                    <li>Feb 27, 2025: Attending <a href="https://2024.naacl.org/" target="_blank">AAAI 2025</a></li>
+                    <li>Feb 21, 2025: Talk at <a href="https://allenai.org/" target="_blank">Allen Institute for AI</a></li>
+                    <li>Feb 17, 2025: Talk at the <a href="https://www.upenn.edu/" target="_blank">University of Pennsylvania</a></li>
+                    <li>Dec 1, 2024: Join <a href="https://drexel.edu/" target="_blank">Drexel University</a> as an assistant professor</li>
+                  </ul>
+                  <div id='show_more_button_act'>
+                    <button onclick="toggleMoreActivities()" class='button'><span class="w3-tag w3-purple w3-round w3-hover-opacity">See past activities</span></button>
+                  </div>
+                  <div id="more_activities" class='hidden'>
+                    <ul>
+                      <li>Oct 1, 2024: Talk at <a href="https://www.stonybrook.edu/" target="_blank">Adobe World Headquarters</a></li>
+                      <li>Sept 24, 2024: Talk at <a href="https://www.stonybrook.edu/" target="_blank">Stony Brook University</a></li>
+                      <li>Aug 22, 2024: Talk at <a href="https://www.stanford.edu/" target="_blank">Stanford University</a></li>
+                      <li>June 21, 2024: Presenting at <a href="https://sites.google.com/view/starsem2024" target="_blank">*SEM 2024</a></li>
+                      <li>June 18, 2024: Attending <a href="https://2024.naacl.org/" target="_blank">NAACL 2024</a></li>
+                      <li>Apr 18, 2024: Talk at the <a href="https://www.pitt.edu/" target="_blank">University of Pittsburgh</a></li>
+                      <li>March 17, 2024: Presenting at <a href="https://2024.eacl.org/" target="_blank">EACL 2024</a></li>
+                      <li>March 13, 2024: Talk at <a href="https://drexel.edu/" target="_blank">Drexel University</a></li>
+                      <li>March 8, 2024: Talk at <a href="https://www.brandeis.edu/" target="_blank">Brandeis University</a></li>
+                      <li>March 5, 2024: Talk at <a href="https://umbc.edu/" target="_blank">University of Maryland, Baltimore County</a></li>
+                      <li>Feb 1, 2024: Guest lecture at the <a href="https://umich.edu/" target="_blank">University of Michigan</a></li>
+                      <li>Jan 31, 2024: Talk at <a href="https://www.kcl.ac.uk/" target="_blank">King's College London</a></li>
+                      <li>Jan 30, 2024: Talk at the <a href="https://umich.edu/" target="_blank">University of Michigan</a></li>
+                      <li>Dec 6, 2023: Attending <a href="https://2023.emnlp.org/" target="_blank">EMNLP 2023</a></li>
+                      <li>Nov 6, 2023: Attending <a href="https://devday.openai.com/" target="_blank">OpenAI DevDay</a></li>
+                      <li>Jul 12, 2023: Presenting at <a href="https://2023.aclweb.org/" target="_blank">ACL 2023</a></li>
+                      <li>May 2, 2023: Presenting at <a href="https://2023.eacl.org/" target="_blank">EACL 2023</a></li>
+                      <li>Feb 13, 2023: Presenting at <a href="https://aaai-23.aaai.org/" target="_blank">AAAI 2023</a></li>
+                      <li>Feb 8, 2023: Talk at <a href="https://www.cmu.edu/" target="_blank">Carnegie Mellon University</a></li>
+                      <li>Feb 7, 2023: Guest lecture at <a href="https://oakland.edu/index" target="_blank">Oakland University</a></li>
+                      <li>Feb 7, 2023: Talk at the <a href="https://umich.edu/" target="_blank">University of Michigan</a></li>
+                      <li>Dec 7, 2022: Presenting at <a href="https://2022.emnlp.org/" target="_blank">EMNLP 2022</a></li>
+                    </ul>
+                  </div>
+                  <div id='show_less_button' class='hidden'>
+                    <hr>
+                    <button onclick="toggleCollapseActivities()" class='button'><span class="w3-tag w3-purple w3-round w3-hover-opacity">Collapse</span></button>
+                  </div>
+                  <br>
+                </div>
 
-          <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
-            <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-headphones fa-fw w3-margin-right w3-xxlarge w3-text-purple"></i>Music</h2>
-            <div class="w3-container">
-              I am a drummer, producer, content creator, and band leader. I run a video channel with over 60,000 subscribers on <a href="https://space.bilibili.com/483770554" target="_blank">Bilibili</a> and <a href="https://www.youtube.com/c/HazStudio" target="_blank">YouTube</a>, primarily making cover songs from video game and anime soundtracks, in a variety of styles ranging from metal to jazz. I am proudly sponsored by Mackie, NUX, Xvive officially and Chinese retailers of Roland, Alesis, Vater, Tama, etc. I have collaborated with major video games such as Genshin Impact and Azur Lane. 
-              <br>
-              <a href="https://space.bilibili.com/483770554" target="_blank"><img src="image/1200px-Bilibili_Logo_Blue.svg.png" alt="bilibili" width="50"></a> &nbsp; <a href="https://www.youtube.com/c/HazStudio" target="_blank"><i class="fab fa-youtube w3-xxlarge w3-hover-opacity"></i></a> &nbsp; <a href="https://open.spotify.com/artist/6ntpoMsRdS6WWUiuGjvcsf" target="_blank"><i class="fab fa-spotify w3-xxlarge w3-hover-opacity"></i></a> &nbsp; <a href="https://music.apple.com/us/artist/haz-studio/1565038720" target="_blank"><i class="fab fa-apple w3-xxlarge w3-hover-opacity"></i></a> &nbsp; <a href="https://music.amazon.com/artists/B093NPZGC5/haz-studio" target="_blank"><i class="fab fa-amazon w3-xxlarge w3-hover-opacity"></i></a>
-              <br>
-              Below are some music videos and drum covers that I played in and produced. 
-              <br><br>
-            <div>
-              <iframe src="https://www.youtube.com/embed/videoseries?list=PLdoWMpbmbJL_qDspGQtEgAMj9iHam6qqh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="width:48%"></iframe> &nbsp;
-              <iframe src="https://www.youtube.com/embed/videoseries?list=PLdoWMpbmbJL-6JgN_t7txxRDK__eXDG1-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="width:48%"></iframe>
-            </div>
-              <br>
-              Below are recorded live performances of the bands I run locally in Philadelphia. 
-              <br><br>
-            <div>
-              <iframe src="https://www.youtube.com/embed/videoseries?list=PLdoWMpbmbJL_uFuHmBrRtHgDXGgOTo1ht" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="width:48%"></iframe> &nbsp;
-              <iframe src="https://www.youtube.com/embed/videoseries?list=PLdoWMpbmbJL-GoYCMBRduIkd_dQHcynEj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="width:48%"></iframe>
-            </div>
-            
-            <hr>
-            My new album, <a href="https://youtu.be/ue8eqHTN-FM" target="_blank">Megidalon</a>, a collection of reimagined Persona soundracks, is available for streaming on all platforms! My two previous albums Dazzling Tales (reimagined Genshin Impact soundtracks) and A Doll's Lament (reimagined NieR soundtracks) are also available for listening on all major streaming platforms.
-            <br>
-            <br>
-            <div><a href="https://www.youtube.com/playlist?list=OLAK5uy_kWf45u05pATzl9he1C1cOtbGhVO2c_4Y0" target="_blank"><img src="image/megidolaon.png" style="width:32%" alt="Megidalon"></a>&nbsp;&nbsp;&nbsp;<a href="https://youtube.com/playlist?list=OLAK5uy_nqihISozPD2kzVR62R-UtkyfTWSa0y0hk" target="_blank"><img src="image/DazzlingTales.png" style="width:32%" alt="Dazzling Tales"></a>&nbsp;&nbsp;&nbsp;<a href="https://youtube.com/playlist?list=OLAK5uy_l9vZRQ9R-copJuC2uskVyuc7-k2rRE5cQ" target="_blank"><img src="image/ADollsLament.png" style="width:32%" alt="A Doll's Lament"></a></div>
-            <br><hr>
-            I also engage in research of AI music generation, having published a paper on automatic drum composition in an AAAI 2023 workshop.
+                <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
+                  <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-headphones fa-fw w3-margin-right w3-xxlarge w3-text-purple"></i>Music</h2>
+                  <div class="w3-container">
+                    I am a drummer, producer, content creator, and band leader. I run a video channel with over 60,000 subscribers on <a href="https://space.bilibili.com/483770554" target="_blank">Bilibili</a> and <a href="https://www.youtube.com/c/HazStudio" target="_blank">YouTube</a>, primarily making cover songs from video game and anime soundtracks, in a variety of styles ranging from metal to jazz. I am proudly sponsored by Mackie, NUX, Xvive officially and Chinese retailers of Roland, Alesis, Vater, Tama, etc. I have collaborated with major video games such as Genshin Impact and Azur Lane.
+                    <br>
+                    <a href="https://space.bilibili.com/483770554" target="_blank"><img src="image/1200px-Bilibili_Logo_Blue.svg.png" alt="bilibili" width="50"></a> &nbsp; <a href="https://www.youtube.com/c/HazStudio" target="_blank"><i class="fab fa-youtube w3-xxlarge w3-hover-opacity"></i></a> &nbsp; <a href="https://open.spotify.com/artist/6ntpoMsRdS6WWUiuGjvcsf" target="_blank"><i class="fab fa-spotify w3-xxlarge w3-hover-opacity"></i></a> &nbsp; <a href="https://music.apple.com/us/artist/haz-studio/1565038720" target="_blank"><i class="fab fa-apple w3-xxlarge w3-hover-opacity"></i></a> &nbsp; <a href="https://music.amazon.com/artists/B093NPZGC5/haz-studio" target="_blank"><i class="fab fa-amazon w3-xxlarge w3-hover-opacity"></i></a>
+                    <br>
+                    Below are some music videos and drum covers that I played in and produced.
+                    <br><br>
+                    <div>
+                      <iframe src="https://www.youtube.com/embed/videoseries?list=PLdoWMpbmbJL_qDspGQtEgAMj9iHam6qqh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="width:48%"></iframe> &nbsp;
+                      <iframe src="https://www.youtube.com/embed/videoseries?list=PLdoWMpbmbJL-6JgN_t7txxRDK__eXDG1-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="width:48%"></iframe>
+                    </div>
+                    <br>
+                    Below are recorded live performances of the bands I run locally in Philadelphia.
+                    <br><br>
+                    <div>
+                      <iframe src="https://www.youtube.com/embed/videoseries?list=PLdoWMpbmbJL_uFuHmBrRtHgDXGgOTo1ht" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="width:48%"></iframe> &nbsp;
+                      <iframe src="https://www.youtube.com/embed/videoseries?list=PLdoWMpbmbJL-GoYCMBRduIkd_dQHcynEj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="width:48%"></iframe>
+                    </div>
 
-<p class="w3-text-gray">[32] <i>Not that Groove: Zero-Shot Symbolic Music Editing</i>; <b>Li Zhang</b>; preprint.<a href="https://arxiv.org/abs/2505.08203" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <a href="https://github.com/zharry29/drums-with-llm-2" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Code</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('lmdrum2bib')">BibTeX</span></p>
-            <div id="lmdrum2bib" class='hidden'> <pre style="overflow:auto">
+                    <hr>
+                    My new album, <a href="https://youtu.be/ue8eqHTN-FM" target="_blank">Megidalon</a>, a collection of reimagined Persona soundracks, is available for streaming on all platforms! My two previous albums Dazzling Tales (reimagined Genshin Impact soundtracks) and A Doll's Lament (reimagined NieR soundtracks) are also available for listening on all major streaming platforms.
+                    <br>
+                    <br>
+                    <div><a href="https://www.youtube.com/playlist?list=OLAK5uy_kWf45u05pATzl9he1C1cOtbGhVO2c_4Y0" target="_blank"><img src="image/megidolaon.png" style="width:32%" alt="Megidalon"></a>&nbsp;&nbsp;&nbsp;<a href="https://youtube.com/playlist?list=OLAK5uy_nqihISozPD2kzVR62R-UtkyfTWSa0y0hk" target="_blank"><img src="image/DazzlingTales.png" style="width:32%" alt="Dazzling Tales"></a>&nbsp;&nbsp;&nbsp;<a href="https://youtube.com/playlist?list=OLAK5uy_l9vZRQ9R-copJuC2uskVyuc7-k2rRE5cQ" target="_blank"><img src="image/ADollsLament.png" style="width:32%" alt="A Doll's Lament"></a></div>
+                    <br><hr>
+                    I also engage in research of AI music generation, having published a paper on automatic drum composition in an AAAI 2023 workshop.
+
+                    <p class="w3-text-gray">[32] <i>Not that Groove: Zero-Shot Symbolic Music Editing</i>; <b>Li Zhang</b>; preprint.<a href="https://arxiv.org/abs/2505.08203" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <a href="https://github.com/zharry29/drums-with-llm-2" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Code</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('lmdrum2bib')">BibTeX</span></p>
+                    <div id="lmdrum2bib" class='hidden'> <pre style="overflow:auto">
 @misc{zhang2025groovezeroshotsymbolicmusic,
-      title={Not that Groove: Zero-Shot Symbolic Music Editing}, 
+      title={Not that Groove: Zero-Shot Symbolic Music Editing},
       author={Li Zhang},
       year={2025},
       eprint={2505.08203},
       archivePrefix={arXiv},
       primaryClass={cs.SD},
-      url={https://arxiv.org/abs/2505.08203}, 
+      url={https://arxiv.org/abs/2505.08203},
 }
           </pre>
-          </div>  
-<p class="w3-text-gray">[18] <i>Language Models are Drummers: Drum Composition with Natural Language Pre-Training</i>; <b>Li Zhang</b> and Chris Callison-Burch; in <a href="https://creativeai-ws.github.io/" target="_blank">AAAI 2023 Workshop on Creative AI Across Modalities</a>.<a href="https://openreview.net/forum?id=haiht1U7pGL" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <a href="https://github.com/zharry29/drums-with-llm" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Code</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('lmdrumbib')">BibTeX</span></p>
-            <div id="lmdrumbib" class='hidden'> <pre style="overflow:auto">
+                    </div>
+                    <p class="w3-text-gray">[18] <i>Language Models are Drummers: Drum Composition with Natural Language Pre-Training</i>; <b>Li Zhang</b> and Chris Callison-Burch; in <a href="https://creativeai-ws.github.io/" target="_blank">AAAI 2023 Workshop on Creative AI Across Modalities</a>.<a href="https://openreview.net/forum?id=haiht1U7pGL" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <a href="https://github.com/zharry29/drums-with-llm" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Code</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('lmdrumbib')">BibTeX</span></p>
+                    <div id="lmdrumbib" class='hidden'> <pre style="overflow:auto">
   @InProceedings{gpt3drum,
     author    = {Li Zhang  and  Chris Callison-Burch},
     title     = {Language Models are Drummers: Drum Composition with Natural Language Pre-Training},
@@ -1026,18 +1017,18 @@ year={2018}
     software  = {https://github.com/zharry29/drums-with-llm},
   }
           </pre>
-          </div>  
-          <br>
-          </div>
-          <!-- End Right Column -->
-      </div>
-      <!-- End Grid -->
-    </div>
-    <!-- End Page Container -->
-  </div>
-  <footer class="w3-container w3-purple w3-center w3-margin-top">
-    <p>&copy; Li Zhang &middot; All rights reserved &middot; Powered by w3.css</p>
-  </footer>
-</body>
+                    </div>
+                    <br>
+                  </div>
+                  <!-- End Right Column -->
+                </div>
+                <!-- End Grid -->
+              </div>
+              <!-- End Page Container -->
+            </div>
+            <footer class="w3-container w3-purple w3-center w3-margin-top">
+              <p>&copy; Li Zhang &middot; All rights reserved &middot; Powered by w3.css</p>
+            </footer>
+          </body>
 
-</html>
+        </html>
