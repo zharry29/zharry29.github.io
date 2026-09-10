@@ -285,7 +285,18 @@
     abstract = "LLMs have been widely used in planning, either as planners to generate action sequences end-to-end, or as formalizers to represent the planning domain and problem in a formal language that can derive plans deterministically. However, both lines of work rely on standard benchmarks that include only generic and simplistic environmental specifications, leading to potential overestimation of the planning ability of LLMs and safety concerns in downstream tasks. We bridge this gap by augmenting widely used planning benchmarks with manually annotated, fine-grained, and rich natural language constraints spanning four formally defined categories. Over 4 state-of-the-art reasoning LLMs, 4 formal languages, and 4 datasets, we show that the introduction of one-sentence constraints consistently halves performance, indicating current LLMs' lack of robustness and an avenue for future research."
 }
           </pre> </div>
-                      
+                  <p class="w3-text-gray">[38] <i>Vision Language Models Cannot Plan, but Can They Formalize?</i> Muyu He, Yuxi Zheng, Yuchen Liu, Zijian An, Bill Cai, Jiani Huang, Lifeng Zhou, Feng Liu, Ziyang Li and <b>Li Zhang</b>; in <a href="https://eccv26wmeai.github.io/" target="_blank">ECCV 2026 Workshop WMEAI</a>; <span style="color: magenta;">BEST PAPER</span>.<a href="https://arxiv.org/abs/2509.21576" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('visualpddl')">BibTeX</span> <a href="https://github.com/RiddleHe/vllm_as_formalizer" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Code</span></a></p>
+                  <div id="visualpddl" class='hidden'> <pre style="overflow:auto">
+        @misc{he2025visionlanguagemodelsplan,
+          title={Vision Language Models Cannot Plan, but Can They Formalize?},
+          author={Muyu He and Yuxi Zheng and Yuchen Liu and Zijian An and Bill Cai and Jiani Huang and Lifeng Zhou and Feng Liu and Ziyang Li and Li Zhang},
+          year={2025},
+          eprint={2509.21576},
+          archivePrefix={arXiv},
+          primaryClass={cs.CL},
+          url={https://arxiv.org/abs/2509.21576},
+        }          
+      </pre> </div>
                       <p class="w3-text-gray">[37] <i>Documentation Retrieval Improves Planning Language Generation</i>; Renxiang Wang and <b>Li Zhang</b>; in <a href="https://www.afnlp.org/conferences/ijcnlp2025/" target="_blank">AACL 2025</a>.<a href="https://aclanthology.org/2025.ijcnlp-short.14/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('docpddl')">BibTeX</span> <a href="https://github.com/Nangxxxxx/PDDL-RAG" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Code</span></a></p>
                       <div id="docpddl" class='hidden'> <pre style="overflow:auto">
 @inproceedings{wang-zhang-2025-documentation,
@@ -408,18 +419,6 @@
   abstract = "Planning in textual environments have been shown to be a long-standing challenge even for current models. A recent, promising line of work uses LLMs to generate a formal representation of the environment that can be solved by a symbolic planner. However, existing methods rely on a fully-observed environment where all entity states are initially known, so a one-off representation can be constructed, leading to a complete plan. In contrast, we tackle partially-observed environments where there is initially no sufficient information to plan for the end-goal. We propose PDDLEGO that iteratively construct a planning representation that can lead to a partial plan for a given sub-goal. By accomplishing the sub-goal, more information is acquired to augment the representation, eventually achieving the end-goal. We show that plans produced by few-shot PDDLEGO are 43{\%} more efficient than generating plans end-to-end on the Coin Collector simulation, with strong performance (98{\%}) on the more complex Cooking World simulation where end-to-end LLMs fail to generate coherent plans (4{\%}).",
 }
           </pre> </div>
-                      <p class="w3-text-gray">[28] <i>PROC2PDDL: Open-Domain Planning Representations from Texts</i>; Tianyi Zhang<span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span><span class="tooltip">^<span class="tooltiptext">Mentored student</span></span>, <b>Li Zhang</b><span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span>, Zhaoyi Hou<span class="tooltip">^<span class="tooltiptext">Mentored student</span></span>, Ziyu Wang<span class="tooltip">^<span class="tooltiptext">Mentored student</span></span>, Yuling Gu, Peter Clark, Chris Callison-Burch and Niket Tandon; in <a href="https://nl-reasoning-workshop.github.io/" target="_blank">ACL 2024 2st Workshop on Natural Language Reasoning and Structured Explanations</a>.<a href="https://aclanthology.org/2024.nlrse-1.2/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('proc2pddl')">BibTeX</span> <a href="https://github.com/zharry29/proc2pddl" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Code</span></a></p>
-                      <div id="proc2pddl" class='hidden'> <pre style="overflow:auto">
-@inproceedings{zhang-etal-2024-proc2pddl,
-  title = "PROC2PDDL: Open-Domain Planning Representations from Texts",
-  author = "Zhang, Tianyi and Zhang, Li  and Hou, Zhaoyi and Wang, Ziyu and Gu, Yuling and Clark, Peter and Callison-Burch, Chris and Tandon, Niket",
-  booktitle = "Proceedings of the 2st Workshop on Natural Language Reasoning and Structured Explanations (NLRSE)",
-  month = aug,
-  year = "2024",
-  address = "Bangkok, Thailand",
-  publisher = "Association for Computational Linguistics",
-}
-</pre> </div>
                       <p class="w3-text-gray">[20] <i>Faithful Chain of Thought Reasoning</i>; Qing Lyu<span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span>, Shreya Havaldar<span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span>, Adam Stein<span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span>, <b>Li Zhang</b>, Delip Rao, Eric Wong, Marianna Apidianaki and Chris Callison-Burch; in <a href="http://www.ijcnlp-aacl2023.org/" target="_blank">AACL 2023</a>. Won <a href="https://www.afnlp.org/conferences/ijcnlp2023/wp/best-paper-awards/" target="_blank">Area Chair Award</a>.<a href="https://aclanthology.org/2023.ijcnlp-main.20/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('fcotbib')">BibTeX</span> <a href="https://github.com/veronica320/Faithful-COT" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Code</span></a></p>
                       <div id="fcotbib" class='hidden'> <pre style="overflow:auto">
 @inproceedings{lyu-etal-2023-faithful,
@@ -478,18 +477,6 @@
       primaryClass={cs.CL},
       url={https://arxiv.org/abs/2510.05498},
 }
-          </pre> </div>
-                  <p class="w3-text-gray">[38] <i>Vision Language Models Cannot Plan, but Can They Formalize?</i> Muyu He, Yuxi Zheng, Yuchen Liu, Zijian An, Bill Cai, Jiani Huang, Lifeng Zhou, Feng Liu, Ziyang Li and <b>Li Zhang</b>; in <a href="https://eccv26wmeai.github.io/" target="_blank">ECCV 2026 Workshop WMEAI</a>.<a href="https://arxiv.org/abs/2509.21576" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('visualpddl')">BibTeX</span> <a href="https://github.com/RiddleHe/vllm_as_formalizer" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Code</span></a></p>
-                  <div id="visualpddl" class='hidden'> <pre style="overflow:auto">
-        @misc{he2025visionlanguagemodelsplan,
-          title={Vision Language Models Cannot Plan, but Can They Formalize?},
-          author={Muyu He and Yuxi Zheng and Yuchen Liu and Zijian An and Bill Cai and Jiani Huang and Lifeng Zhou and Feng Liu and Ziyang Li and Li Zhang},
-          year={2025},
-          eprint={2509.21576},
-          archivePrefix={arXiv},
-          primaryClass={cs.CL},
-          url={https://arxiv.org/abs/2509.21576},
-        }
               </pre> </div>
               <p class="w3-text-gray">[34] <i>A Reality Check of Language Models as Formalizers on Constraint Satisfaction Problems</i>; Rikhil Amonkar<span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span>, Ceyhun Efe Kayan<span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span>, Qimei Lai, Ronan Le Bras and <b>Li Zhang</b>; in <a href="https://wdlctc.github.io/efficient-reasoning-2026/" target="_blank">COLM 2026 the 2nd Workshop on Efficient Reasoning</a>.<br><a href="https://openreview.net/forum?id=suy7I1LNoG" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('natrualplan')">BibTeX</span> <a href="https://github.com/rikhil-amonkar/calendar-planning" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Code</span></a></p>
                       <div id="natrualplan" class='hidden'> <pre style="overflow:auto">
@@ -576,6 +563,18 @@
     abstract = "The rapid advancement of large language models (LLMs) has significantly improved their performance in code generation tasks. However, existing code benchmarks remain static, consisting of fixed datasets with predefined problems. This makes them vulnerable to memorization during training, where LLMs recall specific test cases instead of generalizing to new problems, leading to data contamination and unreliable evaluation results. To address these issues, we introduce DynaCode, a dynamic, complexity-aware benchmark that overcomes the limitations of static datasets. DynaCode evaluates LLMs systematically using a complexity-aware metric, incorporating both code complexity and call-graph structures. DynaCode achieves large-scale diversity, generating up to 189 million unique nested code problems across 4 units of code complexity and 16 types of call graphs. Results on 12 latest LLMs show an average performance drop of 16.8 to 45.7 compared to MBPP+, with performance progressively decreasing as complexity increases. This demonstrates DynaCode{'}s ability to effectively differentiate model performance based on code complexity and how different parts of a program interact. Our benchmark and evaluation code are available at https://github.com/HWH-2000/DynaCode."
 }
           </pre> </div>
+                      <p class="w3-text-gray">[28] <i>PROC2PDDL: Open-Domain Planning Representations from Texts</i>; Tianyi Zhang<span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span><span class="tooltip">^<span class="tooltiptext">Mentored student</span></span>, <b>Li Zhang</b><span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span>, Zhaoyi Hou<span class="tooltip">^<span class="tooltiptext">Mentored student</span></span>, Ziyu Wang<span class="tooltip">^<span class="tooltiptext">Mentored student</span></span>, Yuling Gu, Peter Clark, Chris Callison-Burch and Niket Tandon; in <a href="https://nl-reasoning-workshop.github.io/" target="_blank">ACL 2024 2st Workshop on Natural Language Reasoning and Structured Explanations</a>.<a href="https://aclanthology.org/2024.nlrse-1.2/" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('proc2pddl')">BibTeX</span> <a href="https://github.com/zharry29/proc2pddl" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Code</span></a></p>
+                      <div id="proc2pddl" class='hidden'> <pre style="overflow:auto">
+@inproceedings{zhang-etal-2024-proc2pddl,
+  title = "PROC2PDDL: Open-Domain Planning Representations from Texts",
+  author = "Zhang, Tianyi and Zhang, Li  and Hou, Zhaoyi and Wang, Ziyu and Gu, Yuling and Clark, Peter and Callison-Burch, Chris and Tandon, Niket",
+  booktitle = "Proceedings of the 2st Workshop on Natural Language Reasoning and Structured Explanations (NLRSE)",
+  month = aug,
+  year = "2024",
+  address = "Bangkok, Thailand",
+  publisher = "Association for Computational Linguistics",
+}
+</pre> </div>
                       <p class="w3-text-gray">[27] <i>Calibrating Large Language Models with Sample Consistency</i>; Qing Lyu<span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span>, Kumar Shridhar<span class="tooltip">*<span class="tooltiptext">Equal contribution</span></span>, Chaitanya Malaviya, Li Zhang, Yanai Elazar, Niket Tandon, Marianna Apidianaki, Mrinmaya Sachan and Chris Callison-Burch; in <a href="https://aaai.org/conference/aaai/aaai-25/" target="_blank">AAAI 2025</a>.<a href="https://ojs.aaai.org/index.php/AAAI/article/view/34120" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('consistencybib')">BibTeX</span></p>
                       <div id="consistencybib" class='hidden'> <pre style="overflow:auto">
 @inproceedings{lyu2025calibrating,
